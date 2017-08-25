@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"><meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/style.css"  />
+		<title>入驻类型</title>
+	</head>
+	<body>
+		<div class="choose_head">
+			<img id="a" src="img/choose.png" class="search_pic"  />
+		</div>
+		<ul class="choose_content">
+			<li>
+				
+				<span><img src="img/class_icon01.png" class="search_pic" /></span>
+				<span>高校社团</span>
+			</li>
+			<li>
+				
+				<span><img src="img/class_icon04.png" class="search_pic" /></span>
+				<span>场地资源</span>
+			</li>
+			<li>
+				
+				<span><img src="img/class_icon03.png" class="search_pic" /></span>
+				<span>校内商家</span>
+			</li>
+			<li>
+				<span><img src="img/class_icon05.png" class="search_pic" /></span>
+				<span>技能达人</span>
+			</li>
+			<li>
+				<span><img src="img/class_icon02.png" class="search_pic" /></span>
+				<span>社群大V</span>
+			</li>
+		</ul>
+		<div class="choose_enter">
+			<span class="choose_delete iconfont icon-shanchu"></span>
+		    <a href="#" class="choose_go">立即入驻</a>
+		</div>
+		<!--遮罩层-->
+		<div class="choose_mask"></div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script>
+		var h=$(document).height();
+		$(".choose_mask").css("height",h);
+		$(".choose_content li").click(function(){
+			$(".choose_mask").show();
+			$(".choose_delete").addClass("add_chooseDelete");
+			$(".choose_go").addClass("add_chooseGo");
+			$(this).addClass("add_li").siblings().removeClass("add_li");
+			$(">span:last-child",this).addClass("color")
+		});
+		$(".choose_delete").click(function(){
+			$(".choose_mask").hide();
+			$(".choose_delete").removeClass("add_chooseDelete");
+			$(".choose_go").removeClass("add_chooseGo");
+			$(".choose_content li").removeClass("add_li");
+			$(".choose_content li span:last-child").removeClass("color");
+		})
+var a=$("#a")[0].src
+console.log(a)
+	</script>
+</html>

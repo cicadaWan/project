@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+	    <link rel="stylesheet" type="text/css" href="css/mui.picker.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/mui.poppicker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>社群大V入驻</title>
+	</head>
+	<body>
+		<div class="enterInfo_top">
+			<img src="img/communityV_top.jpg" class="search_pic" />
+		</div>
+		<ul class="message_content">
+			<li>
+				<span class="enter_name">城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</span>
+				<div id="activeCity" class="mui-input-row">
+					<span class="myInfo_name enter_city result-tips">选择你所在的城市</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校</span>
+				<div id="activeShcool" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">选择您所在的学校</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+
+			</li>
+			<li>
+				<p class="place_name">资源类型</p>
+				<div class="icon_box">
+					<div class="community_title choose_card1">
+					<span class="community_icon"><img src="img/community_g1.png" class="search_pic" /></span>
+					<span class="community_size">兼职群</span>
+				</div>
+				<div class="community_title choose_card1">
+					<span class="community_icon"><img src="img/community_02.png" class="search_pic" /></span>
+					<span class="community_size">动漫群</span>
+				</div>
+				<div class="community_title choose_card1">
+					<span class="community_icon"><img src="img/community_03.png" class="search_pic" /></span>
+					<span class="community_size">游戏群</span>
+				</div>
+				<div class="community_title choose_card2">
+					<span class="community_icon"><img src="img/community_04.png" class="search_pic" /></span>
+					<span class="community_size">自媒体</span>
+				</div>
+				</div>
+				
+			</li>
+			<!--前三个兼职选择图-->
+			<div class="message_content community_content1">
+				<li>
+				<span class="enter_name">群&nbsp;&nbsp;名&nbsp;&nbsp;称</span>
+				<input class="inp" type="text" placeholder="请填写群名称" />
+			</li>
+			<li>
+				<span class="enter_name">群&nbsp;&nbsp;人&nbsp;&nbsp;数</span>
+				<input class="inp" type="number" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写社群人数" />
+				
+			</li>
+			<li>
+				<span class="enter_name">社群头像</span>
+				<span class="enter_jia">点击加号上传社群头像</span>
+				<span class="iconfont icon-jiahao new_jia enter_youjiantou icon_pic"></span>
+			</li>
+			<li>
+				<span class="enter_name">群成员图</span>
+				<span class="myInfo_name ">照片需体现群人数哦</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*请上传1~2张群成员图</p>
+			</li>
+			<li>
+				<p class="community_name">活动图片(选填)</p>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*最多可上传9张以往活动图片</p>
+			</li>
+			</div>
+			<!--自媒体选择出来的图-->
+			<div class="message_content community_content2 community_none">
+				<li>
+					<span class="community_enterName">公众号名称</span>
+					<input class="inp" type="text" placeholder="请填写公众号名称" />
+			   </li>
+			   <li>
+					<span class="community_enterName">公众号ID</span>
+					<input class="inp wechat_public" type="text" placeholder="请填写公众号微信ID" />
+					<p class="warn_public"></p>
+			   </li>
+			   <li>
+					<span class="community_enterName">粉丝人数</span>
+					<input class="inp" type="number" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写公众号粉丝数" />
+			   </li>
+			   <li>
+					<span class="community_enterName">平均阅读量</span>
+					<input class="inp" type="number" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写单篇平均阅读量" />
+			   </li>
+			   <li>
+			   	  <span class="community_enterName">头条报价</span>
+			   	  <input type="number" class="community_inp" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写头条软文报价" />
+			   	  <span class="community_span">元/篇</span>
+			   	  <p class="warn_prohibit"></p>
+			   </li>
+			    <li>
+			   	  <span class="community_enterName">次条报价</span>
+			   	  <input type="number" class="community_inp" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写次条软文报价" />
+			   	  <span class="community_span">元/篇</span>
+			   	  <p class="warn_prohibit"></p>
+			   </li>
+			   <li>
+				<span class="community_enterName">公众号头像</span>
+				<span class="enter_jia">点击加号上传头像</span>
+				<span class="iconfont icon-jiahao new_jia enter_youjiantou icon_pic"></span>
+			</li>
+			<li>
+				<span class="community_enterName">日常推文图</span>
+				<span class="myInfo_name ">照片需体现阅读量哦</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*请上传最多9张日常推文图</p>
+			</li>
+			<li>
+				<p class="community_name">活动图片(选填)</p>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*最多可上传9张以往活动图片</p>
+			</li>
+			<li>
+				<p class="community_name">活动案例(选填)</p>
+				<div class="textarea">
+					<textarea class="introduce" name="aboutMe" onkeyup="load()"  placeholder="请填写社群组织开展过的活动，群成员参与情况等"></textarea>
+					<div id="span" class="span"><span>0</span>/200</div>
+				</div>
+			</li>
+			</div>
+			<li>
+				<span class="enter_nameT">我的介绍</span>
+				<div class="textarea">
+					<textarea class="introduce2" name="aboutMe" onkeyup="load2()"  placeholder="请简述您个人或团队的优势，资源经验等"></textarea>
+					<div id="span2" class="span"><span>0</span>/200</div>
+				</div>
+			</li>
+		<li>
+				<span class="enter_name">联&nbsp;&nbsp;系&nbsp;&nbsp;人</span>
+				<input class="inp" type="text" placeholder="填写您的姓名" />
+			</li>
+			<li>
+				<span class="enter_name">联系电话</span>
+				<input class="phone inp" type="text" placeholder="填写您的手机号码" />
+				<p class="warn_tel"></p>
+			</li>
+			<li>
+				<span class="enter_name">联系邮箱</span>
+				<input class="letter inp" type="text" placeholder="填写您的联系邮箱" />
+				<p class="warn_letter"></p>
+			</li>
+			<li>
+				<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+				<input class="wechat inp" type="text" placeholder="填写您的微信账号" />
+				<p class="warn_wechat"></p>
+			</li>
+			
+		</ul>
+		<form class="enter_form" onsubmit="return false">
+			<button>提交</button>
+		</form>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script src="js/mui.min.js"></script>
+	<script src="js/mui.picker.js"></script>
+	<script src="js/mui.poppicker.js"></script>
+	<script src="js/city.data.js"></script>
+	<script src="js/shcool.data.js"></script>
+	<script type="text/javascript" src="js/enterInfo.js"></script>
+	<script>
+	   //字数限制
+     function load2(){
+//   	 console.log($(".introduce").val().length)
+      	 var length=$(".introduce2").val().length;
+      	 var html=$(".introduce2").val();
+      	 if(length>199){
+      	 $(".introduce2").val(html.substring(0,200))
+      	 	 $("#span2 span").html(200);
+      	 }else{
+      	 	 $("#span2 span").html(length)
+      	 }
+      	
+     }
+     //微信公众号正则验证
+     //当文本框失去焦点的时候
+		 $(".wechat_public").blur(function(){
+		 	var val1=$(".wechat_public").val()
+    		var re=/[a-zA-Z][a-zA-Z0-9]+/;
+    		if(!re.test(val1)){
+    			$(".warn_public").html("输入格式有误，请重新输入").css("display","block")
+    			
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_public").html("请输入微信公众号").css("display","block");
+    		}
+    		
+		 })
+        //当文本框重新获得焦点的时候
+        $(".wechat_public").focus(function(){
+        	var val1=$(".wechat_public").val()
+    		var re=/^[a-zA-Z]{1}[-_a-zA-Z0-9]{5,19}$/;
+    		if(!re.test(val1)){
+    			$(".warn_public").html("").css("display","none")
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_public").html("").css("display","none");
+    		}
+        })
+	//选择资源类型
+	var arr1=["img/community_01.png","img/community_02.png","img/community_03.png","img/community_04.png"];
+	var arr=["img/community_g1.png","img/community_g2.png","img/community_g3.png","img/community_g4.png"];
+		$(".icon_box div").click(function(){
+			var index=$(this).index();
+				$(".icon_box img").each(function(i){
+					$(this).attr("src",arr1[i])
+				})
+				$(this).find("img").attr("src",arr[index]);
+		})
+	//选项卡切换
+	$(".choose_card1").click(function(){
+		$(".community_content1").show();
+		$(".community_content2").hide();
+	})
+	$(".choose_card2").click(function(){
+		$(".community_content2").show();
+		$(".community_content1").hide();
+	})
+	
+//	//获取添加图片里面的那些图片的src值
+//	var a =$(".picture_box img");
+//	console.log(a)
+//	for(var i=0;i<a.length;i++){
+//		var b=a[i].src;
+//		console.log(b)
+//	}
+	</script>
+</html>

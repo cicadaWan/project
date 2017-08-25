@@ -1,0 +1,84 @@
+[
+
+	{
+		"Name": "ss",
+		"catory": [
+			{
+				"school": "广州大学",
+				"picture": "personal_bg.png",
+				"city": "广州",
+				"num": "20"
+			}, {
+				"school": "广州大学",
+				"picture": "personal_bg.png",
+				"city": "广州",
+				"num": "20"
+			}, {
+				"school": "广州大学",
+				"picture": "personal_bg.png",
+				"city": "广州",
+				"num": "20"
+			}, {
+				"school": "广州大学",
+				"picture": "personal_bg.png",
+				"city": "广州",
+				"num": "20"
+			}, {
+				"school": "广州大学",
+				"picture": "personal_bg.png",
+				"city": "广州",
+				"num": "20"
+			}, {
+				"school": "广州大学",
+				"picture": "personal_bg.png",
+				"city": "广州",
+				"num": "20"
+			}, {
+				"school": "广州大学",
+				"picture": "personal_bg.png",
+				"city": "广州",
+				"num": "20"
+			}, {
+				"school": "广州大学",
+				"picture": "personal_bg.png",
+				"city": "广州",
+				"num": "20"
+			}
+		]
+	}, {
+		"Name": "sss",
+		"catory": [
+			{
+				"name": "潇洒哥",
+				"name2": "北京师范大学"
+			}, {
+				"name": "北京北京",
+				"name2": "华南师范大学"
+			}, {
+				"name": "潇洒哥",
+				"name2": "北京师范大学"
+			}, {
+				"name": "北京北京",
+				"name2": "华南师范大学"
+			}, {
+				"name": "潇洒哥",
+				"name2": "北京师范大学"
+			}, {
+				"name": "北京北京",
+				"name2": "华南师范大学"
+			}, {
+				"name": "潇洒哥",
+				"name2": "北京师范大学"
+			}, {
+				"name": "北京北京",
+				"name2": "华南师范大学"
+			}, {
+				"name": "潇洒哥",
+				"name2": "北京师范大学"
+			}, {
+				"name": "北京北京",
+				"name2": "华南师范大学"
+			}
+		]
+	}
+]

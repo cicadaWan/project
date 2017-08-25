@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.poppicker.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>校内商家入驻</title>
+	</head>
+
+	<body>
+		
+		<div class="enterInfo_top">
+			<img src="img/sell_top.jpg" class="search_pic" />
+		</div>
+		<ul class="message_content">
+			<li>
+				<span class="enter_name">城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</span>
+				<div id="activeCity" class="mui-input-row">
+					<span class="myInfo_name enter_city result-tips">选择你所在的城市</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校</span>
+				<div id="activeShcool" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">选择您所在的学校</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+
+			</li>
+			<li>
+				<span class="enter_name">入驻名称</span>
+				<input class="inp" type="text" placeholder="请填写入驻名称" />
+			</li>
+			<li>
+				<span class="enter_name">入驻头像</span>
+				<span class="enter_jia">点击加号上传入驻头像</span>
+				<span class="iconfont icon-jiahao new_jia enter_youjiantou icon_pic"></span>
+			</li>
+			<li>
+				<span class="enter_name">商家类型</span>
+				<div id="sellStyle" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">请选择商家类型</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+			</li>
+			<li>
+				<p class="place_name">合作形式</p>
+				<div class="sellCheck_box">
+					<div class="sell_check">
+						<span class="check_pic"></span>
+						<span>商品专柜摆放商品</span>
+					</div>
+					<div class="sell_check">
+						<span class="check_pic"></span>
+						<span>门店摆放易拉宝</span>
+					</div>
+					<div class="sell_check">
+						<span class="check_pic"></span>
+						<span>门店张贴宣传海报</span>
+					</div>
+					<div class="sell_check">
+						<span class="check_pic"></span>
+						<span>门店派单派劵</span>
+					</div>
+					<div class="sell_check">
+						<span class="check_pic"></span>
+						<span style="margin-bottom:17.5px;">其他</span>
+					</div>
+				</div>
+
+				<div class="sellNum_box">
+					<div class="sell_num sellNum_none">
+						<span class="sell_span1">商品专柜摆放商品</span>
+						<div class="num_right">
+							<div class="sell_bottom">
+								<input type="number" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写报价" />
+							</div>
+							<span class="sell_span2">元/次</span>
+						</div>
+
+					</div>
+					<div class="sell_num sellNum_none">
+						<span class="sell_span1">门店摆放易拉宝</span>
+						<div class="num_right">
+							<div class="sell_bottom">
+								<input type="number" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写报价" />
+							</div>
+							<span class="sell_span2">元/次</span>
+						</div>
+					</div>
+					<div class="sell_num sellNum_none">
+						<span class="sell_span1">门店张贴宣传海报</span>
+						<div class="num_right">
+							<div class="sell_bottom">
+								<input type="number" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写报价" />
+							</div>
+							<span class="sell_span2">元/次</span>
+						</div>
+
+					</div>
+					<div class="sell_num sellNum_none">
+						<span class="sell_span1">门店派单派劵</span>
+						<div class="num_right">
+							<div class="sell_bottom">
+								<input type="number" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写报价" />
+							</div>
+							<span class="sell_span2">元/次</span>
+						</div>
+
+					</div>
+					<div class="sell_num sellNum_none">
+						<span class="sell_span1">其他</span>
+						<div class="num_right">
+							<div class="sell_bottom">
+								<input type="number" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写报价" />
+							</div>
+							<span class="sell_span2">元/次</span>
+						</div>
+
+					</div>
+				</div>
+
+			</li>
+			<!--场地场景照片图空出来的部分-->
+			<li>
+				<span class="enter_name enterName">门店照片</span>
+				<span class="enter_name enterName2">全景照片</span>
+				<span class="myInfo_name">点击加号上传全景照片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<span class="enter_name add_photo enterName2">中景照片</span>
+				<span class="myInfo_name add_place">点击加号上传中景照片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<span class="enter_name add_photo enterName2">近景照片</span>
+				<span class="myInfo_name add_place">点击加号上传近景照片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*最多可上传9张活动照片</p>
+			</li>
+			<li>
+				<span class="enter_nameT">门店描述</span>
+				<div class="textarea">
+					<textarea class="introduce" id="aboutMeT" name="aboutMe" onkeyup="load()"  placeholder="请填写和门店相关的信息，譬如门店销售品类，人流量优势等等"></textarea>
+					<div id="span" class="span"><span>0</span>/200</div>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">联&nbsp;&nbsp;系&nbsp;&nbsp;人</span>
+				<input class="inp" type="text" placeholder="填写您的姓名" />
+			</li>
+			<li>
+				<span class="enter_name">联系电话</span>
+				<input class="phone inp" type="text" placeholder="填写您的手机号码" />
+				<p class="warn_tel"></p>
+			</li>
+			<li>
+				<span class="enter_name">联系邮箱</span>
+				<input class="letter inp" type="text" placeholder="填写您的联系邮箱" />
+				<p class="warn_letter"></p>
+			</li>
+			<li>
+				<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+				<input class="wechat inp" type="text" placeholder="填写您的微信账号" />
+				<p class="warn_wechat"></p>
+			</li>
+		</ul>
+		<form class="enter_form" onsubmit="return false">
+			<button>提交</button>
+		</form>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script src="js/mui.min.js"></script>
+	<script src="js/mui.picker.js"></script>
+	<script src="js/mui.poppicker.js"></script>
+	<script src="js/city.data.js"></script>
+	<script src="js/shcool.data.js"></script>
+	<script type="text/javascript" src="js/enterInfo.js"></script>
+	<script>
+		$(".sell_check").click(function() {
+			var index = $(this).index();
+			console.log(index)
+			if($(">span:first-child", this).hasClass("check_pic")) {
+				$(">span:first-child", this).removeClass("check_pic").addClass("check_img");
+				console.log($(".sellNum_box div").eq(index))
+				$(".sellNum_box .sell_num").eq(index).removeClass("sellNum_none")
+			} else {
+				$(">span:first-child", this).removeClass("check_img").addClass("check_pic");
+				$(".sellNum_box .sell_num").eq(index).addClass("sellNum_none")
+			}
+		});
+		  //选择商家类型
+    var sellStyle=new mui.PopPicker({
+    	layer:1
+    });
+    sellStyle.setData([{value:0,text:"小卖部"},{value:1,text:"超市"},{value:2,text:"水吧/奶茶店"},{value:3,text:"打印店"},{value:4,text:"其他"}]);
+					var showsellStyleButton = document.getElementById('sellStyle');
+					showsellStyleButton.addEventListener('tap', function(event) {
+					sellStyle.show(function(items) {
+//							console.log(items)
+							document.querySelector('#sellStyle .result-tips').style.display = "none";
+							document.querySelector('#sellStyle .show-result').style.display = "block";
+							document.querySelector('#sellStyle .show-result').innerText = items[0].text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+	</script>
+
+</html>

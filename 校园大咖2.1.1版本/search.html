@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>校咖汇</title>
+	</head>
+	<link rel="stylesheet" href="css/mui.picker.css" />
+	<link rel="stylesheet" href="css/mui.poppicker.css" />
+	<link rel="stylesheet" href="iconfont/iconfont.css" />
+	<link rel="stylesheet" href="css/dropload.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<body>
+		<header class="ctt_headerSearch">
+			<form class="ctt_hot">
+				<a href="javascript:void(0)" class="hot_pic"><img class="search_pic" src="img/search.png" /></a>
+				<input type="text" placeholder="搜索" class="hot_inp" />
+				<span class="icon_remove"></span>
+			</form>
+			<span class="ctt_cancel">取消</span>
+		</header>
+		<div class="searchSource_content">
+			<span class="searchSource_left searchSource_border"><span class="searchSource_green">搜资源</span></span>
+			<span class="searchSource_left"><span>搜大咖</span></span>
+		</div>
+		<div class="list_content">
+
+			<span class="hot_word">搜索热词</span>
+			<div class="search_list">
+				<a href="javascript:void(0)"><span>热词</span></a>
+				<a href="javascript:void(0)"><span>校咖计划</span></a>
+				<a href="javascript:void(0)"><span>热词</span></a>
+				<a href="javascript:void(0)"><span>热词</span></a>
+				<a href="javascript:void(0)"><span>大学生文化生活</span></a>
+				<a href="javascript:void(0)"><span>校咖计划</span></a>
+				<a href="javascript:void(0)"><span>校咖计划</span></a>
+			</div>
+		</div>
+		<section class="search_content">
+			<ul class="class_choose">
+				<li class="choose choose_sort">
+					<span class="class_active">默认排序</span>
+					<span class="icon_down iconSort"></span>
+				</li>
+				<li class="choose choose1">
+					<span>销量优先</span>
+				</li>
+				<li class="choose choose2">
+					<span>筛选</span>
+					<span class="filter"></span>
+				</li>
+				<div class="search_bg ctt_none"></div>
+				<!--点击排序出来的部分-->
+				<div class="class_sortContent">
+					<div class="search_bg"></div>
+					<ul class="class_sort">
+						<li id="def" data-name="" class="class_active">默认排序<span class="iconfont icon-gou class_check"></span></li>
+						<li id="desc" data-name="desc">价格由高到低<span class="iconfont class_check"></span></li>
+						<li id="asc" data-name="asc">价格由低到高<span class="iconfont class_check"></span></li>
+					</ul>
+				</div>
+				<!--点击筛选出来的样式-->
+				<div class="class_filterContent">
+			<div style="min-height: 100%;">
+			<div class="class_price">
+				<h3>价格</h3>
+				<div class="price_box">
+					<input id="minPrice" placeholder="最低价" type="number" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))">
+					<span>—</span>
+					<input id="maxPrice" placeholder="最高价" type="number" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))">
+				</div>
+			</div>
+			<div class="address">
+				<h3>所在地</h3>
+				<div class="choose_address choose_address1 mui-input-row" id="chooseCity">
+					<span class="address_text address_text1 result-tips">选择所在地</span>
+					<span class="address_text show-result"></span>
+					<span class="iconfont icon-arrfill_d-copy-copy"></span>
+				</div>
+			</div>
+			<div class="service_box">
+				<h3>服务类型</h3>
+				<div class="service_style">
+					<div data-name="1">线上</div>
+					<div data-name="2">线下</div>
+				</div>	
+			</div>
+			<div class="address address1">
+				<h3>院校等级</h3>
+				<!--<div class="choose_address"><span class="address_text">选择院校等级</span><span class="iconfont icon-arrfill_d-copy-copy"></span></div>-->
+				<div class="choose_address mui-input-row" id="chooseSchool">
+					<span class="address_text result-tips">选择院校等级</span>
+					<span class="address_text show-result"></span>
+					<span class="iconfont icon-arrfill_d-copy-copy"></span>
+				</div>
+			</div>
+			
+			</div>
+			<div class="enure_content">
+			   <div class="reset_box">重置</div>
+			   	<div class="enure_box">确定</div>
+			</div>
+		
+		</div>
+			</ul>
+			<!--搜索资源出来的列表页-->
+			<!--<div class="searchResource_Content ctt_searchBox">-->
+			<ul class="searchResource_content ctt_searchBox">
+				<!--<li>
+					<div class="search_bg"></div>
+					<div class="searchList_content">
+						<div class="searchList_title">
+							<span class="searchList_pic"><img src="img/class_picture.png" class="search_pic" /></span>
+							<span class="searchList_name">咕噜咕噜08</span>
+							<div class="searchList_city">
+								<span class="iconfont icon-zuobiao"></span>
+								<span>广州</span>
+							</div>
+						</div>
+						<div class="ctt_Piccontent">
+							<div class="ctt_pic">
+								<img src="img/personal_bg.png" class="search_pic">
+								<span class="ctt_consult"><span>广州大学</span></span>
+							</div>
+							<span class="ctt_serviceTitle"><span>服务标题&nbsp;:&nbsp;精准咨询，答您所需</span></span>
+						</div>
+					</div>
+					<div class="ctt_Pricecontent">
+						<div class="Pricecontent_left">
+							<span>￥20元/次</span>
+							<span>[已售2687]</span>
+						</div>
+						<span class="Pricecontent_right">加入已选</span>
+					</div>
+				</li>
+				<li>
+					<div class="search_bg"></div>
+					<div class="searchList_content">
+						<div class="searchList_title">
+							<span class="searchList_pic"><img src="img/class_picture.png" class="search_pic" /></span>
+							<span class="searchList_name">咕噜咕噜08</span>
+							<div class="searchList_city">
+								<span class="iconfont icon-zuobiao"></span>
+								<span>广州</span>
+							</div>
+						</div>
+						<div class="ctt_Piccontent">
+							<div class="ctt_pic">
+								<img src="img/personal_bg.png" class="search_pic">
+								<span class="ctt_consult"><span>广州大学</span></span>
+							</div>
+							<span class="ctt_serviceTitle"><span>服务标题&nbsp;:&nbsp;精准咨询，答您所需</span></span>
+						</div>
+					</div>
+					<div class="ctt_Pricecontent">
+						<div class="Pricecontent_left">
+							<span>￥20元/次</span>
+							<span>[已售2687]</span>
+						</div>
+						<span class="Pricecontent_right">加入已选</span>
+					</div>
+				</li>-->
+			</ul>
+			<!--</div>-->
+				
+			<!--搜索大咖出来的列表页-->
+			<!--<div class="cttRecommend_content ctt_searchBox">-->
+				<!--<div class="search_bg"></div>-->
+				<ul class="ctt_lists cttRecommend_content ctt_searchBox">
+					<!--<li class="recommend">
+						<div class="recommend_left ctt_recommendLeft">
+							<img src="img/per_banner01.jpg" class="search_pic">
+						</div>
+						<div class="ctt_recommendRight">
+							<div class="recommendRight_left">
+								<span>潇洒哥</span>
+								<span><strong class="searchSource_green">北京</strong>师范大学</span>
+							</div>
+							<div class="recommendRight_right">
+								<div class="ctt_address">
+									<span><img src="img/address.png" class="search_pic"></span>
+									<span>广州</span>
+								</div>
+								<div class="ctt_address ctt_Address">
+									<span><img src="img/flg.png" class="search_pic"></span>
+									<span>动漫社</span>
+								</div>
+							</div>
+
+						</div>
+					</li>
+					<li class="recommend">
+						<div class="recommend_left ctt_recommendLeft">
+							<img src="img/per_banner01.jpg" class="search_pic">
+						</div>
+						<div class="ctt_recommendRight">
+							<div class="recommendRight_left">
+								<span><strong class="searchSource_green">北京北京</strong></span>
+								<span>华南师范大学</span>
+							</div>
+							<div class="recommendRight_right">
+								<div class="ctt_address">
+									<span><img src="img/address.png" class="search_pic"></span>
+									<span>广州</span>
+								</div>
+								<div class="ctt_address ctt_Address">
+									<span><img src="img/flg.png" class="search_pic"></span>
+									<span>技能达人</span>
+								</div>
+							</div>
+
+						</div>
+					</li>
+					<li class="recommend">
+						<div class="recommend_left ctt_recommendLeft">
+							<img src="img/per_banner01.jpg" class="search_pic">
+						</div>
+						<div class="ctt_recommendRight">
+							<div class="recommendRight_left">
+								<span>潇洒哥</span>
+								<span><strong class="searchSource_green">北京</strong>师范大学</span>
+							</div>
+							<div class="recommendRight_right">
+								<div class="ctt_address">
+									<span><img src="img/address.png" class="search_pic"></span>
+									<span>广州</span>
+								</div>
+								<div class="ctt_address ctt_Address">
+									<span><img src="img/flg.png" class="search_pic"></span>
+									<span><strong class="searchSource_green">北京</strong>社群</span>
+								</div>
+							</div>
+
+						</div>
+					</li>-->
+					<!--<div class="dropload-down">
+					<div class="dropload-refresh">↑上拉加载更多</div>
+				</div>-->
+				</ul>
+			<!--</div>-->
+		</section>
+       <div class="mask"></div>
+       <!--06-19加入已选的弹窗-->
+       <div class="popupWindow_content">
+       	<div class="popupWindow_title">
+       		<span class="popupWindow_close"><img src="img/cha.png" alt="" class="search_pic" /></span>
+       		<span class="poopupWindow_choose">已选</span>
+       		<span class="popupWindow_car"><img src="img/buycar.png" class="search_pic" /></span>
+       	</div>
+       	<ul class="poopupWindow_box">
+       		<li>
+       			<span class="queen"><img src="img/queen.png" class="search_pic" /></span>
+       			<div class="popupWindow_message">
+       				<span>精准咨询，答您所需</span>
+       				<span>商家选定特定校园资源，直接付费咨询...</span>
+       			</div>
+       			<div class="popupWindow_number">
+       				<span class="reduce">-</span>
+       				<span class="value">1</span>
+       				<span class="add">+</span>
+       			</div>
+       		</li>
+       		<!--<li>
+       			<span class="queen"><img src="img/queen.png" class="search_pic" /></span>
+       			<div class="popupWindow_message">
+       				<span>精准咨询，答您所需</span>
+       				<span>商家选定特定</span>
+       			</div>
+       			<div class="popupWindow_number">
+       				<span class="reduce">-</span>
+       				<span class="value">1</span>
+       				<span class="add">+</span>
+       			</div>
+       		</li>-->
+       	</ul>
+       	<!--这一部分当是搜索结果为单项时候就不出现，只需要去掉popupWindow_up这个类名就可以-->
+       	<span class="popupWindow_more popupWindow_up"></span>
+       </div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+	<script type="text/javascript" src="js/mui.picker.js" ></script>
+	<script type="text/javascript" src="js/mui.poppicker.js" ></script>
+	<script type="text/javascript" src="js/city.data.js" ></script>
+	<script type="text/javascript" src="js/shcool.data.js" ></script>
+	<script type="text/javascript" src="js/dropload.min.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
+
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<!--<link rel="stylesheet" href="css/mui.min.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.css" />
+		<link rel="stylesheet" type="text/css" href="css/mui.poppicker.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>场地资源入驻</title>
+	</head>
+
+	<body>
+		<div class="enterInfo_top">
+			<img src="img/place_top.jpg" class="search_pic" />
+		</div>
+		<ul class="message_content">
+			<li>
+				<span class="enter_name">城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</span>
+				<div id="activeCity" class="mui-input-row">
+					<span class="myInfo_name enter_city result-tips">选择你所在的城市</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校</span>
+				<div id="activeShcool" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">选择您所在的学校</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+
+			</li>
+			<li>
+				<span class="enter_name">入驻名称</span>
+				<input class="inp" type="text" placeholder="请填写入驻名称" />
+			</li>
+			<li>
+				<span class="enter_name">入驻头像</span>
+				<span class="enter_jia">点击加号上传入驻头像</span>
+				<span class="iconfont icon-jiahao new_jia enter_youjiantou icon_pic"></span>
+			</li>
+			<li>
+				<span class="enter_name">场地类型</span>
+				<div id="placeStyle" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">请选择场地类型</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">场地规模</span>
+				<div id="placeSize" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">请选择场地规模</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+			</li>
+			<li>
+				<p class="place_name">基本物资配备(可选)</p>
+				<div class="check">
+					<span>麦克风</span>
+					<span class="check_pic"></span>
+				</div>
+				<div class="check">
+					<span>音响</span>
+					<span class="check_pic"></span>
+				</div>
+				<div class="check">
+					<span>桌椅</span>
+					<span class="check_pic"></span>
+				</div>
+				<div class="check">
+					<span>投影仪</span>
+					<span class="check_pic"></span>
+				</div>
+				<div class="check">
+					<span>电脑</span>
+					<span class="check_pic"></span>
+				</div>
+				<div class="check">
+					<span>展板</span>
+					<span class="check_pic"></span>
+				</div>
+				<p class="enter_name">使用时间</p>
+				<div id="placeTime" class="mui-input-row place_inp">
+
+					<span class="result-tips">8点</span>
+					<span class="show-result" id="result"></span>
+				</div>
+				<span class="place_span">—</span>
+				<div id="placeTime2" class="mui-input-row place_inp">
+					<span class="result-tips">12点</span>
+					<span class="show-result"></span>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">提供兼职</span>
+				<div id="provide" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">是否提供兼职方式</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">场地报价</span>
+				<input class="inp" type="number" onKeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写场地单次使用费用" />
+			</li>
+			<!--场地场景照片图空出来的部分-->
+			<li>
+				<span class="enter_name enterName">场地照片</span>
+				<span class="enter_name enterName2">全景照片</span>
+				<span class="myInfo_name">点击加号上传全景照片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+						
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<span class="enter_name add_photo enterName2">中景照片</span>
+				<span class="myInfo_name add_place">点击加号上传中景照片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							<span class="cover">封面</span>
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						<span class="cover">封啊</span>
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						<span class="cover">封面</span>
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<span class="enter_name add_photo enterName2">近景照片</span>
+				<span class="myInfo_name add_place">点击加号上传近景照片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*最多可上传9张场地照片</p>
+			</li>
+			<!--场地描述-->
+			<li>
+				<span class="enter_nameT">场地描述</span>
+				<div class="textarea">
+					<textarea class="introduce" id="aboutMeT" name="aboutMe" onkeyup="load()"  placeholder="请填写和场地有关的信息，譬如场地大小，过往举办过的活动等等"></textarea>
+					<div id="span" class="span"><span>0</span>/200</div>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">联&nbsp;&nbsp;系&nbsp;&nbsp;人</span>
+				<input class="inp" type="text" placeholder="填写您的姓名" />
+			</li>
+			<li>
+				<span class="enter_name">联系电话</span>
+				<input class="phone inp" type="text" placeholder="填写您的手机号码" />
+				<p class="warn_tel"></p>
+			</li>
+			<li>
+				<span class="enter_name">联系邮箱</span>
+				<input class="letter inp" type="text" placeholder="填写您的联系邮箱" />
+				<p class="warn_letter"></p>
+			</li>
+				<li>
+					<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+					<input class="wechat inp" type="text" placeholder="填写您的微信账号" />
+					<p class="warn_wechat"></p>
+				</li>
+		</ul>
+		<form class="enter_form" onsubmit="return false">
+			<button>提交</button>
+		</form>
+	</body>
+
+</html>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script src="js/mui.min.js"></script>
+<script src="js/mui.picker.js"></script>
+<script src="js/mui.poppicker.js"></script>
+<script src="js/city.data.js"></script>
+<script src="js/shcool.data.js"></script>
+<script type="text/javascript" src="js/enterInfo.js"></script>
+<script>
+	$(".check span:last-child").click(function() {
+
+			if($(this).hasClass("check_pic")) {
+				$(this).removeClass("check_pic").addClass("check_img")
+
+			} else {
+
+				$(this).removeClass("check_img").addClass("check_pic")
+			}
+		})
+     
+	//选择场地类型
+
+	var placeStyle = new mui.PopPicker({
+		layer: 1
+	});
+	placeStyle.setData([{
+		value: 0,
+		text: "活动展位"
+	}, {
+		value: 1,
+		text: "活动中心"
+	}, {
+		value: 2,
+		text: "多媒体课室"
+	}]);
+	var showplaceStyleButton = document.getElementById('placeStyle');
+	showplaceStyleButton.addEventListener('tap', function(event) {
+		placeStyle.show(function(items) {
+			document.querySelector('#placeStyle .result-tips').style.display = "none";
+			document.querySelector('#placeStyle .show-result').style.display = "block";
+			document.querySelector('#placeStyle .show-result').innerText = items[0].text;
+			//返回 false 可以阻止选择框的关闭
+			//return false;
+			placeStyle.hide(function(items) {
+				if(document.querySelector('#placeStyle .show-result').innerText = "") {
+					$(".mui-backdrop").css("display", "none")
+				}
+
+			})
+		});
+
+	}, false);
+	//选择场地规模
+	var placeSize = new mui.PopPicker({
+		layer: 1
+	});
+	placeSize.setData([{
+		value: 0,
+		text: "容纳人数:150人以内"
+	}, {
+		value: 0,
+		text: "容纳人数:150人至250人"
+	}, {
+		value: 0,
+		text: "容纳人数:250人以上"
+	}]);
+	var showplaceSizeButton = document.getElementById('placeSize');
+	showplaceSizeButton.addEventListener('tap', function(event) {
+		placeSize.show(function(items) {
+			document.querySelector('#placeSize .result-tips').style.display = "none";
+			document.querySelector('#placeSize .show-result').style.display = "block";
+			document.querySelector('#placeSize .show-result').innerText = items[0].text;
+			//返回 false 可以阻止选择框的关闭
+			//return false;
+		});
+	}, false);
+	//是否提供兼职方式
+	var provide = new mui.PopPicker({
+		layer: 1
+	});
+	provide.setData([{
+		value: 0,
+		text: "是"
+	}, {
+		value: 0,
+		text: "否"
+	}]);
+	var showprovideButton = document.getElementById('provide');
+	showprovideButton.addEventListener('tap', function(event) {
+		provide.show(function(items) {
+			document.querySelector('#provide .result-tips').style.display = "none";
+			document.querySelector('#provide .show-result').style.display = "block";
+			document.querySelector('#provide .show-result').innerText = items[0].text;
+			//返回 false 可以阻止选择框的关闭
+			//return false;
+		});
+	}, false);
+	//时间选择器
+	var a = "";
+	var c = ""
+	var time = [{
+		value: 0,
+		text: "0点"
+	}, {
+		value: 1,
+		text: "1点"
+	}, {
+		value: 2,
+		text: "2点"
+	}, {
+		value: 3,
+		text: "3点"
+	}, {
+		value: 4,
+		text: "4点"
+	}, {
+		value: 5,
+		text: "5点"
+	}, {
+		value: 6,
+		text: "6点"
+	}, {
+		value: 7,
+		text: "7点"
+	}, {
+		value: 8,
+		text: "8点"
+	}, {
+		value: 9,
+		text: "9点"
+	}, {
+		value: 10,
+		text: "10点"
+	}, {
+		value: 11,
+		text: "11点"
+	}, {
+		value: 12,
+		text: "12点"
+	}, {
+		value: 13,
+		text: "13点"
+	}, {
+		value: 14,
+		text: "14点"
+	}, {
+		value: 15,
+		text: "15点"
+	}, {
+		value: 16,
+		text: "16点"
+	}, {
+		value: 17,
+		text: "17点"
+	}, {
+		value: 18,
+		text: "18点"
+	}, {
+		value: 19,
+		text: "19点"
+	}, {
+		value: 20,
+		text: "20点"
+	}, {
+		value: 21,
+		text: "21点"
+	}, {
+		value: 22,
+		text: "22点"
+	}, {
+		value: 23,
+		text: "23点"
+	}]
+	var placeTime = new mui.PopPicker({
+		layer: 1
+	});
+	placeTime.setData(time);
+	var showplaceTimeButton = document.getElementById('placeTime');
+	showplaceTimeButton.addEventListener('tap', function(event) {
+		placeTime.show(function(items) {
+			document.querySelector('#placeTime .result-tips').style.display = "none";
+			document.querySelector('#placeTime .show-result').style.display = "block";
+			document.querySelector('#placeTime .show-result').innerText = items[0].text;
+			a = document.querySelector('#placeTime .show-result').innerText;
+			
+			var v = parseInt(a)
+//			console.log(time)
+			c = time.slice(v)
+//			console.log(c)
+			var placeTime2 = new mui.PopPicker({
+				layer: 1
+			});
+
+			placeTime2.setData(c);
+			var showplaceTimeButton2 = document.getElementById('placeTime2');
+			showplaceTimeButton2.addEventListener('tap', function(event) {
+				placeTime2.show(function(items) {
+					document.querySelector('#placeTime2 .result-tips').style.display = "none";
+					document.querySelector('#placeTime2 .show-result').style.display = "block";
+					document.querySelector('#placeTime2 .show-result').innerText = items[0].text;
+					//返回 false 可以阻止选择框的关闭
+					//return false;
+					var muiPickerLh = $(".mui-poppicker").length;
+	        		if(muiPickerLh>4){
+	        		$(".mui-poppicker").eq(muiPickerLh-4).remove();
+	        		}
+
+				});
+			}, false);
+		});
+
+	}, false);
+</script>

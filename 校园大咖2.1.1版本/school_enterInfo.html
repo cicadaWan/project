@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+	    <link rel="stylesheet" type="text/css" href="css/mui.picker.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/mui.poppicker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>高校社团入驻</title>
+	</head>
+	<body>
+		<div class="enterInfo_top">
+			<img src="img/school_top.jpg" class="search_pic"  />
+		</div>
+		<!--公有信息部分-->
+		<ul class="message_content">
+			<li>
+				<span class="enter_name">城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</span>
+				<div id="activeCity" class="mui-input-row">
+					<span class="myInfo_name enter_city result-tips">选择你所在的城市</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+					
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校</span>
+				<div id="activeShcool" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">选择您所在的学校</span>
+					<span class="myInfo_name show-result"></span>
+				   <span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+				
+			</li>
+			<li>
+				<span class="enter_name">社团名称</span>
+				<input class="inp" type="text" placeholder="填写社团名称" />
+			</li>
+			<li>
+				<span class="enter_name">社团头像</span>
+				<span class="enter_jia">点击加号上传社团头像</span>
+				<span class="iconfont icon-jiahao new_jia enter_youjiantou icon_pic"></span>
+			</li>
+			<li>
+				<span class="enter_name">活动图片</span>
+				<span class="myInfo_name ">请上传以往活动图片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						<span class="cover">封啊</span>
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*最多可上传9张活动照片</p>
+			</li>
+			<li>
+				<span class="enter_nameT">活动案例</span>
+				<div class="textarea">
+					<textarea class="introduce" name="aboutMe" onkeyup="load()"  placeholder="请描述主办或承办过的活动案例"></textarea>
+					<div id="span" class="span"><span>0</span>/200</div>
+				</div>
+			</li>
+			<li>
+				<span class="enter_nameT">社团介绍</span>
+				<div class="textarea">
+					<textarea class="school_introduce" name="aboutme" onkeyup="load4()" placeholder="请描述您的团队优势，资源经验等等"></textarea>
+					<div id="span4" class="span"><span>0</span>/200</div>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">联&nbsp;&nbsp;系&nbsp;&nbsp;人</span>
+				<input class="inp" type="text" placeholder="填写您的姓名" />
+			</li>
+			<li>
+				<span class="enter_name">联系电话</span>
+				<input class="phone inp" type="text" placeholder="填写您的手机号码" />
+				<p class="warn_tel"></p>
+			</li>
+			<li>
+				<span class="enter_name">联系邮箱</span>
+				<input class="letter inp" type="text" placeholder="填写您的联系邮箱" />
+				<p class="warn_letter"></p>
+			</li>
+			<li>
+				<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+				<input class="wechat inp" type="text" placeholder="填写您的微信账号" />
+				<p class="warn_wechat"></p>
+			</li>
+		</ul>
+		
+		<form class="enter_form" onsubmit="return false">
+			<button>提交</button>
+		</form>
+		<div class="window_mask"></div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script src="js/mui.min.js"></script>
+	<script src="js/mui.picker.js"></script>
+	<script src="js/mui.poppicker.js"></script>
+	<script src="js/city.data.js"></script>
+	<script src="js/shcool.data.js"></script>
+    <script type="text/javascript" src="js/enterInfo.js" ></script>
+   <script>
+     //字数限制
+	
+     function load4(){
+      	 var length=$(".school_introduce").val().length;
+      	 var html=$(".school_introduce").val();
+      	 
+      	 if(length>199){
+      	 $(".school_introduce").val(html.substring(0,200))
+      	 	
+      	 	 $("#span4 span").html(200);
+      	 	 
+      	 }else{
+      	 	 $("#span4 span").html(length)
+      	 }
+      	
+     }
+    </script>
+</html>
