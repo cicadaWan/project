@@ -1,0 +1,124 @@
+1.关于动态生成的元素，点击事件失效的解决办法
+  $(document).on("click","目标元素"，function(){})
+
+2.关于IOS下点击事件失效的原因
+   问题描述：当委托给一个元素添加click事件时，如果事件是委托到 document 或 body 上，并且委托的元素是默认不可点击的(如 div, span              等)，此时 click 事件会失效。
+
+  解决办法：将 click 事件直接绑定到目标元素(即 .target ) 上
+            将目标元素换成 <a> 或者 <button> 等可点击的元素
+            给目标元素添加一个空的 onclick=""(<div class="target" onclick="">点击我!</div>)
+            把 click 改成 touchend 或 touchstart（注意加上preventDefault）
+            将 click 元素委托到非 document 或 body 的父级元素上
+            给目标元素加一条样式规则 cursor: pointer; (cursor: pointer; -webkit-tap-highlight-color: transparent;)
+            在Safari中，不可点击元素的点击事件是不会冒泡到父级元素的。通过添加cursor:pointer;让元素变成可点击。
+
+3.IOS系统input及input内元素cursor:pointer;失效，使得iOS系统上需要借助cursor属性才能生效的click事件无法触发
+
+    解决办法：设置font-size:0;
+              把click改成touchend(加上preventDefault)
+
+4.input输入框中，type="number"  onkeypress="this.value=(this.value.match(/\d+(\.\d{0,2})?/)||[''])[0]"限制只能输入正数或者小数，且小数保留两位在安卓正常，ios上面可以输入汉字，如果onkeypress换成onkeyup会引发在安卓手机上小数点的位置不对，例如2.3变成23.
+
+解决办法：<input type="number" min="0" inputmode="numeric" pattern="[0-9]*" title="Non-negative integral number">
+
+5.Iphone上对于动态生成的html元素绑定点击事件$(document).click()失效
+
+解决办法：给被绑定元素添加样式cursor:pointer;
+
+6.--------------------------------点击页面空白处收起软键盘利用失去焦点------------------------------
+http://m.blog.csdn.net/github_35549695/article/details/53232144
+
+解决办法：/* 点击空白处收起键盘 */
+	$(document).bind("click",function(e){ 
+          var target = $(e.target); 
+         //这个条件就排除了内容区域，closest()获得匹配选择器的第一个祖先元素，从当前元素开始沿DOM树向上。
+          if(target.closest(".communicate_content").length == 0&&target.closest(".communicate_foot").length == 0){ 
+           $(".communicate_foot input").blur();
+       } 
+       }) 
+7.移动端文本框字数限制
+<textarea onkeyup="load()" onkeydown="load()"></textarea>
+js://主页介绍字数控制
+function load() {
+	
+	var length = $(".introduce").val().length;
+	var html = $(".introduce").val();
+
+	if(length > 199) {
+		$(".introduce").val(html.substring(0, 200))
+
+		$("#span span").html(200);
+
+	} else {
+		$("#span span").html(length)
+	}
+
+}
+//------------------------ios系统下字数检测----------------------------
+在web开发中，我们有时会需要动态监听输入框值的变化，当使用onkeydown、onkeypress、onkeyup作为监听事件时，会发现一些复制粘贴等操作用不了，同时，在处理组合快键键的时候也很麻烦。这时候我们需要更专业的解决方案：HTML5标准事件oninput、onchange和IE专属的事件properchange。
+
+$(".introduce").on("input propertychange", function() {    
+	var length = $(".introduce").val().length;
+	var html = $(".introduce").val();
+
+	if(length > 199) {
+		$(".introduce").val(html.substring(0, 200))
+
+		$("#span span").html(200);
+
+	} else {
+		$("#span span").html(length)
+	}
+    });  
+8.------------------解决第三方软键盘唤起时底部input输入框被遮挡问题----------------------------
+
+    var bfscrolltop = document.body.scrollTop;//获取软键盘唤起前浏览器滚动部分的高度
+    $(".communicate_foot input").focus(function(){
+        interval = setInterval(function(){//设置一个计时器，时间设置与软键盘弹出所需时间相近
+        document.body.scrollTop = document.body.scrollHeight;//获取焦点后将浏览器内所有内容高度赋给浏览器滚动部分高度
+        },100)
+    }).blur(function(){//设定输入框失去焦点时的事件
+        clearInterval(interval);//清除计时器
+        document.body.scrollTop = bfscrolltop;
+    });
+
+9.keyup和keydown在ios设备上失效
+
+在ios上用第三方输入法是无法用keyup事件监听的，ios系统做了屏蔽，替换方案如下：$('input').bind('input propertychange', function() {  
+                alert("....")  
+            });  
+
+
+10.input的placeholder在真机上，placeholder里面的内容会明显靠上，
+
+ 解决办法：line-height:normal;
+
+11.虚拟键盘导致fixed元素错位
+
+  解决办法：将fixed元素设置为static，虚拟键盘消失时候设置回来。
+
+
+12.消除transition闪屏
+   -webkit-transform-style: preserve-3d;
+/*设置内嵌的元素在 3D 空间如何呈现：保留 3D*/
+-webkit-backface-visibility: hidden;
+/*（设置进行转换的元素的背面在面对用户时是否可见：隐藏）*/
+
+13.ios端按钮和输入框自带圆角问题
+-webkit-appearance : none ;/解决ios上按钮的圆角问题/
+border-radius: 0;/解决ios上输入框圆角问题/
+
+使用css3动画的时候尽量利用3D加速，从而使得动画变得流畅。动画过程中的动画闪白通过backface-visibility隐藏
+-webkit-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+
+
+
+input文本框只允许输入数字代码三则：http://tec.5lulu.com/detail/102ptn21a8npn8t66.html
+
+修改输入框提示字的 颜色：http://www.jb51.net/web/455302.html；
+
+纯css实现带三角箭头带描边带阴影带圆角的兼容各浏览器de气泡层：http://www.cnblogs.com/xueduanyang/archive/2010/11/09/1872261.html；
+
+关于透明度，以后就用rgba的颜色；
+ 
