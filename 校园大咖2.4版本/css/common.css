@@ -1,0 +1,299 @@
+body,
+html,
+ul,
+li,
+span,
+h3,
+p,
+input,
+textarea,
+a,
+i,
+h5,
+img,
+strong,
+div,
+label,
+header,
+section,
+nav,
+form,
+button,
+footer,
+strong {
+	margin: 0;
+	padding: 0;
+	font-family: "寰蒋闆呴粦";
+	box-sizing: border-box;
+}
+i,
+strong {
+	font-style: normal;
+}
+
+h3,h6,h5{
+	font-weight: normal;
+}
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+input:-moz-placeholder,   
+textarea:-moz-placeholder {   
+    color: #ccc;   
+}   
+  
+input:-ms-input-placeholder,   
+textarea:-ms-input-placeholder {   
+    color: #ccc;   
+}   
+  
+input::-webkit-input-placeholder,   
+textarea::-webkit-input-placeholder {   
+    color: #ccc;   
+}  
+
+
+input:focus,textarea:focus{
+	outline: none;
+}
+.search_pic{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.show-result{
+	display: none;
+}
+.mui-backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    background: #000;
+    opacity: 0.3 !important;
+}
+.mui-poppicker {
+    background-color: #f8f8f8 !important;
+}
+.mui-poppicker {
+    z-index: 2001;
+}
+.mui-poppicker-btn-cancel, .mui-btn {
+    color: #b7b7b7;
+    border: 1px solid #b7b7b7;
+    border-radius: 5px;
+    background: #fff;
+}
+.mui-poppicker-btn-ok, .mui-btn-blue {
+    background: #1D9243;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+}
+.mui-picker {
+    background: #eee;
+}
+/*头部背景图*/
+.lookFeedback_head{
+	width: 100vw;
+	height: 36vw;
+	overflow: hidden;
+}
+.textarea_change{
+    width: 92vw;
+    border: 1px solid #ccc ;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.textarea{
+	width: 86.666vw;
+	height: 41.333vw;
+	border: 0;
+	margin: 10px 2.666vw 0;
+}
+/*身份验证哪ul li的样式*/
+.verification_content{
+	width:92vw;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.verification_content li{
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+.verification_name{
+	float: left;
+	font-size: 4.533vw;
+	color: #333;
+	margin: 17px 40px 17px 0;
+}
+.verification_inp,.verification_span{
+	width: 50vw;
+	float: left;
+	font-size: 4vw;
+	color: #333;
+	margin: 18px 0;
+	border: 0;
+}
+.verification_span{
+	color: #ccc;
+}
+.zhishi{
+	float: right;
+	width: 2vw;
+	height: 3.333vw;
+	margin-top:6.133vw ;
+}
+.verification_foot{
+	display: block;
+	width: 100vw;
+	height: 15.2vw;
+	line-height: 15.2vw;
+	text-align: center;
+	font-size: 5.333vw;
+	color: #fff;
+	background: #43bb57;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+/*电话，微信等提示语*/
+.warn_tel, .warn_letter,.warn_wechat{
+    float: left;
+    font-size: 3.466vw;
+    color: red;
+    width: 92vw;
+    text-align: right;
+    margin-bottom: 18px;
+    display: none;
+}
+/*长度为100vw有下边框的*/
+.administrationCenter_content{
+   width: 100vw;
+   overflow: hidden;	
+}
+.administrationCenter_content li{
+	padding: 0 4vw;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+/*无边框的背景*/
+.administrationCenter_bg{
+	width:100vw;
+	height: 8px;
+	background: #f6f6f6;
+}
+/*公用弹窗*/
+.mask_common{
+	width: 100vw;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.2);
+	z-index: 999;
+}
+/*公用订单来源类似标题，内容歌声无敌棒这种*/
+.transaction_content{
+	width:100%;
+	clear: both;
+	overflow: hidden;
+	border: 1px solid #ccc;
+}
+.transaction_head{
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+.head_left{
+	float: left;
+	overflow: hidden;
+}
+.head_left span:nth-of-type(1){
+	float: left;
+	width: 7.2vw;
+	height: 7.2vw;
+	border-radius:100%;
+	margin: 6px 7.5px 6px 2.667vw;
+}
+.head_left img{
+	border-radius:100%;
+}
+.head_left span:nth-of-type(2){
+	float: left;
+	font-size: 3.733vw;
+	color: #333;
+	margin: 10px 0;
+}
+.head_right{
+	float: right;
+	overflow: hidden;
+	font-size: 3.2vw;
+	color: #666;
+	margin: 12px 2.667vw 12px 0;
+}
+.transaction_left{
+	float: left;
+	width: 17.333vw;
+	height: 17.333vw;
+	margin: 15px 2.667vw;
+}
+.transaction_right{
+	overflow: hidden;
+	margin-right: 2.667vw;
+}
+.transaction_music{
+	float: left;
+    font-size: 3.466vw;
+    color: #666;
+   margin: 13px 5px 3px 0;
+    width: 17.4667vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.transaction_style{
+	float: left;
+    border: 1px solid #8cc9a0;
+    margin: 10px 0 2px 0;
+}
+.transaction_style span{
+	    display: block;
+    font-size: 2.9333vw;
+    color: #4fba60;
+    margin: 1.5px 6px;
+}
+.transaction_info{
+	width: 100%;
+    font-size: 2.933vw;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.transaction_price{
+	    font-size: 3.2vw;
+    color: #ff6666;
+    margin-top: 6px;
+}
+.transaction_number{
+	font-size: 3.2vw;
+    color: #666;
+    float: right;
+    margin-top: 2px;
+}
+/*公用字体色值*/
+.size_green{
+	color: #4fba60 !important;
+}
+.hide{
+	display: none;
+}

@@ -1,0 +1,100 @@
+.suggestions_title{
+	width: 92vw;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.suggestions_title p{
+	font-size: 4.8vw;
+	color: #333;
+	margin: 20px 0 10px;
+}
+.suggestions_title span{
+	display: block;
+	font-size: 3.2vw;
+	color: #999;
+	margin-bottom: 20px;
+}
+.suggestions_bg{
+	width: 100vw;
+	height: 6px;
+	background: #f5f5f5;
+}
+.suggestions_content{
+	width: 100vw;
+	overflow: hidden;
+}
+.problem_name{
+	font-size: 4vw;
+	color: #333;
+	margin: 20px 0 20px 4vw;
+}
+.suggestions_choose{
+	width: 100%;
+	margin: 0 0 0 4vw;
+	overflow: hidden;
+}
+.suggestions_choose li{
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.suggestions_choose li span{
+	float: left;
+}
+.diot{
+	width:3.7333vw ;
+	height: 3.7333vw;
+	margin:1.5px 10px 0 0;
+}
+.pleased{
+	background: url(../img/pleased.png) no-repeat;
+    background-size:100% 100% ;
+}
+.noPleased{
+	background: url(../img/noPleased.png) no-repeat;
+    background-size:100% 100% ;
+}
+.suggest{
+	 font-size: 3.466vw;
+	 color: #666;
+}
+.problem_suggest{
+	margin-bottom: 10px;
+}
+.textarea{
+	height: 24vw;
+}
+.textarea_change{
+	margin: 0 auto 15px;
+}
+.concat{
+	display: block;
+	font-size: 3.2vw;
+	color: #999;
+	margin: 0 0 10px 4vw;
+}
+.concat_style{
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    width: 92vw;
+    height: 8vw;
+    line-height: 8vw;
+    text-indent: 10px;
+    font-size: 3.466vw;
+    color: #333;
+    margin: 0 auto 50px;
+}
+.suggestions_foot{
+	width: 92vw;
+	height: 9.6vw;
+	font-size: 4.266vw;
+	color: #fff;
+	text-align: center;
+	line-height: 9.6vw;
+	background: #45c479;
+	border-radius: 5px;
+	margin: 0 auto 20px;
+}
+.green{
+	color: #45c479;
+}

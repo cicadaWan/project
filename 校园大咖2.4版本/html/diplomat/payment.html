@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>结算</title>
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/diplomat.css" />
+	</head>
+	<body style="background: #f5f5f5;">
+		<div class="referral_title">
+			<span class="paymentName">商品名称</span>
+			<span class="paymentname">精准咨询精准咨询精准咨询精准咨询</span>
+		</div>
+		<div class="referral_content paymentContent">
+			<span class="paymentName">支付金额</span>
+			<span class="paymentMoney">￥10.00</span>
+		</div>
+		<p class="referral_message payment_message">注:请核对商品名称及支付金额，确认无误后进行支付</p>
+		<div class="write_foot payment">立即支付</div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery-2.1.0.js" ></script>
+	<script>
+	//超过12个字省略号代替
+	var length=$(".paymentname").html().length;
+	if(length>12){
+		$(".paymentname").html($(".paymentname").html().substring(0,12)+"...")
+	}
+	
+	</script>
+</html>

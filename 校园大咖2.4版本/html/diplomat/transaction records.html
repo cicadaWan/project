@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>交易记录</title>
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/diplomat.css" />
+	</head>
+
+	<body style="background: #f5f5f5;">
+		<ul class="deposit_content records_content">
+
+			<li>
+				<span class="records_name">交易金额</span>
+				<span class="records_title size_green">￥20.00</span>
+			</li>
+			<li>
+				<span class="records_name">交易类型</span>
+				<span class="records_title">订单分成</span>
+			</li>
+			<li>
+				<span class="records_name">交易时间</span>
+				<span class="records_title">2017-01-20 10:00:00</span>
+			</li>
+			<li>
+				<span class="records_name">交易单号</span>
+				<span class="records_title">201706120956</span>
+			</li>
+			<!--无交易记录详情时候如下部分不出现加个类名hide-->
+			<li>
+				<span class="records_name">订单来源</span>
+				<div class="transaction_content">
+					<div class="transaction_head">
+						<div class="head_left">
+							<span><img src="../../img/pro_img.jpg" class="search_pic" /></span>
+							<span>大话西游</span>
+						</div>
+						<span class="head_right">华南师范大学</span>
+				    </div>
+						<div class="transaction_box">
+							<div class="transaction_left"><img src="../../img/pro_img.jpg" class="search_pic"></div>
+							<div class="transaction_right">
+								<span class="transaction_music">歌声无敌棒</span>
+								<span class="transaction_style"><span>线上</span></span>
+								<span class="transaction_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢米那孩子救护车费吃饱电脑</span>
+								<span class="transaction_price">20元/次</span>
+								<span class="transaction_number">购买数量&nbsp;:&nbsp;1</span>
+							</div>
+
+						</div>
+					</div>
+				
+			</li>
+		</ul>
+
+	</body>
+    <script type="text/javascript" src="../../js/jquery-2.1.0.js" ></script>
+    <script>
+    	//判断如果交易记录没有时候出来的样式
+    	if($(".records_content li:last-child").hasClass("hide")){
+    		$(".records_content li:nth-last-of-type(2)").css("marginBottom","35px")
+    	}else{
+    		$(".records_content li:nth-last-of-type(2)").css("marginBottom","0")
+    	}
+    </script>
+</html>

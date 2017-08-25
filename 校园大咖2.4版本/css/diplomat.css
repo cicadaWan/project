@@ -1,0 +1,569 @@
+
+/*管理员中心*/
+.administrationCenter_head{
+	background: url(../img/pro_img.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.head_mask{
+	width: 100vw;
+	height: 36vw;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	background:rgba(0,0,0,0.2);
+}
+.administrationCenter_pic{
+	display: block;
+	width: 14.666vw;
+	height: 14.666vw;
+	border-radius: 100%;
+	top:7.4667vw;
+	position: absolute;
+	left: 42.667vw;
+	border: 1px solid #ccc;
+	z-index: 3;
+}
+.pic{
+	width: 100%;
+	margin-top: -30%;
+}
+.administrationCenter_pic img,.administrationCenter_photo img{
+	border-radius: 100%;
+}
+.administrationCenter_name{
+	font-size: 4vw;
+	color: #fff;
+	text-align: center;
+	z-index: 3;
+	position: absolute;
+	width: 100%;
+	top: 24.533vw;
+}
+.administrationCenter_title{
+	float: left;
+	font-size: 4vw;
+	color: #333;
+	margin: 12px 0;
+}
+.administrationCenter_look{
+	float: right;
+	overflow: hidden;
+}
+.administrationCenter_look span:nth-of-type(1){
+	float: left;
+	font-size: 3.2vw;
+	color: #ccc;
+	margin: 13px 4px 13px 0;
+}
+.administrationCenter_look span:nth-of-type(2){
+	float: left;
+	width: 2vw;
+	height: 2.933vw;
+	margin: 15px 0;
+}
+.administrationCenter_left,.administrationCenter_photo,.substance_right{
+	float: left;
+	overflow: hidden;
+}
+.administrationCenter_right{
+	float: right;
+	overflow: hidden;
+	font-size: 2.9333vw;
+	color: #ccc;
+	margin-top: 11px;
+}
+.administrationCenter_photo{
+	width: 10.666vw;
+	height: 10.666vw;
+	margin: 10px 6px 10px 0;
+	border-radius: 100%;
+}
+.substance_right span:nth-of-type(1){
+	display: block;
+	color: #42bd56;
+	font-size: 3.733vw;
+	margin: 12px 0 2px;
+}
+.substance_right span:nth-of-type(2){
+	display: block;
+	color: #666;
+	font-size: 3.2vw;
+	margin-bottom: 12px;
+}
+.administrationCenter_content li:last-child{
+	border: 0;
+}
+.administrationCenter_function,.function_content{
+	width: 100vw;
+	overflow: hidden;
+}
+.function_name{
+	font-size: 4vw;
+	color: #333;
+	margin: 12px 0 12px 4vw;
+}
+.function_content{
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.function{
+	width: 25%;
+	overflow: hidden;
+	float: left;
+}
+
+.function span:nth-of-type(1){
+	display: block;
+	width: 6.933vw;
+	height: 6.933vw;
+	margin: 23px auto 10px;
+}
+.function span:nth-of-type(2){
+	display: block;
+	font-size: 3.466vw;
+	color: #333;
+	text-align: center;
+	margin-bottom: 23px;
+}
+.administrationCenter_foot{
+	width: 40vw;
+	height: 9.333vw;
+	font-size: 4vw;
+	color: #fff;
+	background: #7fd67a;
+	line-height: 9.333vw;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 20px;
+	position: absolute;
+	left: 30vw;
+	bottom: 30px;
+}
+@media only screen and (min-width: 320px) and (max-width:320px) {
+	.administrationCenter_foot{
+		position: static;
+		margin:40px auto 30px;
+	}
+}
+/*我的资源库*/
+.resource_head{
+	width: 100vw;
+	overflow: hidden;
+	background: #f5f5f5;
+}
+.resourceLibrery{
+	font-size: 4.266vw;
+	color: #666;
+	display: block;
+	margin: 20px 0 12px 4vw;
+}
+/*提现页面*/
+
+.deposit_content{
+	width: 92vw;
+	overflow: hidden;
+	background: #fff;
+	margin: 20px auto 0;
+	
+}
+.deposit_content li{
+	overflow: hidden;
+	margin: 0 20px;
+}
+.deposit_name{
+	font-size: 4vw;
+	color: #333;
+	margin: 15px 0 45px;
+}
+.deposit_money{
+	border-bottom: 1px solid #ccc;
+}
+.deposit_money span{
+	font-size: 5.6vw;
+	color: #333;
+	margin-bottom: 8px;
+	margin-right: 16px;
+	float: left;
+}
+.deposit_money input{
+	font-size: 3.733vw;
+	color: #333;
+	margin-top: 6px;
+	float: left;
+    border: 0;
+    width: 40vw;
+}
+.money_yu,.total_deposit,.warn_money{
+	font-size: 3.7333vw;
+	color: #666;
+	float: left;
+	margin: 10px 0 20px;
+}
+.warn_money{
+	color: #fe575b;
+	display: none;
+}
+.total_deposit{
+	float: right;
+	color:#4fba60;
+}
+.deposit_cue{
+	font-size: 3.2vw;
+	color: #666;
+	margin: 20px 4vw 40px;
+}
+.deposit_foot{
+	width: 92vw;
+	height: 9.6vw;
+	text-align: center;
+	line-height: 9.6vw;
+	font-size: 4.8vw;
+	color: #fff;
+	background: #ccc;
+	border-radius: 2.5px;
+	margin: 0 auto;
+}
+.deposit_green{
+	background: #4fba60;
+}
+/*出来的弹窗样式*/
+.deposit_popup{
+	width: 66.666vw;
+	overflow: hidden;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    margin-left: -33.333vw;
+    margin-top: -40.133vw;
+   display: none;
+   z-index: 1000;
+}
+.close{
+	width: 100%;
+	height: 12.8vw;
+}
+.close img{
+    width: 7.333vw;
+    height: 7.333vw;
+    float: right;
+    margin-bottom: 5.333vw;
+}
+.popup_content,.popup_administrator{
+	width: 100%;
+	height: 25.333vw;
+	background: url(../img/deposit_bg.png) no-repeat;
+	background-size: 100% 100%;
+	clear: both;
+	
+}
+.popup_administrator{
+	background: url(../img/administrator_bg.png) no-repeat;
+	background-size: 100% 100%;
+}
+.popup_box,.administrator_box{
+	width: 66.666vw;
+	overflow: hidden;
+	background: #fff;
+}
+.popup_box span:nth-of-type(1){
+	display: block;
+	font-size: 4.533vw;
+	color: #333;
+	margin: 20px 0 10px;
+	text-align: center;
+}
+.popup_box span:nth-of-type(2){
+	display: block;
+	font-size: 5.333vw;
+	color: #fe575b;
+	margin: 0 0 20px;
+	text-align: center;
+}
+.popup_box a{
+	display: block;
+	width: 34.666vw;
+	height: 10.666vw;
+	font-size: 4.266vw;
+	color: #fff;
+	margin: 0 auto 20px;
+	text-align: center;
+	line-height: 10.666vw;
+	background: #4fba60;
+	border-radius: 20px;
+}
+/*交易记录*/
+.records_content{
+	background: url(../img/records_bg.png) no-repeat;
+	background-size: cover;
+}
+.records_content li{
+	margin: 0 4vw;
+	border-bottom: 1px dashed #ccc;
+}
+.records_name{
+	font-size: 4vw;
+	color: #666;
+	float: left;
+	margin: 15px 0;
+}
+.records_title{
+	float: right;
+	font-size: 4.266vw;
+	color: #333;
+	margin: 15px 0;
+}	
+.records_content li:last-child{
+	border: 0;
+	margin-bottom: 35px;
+}
+/*管理员更换*/
+.administrator_popup{
+	display: block;
+	margin-top: -51.06vw;
+}
+.administrator_mask{
+	height: 100vh;
+}
+.administrator_box p{
+	font-size: 4.533vw;
+	color: #333;
+	text-align: center;
+	margin: 20px 0 10px;
+}
+.administrator_box span{
+	display: block;
+	font-size: 3.466vw;
+	color: #999;
+	line-height: 1.4;
+	margin: 0 4.8vw 20px;
+}
+.administrator_box a:nth-of-type(1){
+	display: block;
+	width: 34.666vw;
+	height: 10.666vw;
+	font-size: 4.266vw;
+	color: #fff;
+	text-align: center;
+	line-height: 10.666vw;
+	background: #4fba60;
+	border-radius: 20px;
+	margin: 0 auto;
+}
+.administrator_box a:nth-of-type(2){
+	display: block;
+	font-size: 4.266vw;
+	color: #999;
+	text-align: center;
+	margin: 15px 0 20px;
+}
+/*填写管理员手机号码页面*/
+.adminiSure_content{
+	width: 76vw;
+    overflow: hidden;
+    margin: 110px auto 0;
+}
+.adminiSure_title{
+	display: block;
+	font-size: 4.8vw;
+	color: #333;
+	text-align: center;
+	margin-bottom: 16px;
+}
+.admniSure_tel {
+    overflow: hidden;
+}
+.admniSure_tel span {
+    font-size: 4.266vw;
+    color: #676767;
+    letter-spacing: 1.866vw;
+    line-height: 10.4vw;
+}
+.admniSure_tel span, .admniSure_tel div {
+    float: left;
+}
+.admminiSure_inp {
+    border: 1px solid #e7e7e7;
+    margin-right: 7px;
+}
+.admminiSure_inp input {
+    float: left;
+    width: 8.4vw;
+    height: 10.4vw;
+    background: #fff;
+    text-align: center;
+    font-size: 4.266vw;
+    color: #676767;
+    border: 0;
+    border-right: 1px solid #e7e7e7;
+}
+.admminiSure_inp input:last-child {
+    border-right: 0;
+}
+.administratorEnsure{
+	 display: block;
+    height: 12.8vw;
+    line-height: 12.8vw;
+    text-align: center;
+    font-size: 5.333vw;
+    color: #fff;
+    background: #4fba60;
+    margin-top: 112px;
+    border-radius: 5px;
+}
+.inform {
+    width: 30vw;
+    height: 20vw;
+    border-radius: 5px;
+    font-size: 3.466vw;
+    text-align: center;
+    line-height: 20vw;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -15vw;
+    margin-top: -10vw;
+    background: #fff;
+    z-index: 1000;
+    display: none;
+}
+/*管理员更换*/
+.change_inform {
+    width: 50vw;
+    margin-left: -25vw;
+    display: none;
+}
+.change_Inform {
+    width: 74vw;
+    margin-left: -37vw;
+    text-align: center;
+    display: none;
+}
+/*模板消息页面*/
+.adminiNew_content {
+    width: 83vw;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.admini_new {
+    display: block;
+    margin: 55px 8px 60px;
+    font-size: 4.8vw;
+    color: #333;
+}
+.introduce {
+    display: block;
+    height: 11.2vw;
+    font-size: 4.8vw;
+    color: #fff;
+    text-align: center;
+    line-height: 11.2vw;
+    background: #4fba60;
+    border-radius: 5px;
+    margin-bottom: 17px;
+}
+.intro {
+    display: block;
+    text-align: center;
+    font-size: 4.8vw;
+    color: #999;
+}
+/*推广链接*/
+.referral_title{
+	display: block;
+	width: 92vw;
+	overflow: hidden;
+	margin: 20px auto 1px;
+	background: url(../img/referral_bgg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.referral_content{
+	display: block;
+	margin: 0 4vw;
+	background: url(../img/referral_bg.png) no-repeat;
+	background-size: 100% 100%;
+	
+}
+.referral_title span{
+	display: block;
+	margin: 17px 0 17px 13px;
+	font-size: 4.8vw;
+	color: #333;
+}
+.referral_content span{
+	display: block;
+	font-size: 4vw;
+	color: #999;
+	margin: 0 13px 0 13px;
+	height: 25.066vw;
+	padding-top: 20px;
+	overflow: scroll;
+}
+.referral_message{
+	 display: block;
+	 width: 92vw;
+	 margin: 15px auto 0;
+	 font-size: 3.733vw;
+	 color: #ccc;
+}
+.success_link{
+	display: block;
+	width: 32vw;
+	height: 10.666vw;
+	font-size: 4vw;
+	color: #fff;
+	text-align: center;
+	line-height: 10.666vw;
+	background: #000;
+	opacity: 0.2;
+	border-radius: 5px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -16vw;
+	margin-top: -5.333vw;
+	display: none;
+	z-index: 1000;
+}
+/*结算页面*/
+.referral_title .paymentName,.referral_content .paymentName{
+	float: left;
+	font-size: 4.266vw;
+	color: #666;
+	margin: 18px 0 18px 4vw;
+}
+.paymentContent{
+	overflow: hidden;
+}
+.referral_title .paymentname{
+	float: right;
+	font-size: 4.266vw;
+	margin: 18px 4vw 18px 0;
+}
+.referral_content .paymentName,.referral_content .paymentMoney{
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+}
+.referral_content .paymentMoney{
+	font-size: 4.266vw;
+	color: #1c9242;
+	float: right;
+	margin: 18px 4vw 18px 0;
+}
+.payment_message{
+	font-size: 3.2vw;
+	margin: 10px auto 0;
+}
+.payment{
+	width: 92vw;
+	margin: 40px auto 0;
+	height: 9.6vw;
+    font-size: 3.466vw;
+    color: #fff;
+    background: #1c9242;
+    text-align: center;
+    line-height: 9.6vw;
+    border-radius: 5px;
+}
