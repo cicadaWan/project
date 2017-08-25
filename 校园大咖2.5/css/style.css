@@ -1,0 +1,259 @@
+.apply_title{
+	font-size: 4.8vw;
+	color: #333;
+	display: block;
+	margin: 30px 0 25px 0;
+}
+.nature{
+	overflow: hidden;
+	margin: 5px 0 20px;
+}
+.nature span:first-child{
+	width: 4vw;
+	height: 4vw;
+	margin: 4px 10px 0 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 350px) {
+	.nature span:first-child{
+		margin: 5px 10px 0 0;
+	}
+}
+.nature span:nth-of-type(2){
+	font-size: 4.266vw;
+	color:#333;
+}
+.apply-foot{
+	width: 82.666vw;
+	height: 11.2vw;
+	margin:  65px auto 0;
+	background: #1c9242;
+	font-size: 4.8vw;
+	color: #fff;
+	text-align: center;
+	line-height: 11.2vw;
+	border-radius: 5px;
+}
+.apply_success{
+	overflow: hidden;
+    display: none;
+}
+.apply_success{
+	overflow: hidden;
+	display: none;
+}
+.add_pic{
+	float: none;
+}
+.add_pic .icon-pic{
+	width: 7.466vw;
+	height: 6.133vw;
+	top:29px;
+}
+.apply_ticket{
+	font-size: 3.466vw;
+	color:#ccc;
+	margin: 10px 0;
+}
+.apply_attention{
+	font-size: 2.933vw;
+	color:#ff6666;
+    margin-bottom:20px ;
+}
+.textarea {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: none;
+}
+.textarea_info {
+    width: 92vw;
+    margin: 0 0 18px 0;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 5px;
+}
+.introduce, .Introduce {
+    display: block;
+    width: 85.6vw;
+    min-height: 28vw;
+    margin: 12px auto 0;
+    font-size: 4vw;
+    line-height: 1.5;
+    color: #333;
+    border: 0;
+}
+.span {
+    position: absolute;
+    right: 4.533vw;
+    bottom: 30px;
+    font-size: 4.2667vw;
+    color: #7d7d7d;
+}
+/*退款页面*/
+.publish_title {
+    width: 100vw;
+    overflow: hidden;
+    clear: both;
+    border-bottom: 1px solid #d5d5d5;
+}
+.title_pic {
+    width: 8.8vw;
+    height: 8.8vw;
+    float: left;
+    margin: 14px 4vw;
+    border-radius: 100%;
+}
+.publish_title h3 {
+    font-size: 4.266vw;
+    color: #0c0c0c;
+    float: left;
+    margin: 20px 0;
+}
+.edit {
+    font-size: 4.266vw;
+    color: #3da266;
+    float: right;
+    margin: 20px 4vw 20px 0;
+}
+.substance_content{
+    width: 100vw;
+    overflow: hidden;
+    clear: both;
+    display: block;
+    position: relative;
+    background: #f8f8f8;
+}
+.substance_left {
+    width: 23.466vw;
+    height: 23.466vw;
+    float: left;
+    margin: 16px 4vw;
+}
+.substance_Right {
+    width: 65.666vw;
+    float: left;
+    height: 24.2666vw;
+    position: relative;
+    margin-top: 16px;
+}
+.substance_Music {
+    font-size: 4vw;
+    color: #0c0c0c;
+    margin: 0 14.5px 12px 0;
+    width: 20vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.orderDetail_info {
+    display: block;
+    width: 100%;
+    font-size: 2.933vw;
+    color: #0c0c0c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.add_Price {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+.substance_price {
+    font-size: 4vw;
+    color: #eb5257;
+    float: left;
+}
+.sell_Num {
+    font-size: 2.8vw;
+    color: #aeaeae;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.orderDetail_num {
+    width: 100vw;
+    padding: 0 4vw;
+    overflow: hidden;
+    border-top: 1px solid #d5d5d5;
+}
+.orderDetail_buy {
+    width: 20.666vw;
+    font-size: 4vw;
+    color: #333;
+    margin: 14px 8.5px 14px 1px;
+    float: left;
+}
+.orderDetail_number {
+	display: block;
+    font-size: 4vw;
+    color: #333;
+    margin: 14px 0;
+}
+.drawback-box{
+	width: 100vw;
+	overflow: hidden;
+}
+.drawback-box span,.drawback-box input{
+	float: left;
+	font-size: 4.266vw;
+}
+.drawback-box span:nth-of-type(1){
+	color: #333;
+	margin: 15px 0 15px 4vw;
+}
+.drawback-box span:nth-of-type(2){
+	margin: 15px 0 15px 10px;
+}
+.drawback-box input:nth-of-type(1),.drawback-box input:nth-of-type(2){
+	margin: 15px 0;
+	border: 0;
+	line-height: normal;
+	-webkit-appearance : none ;
+    border-radius: 0;
+}
+
+/*.drawback-box input:nth-of-type(1)::-webkit-input-placeholder,
+.drawback-box input:nth-of-type(1):-moz-placeholder,
+.drawback-box input:nth-of-type(1):-ms-input-placeholder{
+	font-size: 3.466vw;
+	color: red;
+}*/
+.drawback-box input:nth-of-type(1){
+	display: none;
+}
+.drawback-box input:nth-of-type(1)::-webkit-input-placeholder{
+	font-size: 3.466vw;
+}
+.drawback-box input:nth-of-type(2)::-webkit-input-placeholder{
+	color: #1c9242;
+}
+.drawback-attention{
+	width: 100vw;
+	font-size: 3.2vw;
+	color: #999;
+	padding: 12px 0 15px 4vw;
+	background: rgba(245,245,245,1);
+}
+.drawback-reason{
+	display: block;
+	margin: 20px 0 10px 4vw;
+	font-size: 4.266vw;
+	color: #333;
+}
+.drawback-textarea{
+	width: 92vw;
+	display: block;
+	margin: 0 auto;
+}
+.drawback-case{
+	margin: 20px 0 15px 4vw;
+}
+.drawback-addPic{
+	margin-left: 4vw;
+}
+.drawback-ticket{
+	margin: 15px 0 40px 4vw;
+}
