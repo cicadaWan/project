@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="../校园大咖/css/mui.picker.css" />
+		<link rel="stylesheet" href="../校园大咖/css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../校园大咖2.4版本/css/mui.picker.min.css" />
+	
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="css/style1.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<title>下单</title>
+	</head>
+	<style>
+		.mui-dtpicker-title h5{
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<body>
+		<div class="publish_case">
+				<div class="publish_content none_border">
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+				</div>
+			</div>
+		<div class="substance_content border">
+				<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+				<div class="substance_Right">
+					<span class="substance_Music">歌声无敌棒</span>
+					<span class="substance_Line"><span>服务类型</span></span>
+					<p>广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么会飞的上半场v发版发v飓风肌肤的</p>
+					<span class="substance_price">20</span><span class="substance_price">元/次</span>
+                    <span class="sell_Num">[已售4567]</span>
+				</div>
+
+			</div>
+		</div>
+			<!--主内容区-->
+			<ul class="accurate_content">
+				<li>
+					<span class="accurate_title">投放内容</span>
+					<span class="accurate-title">标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题</span>
+					<input placeholder="请输入投放标题" class="accurate_inp"  />
+				</li>
+				<li>
+					<span class="accurate-title">文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本</span>
+					<div class="textarea">
+					<textarea class="Introduce" name="aboutMe" onkeyup="load()" onkeydown="load()"  placeholder="请输入文本内容"></textarea>
+					<div id="span" class="Span"><span>0</span>/500</div>
+				</div>
+				<span class="accurate-title accurate_title2">图片<span class="choose_title">(&nbsp;选填&nbsp;)</span></span>
+				<!--添加的图片-->
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+					</div>
+					<!--<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+					</div>-->
+					</div>
+					<!--<添加的图片完-->
+					
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<span class="accurate-title accurate_title2">链接<span class="choose_title">(&nbsp;选填&nbsp;)</span></span>
+				<input placeholder="请输入链接地址" class="accurate_inp"  />
+				</li>
+				<li>
+					<span class="accurate-title accurate_title2">联&nbsp;&nbsp;系&nbsp;&nbsp;人</span>
+					<input placeholder="请填写您的姓名" class="accurate_inp"  />
+				</li>
+				<li>
+					<span class="accurate-title accurate_title2">联系电话</span>
+					<input placeholder="请填写您的联系电话" class="accurate_inp"  />
+				</li>
+				<li>
+					<span class="accurate-title accurate_title3">买家留言<span class="choose_title">(&nbsp;选填&nbsp;)</span></span>
+				    <div class="textarea">
+					<textarea class="Introduce Introduce2" name="aboutMe" onkeyup="load2()" onkeydown="load2()"  placeholder="请输入文本内容"></textarea>
+					<div id="span2" class="span"><span>0</span>/500</div>
+				</div>
+				</li>
+			</ul>
+			<div class="substance_Bg"></div>
+			<div class="accurate_time">
+				<span>投放时间&nbsp;:&nbsp;</span>
+				 <span data-options='{}' class="green Btn  mui-btn mui-btn-block"  id="result" style="width: 40vw">2017-10-01&nbsp;&nbsp;10:00</span>
+				<span>投放内容需经平台审核，投放时间必须在48小时以后</span>
+			</div>
+			<div class="accurate_total">
+				<span>合计&nbsp;:&nbsp;</span>
+				<span>500元</span>
+			</div>
+			<div class="substance_Bg"></div>
+			<div class="footer"><span>提交订单</span></div>
+			<!--弹出的支付框-->
+			<div class="popup_mask"></div>
+		<div class="consult_popup">
+			<div class="close"><img src="img/close.png" class="search_pic" /></div>
+			<div class="popup_content">
+				<h3>温馨提示</h3>
+				<span class="popup_pic"><img src="img/style.png" class="search_pic" /></span>
+			    <span class="told">为避免打扰用户，如需在线咨询，请先下单支付咨询费用。</span>
+			    <span class="sold">￥&nbsp;20元</span>
+			    <span class="sold1">(支付后即可与卖家直接沟通哦~)</span>
+			   <span class="go"><span class="immediately">立即<br/>支付</span></span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript" src="../校园大咖/js/mui.min.js" ></script>
+	<script type="text/javascript" src="../校园大咖/js/mui.picker.js" ></script>
+	<script type="text/javascript" src="../校园大咖/js/mui.poppicker.js" ></script>
+	<script type="text/javascript" src="../校园大咖2.3版本/js/mui.dtpicker.js" ></script>
+	<script>
+	 var maskHeight=$(document).height();
+	    $(".popup_mask").css("height",maskHeight)
+		//获取弹出框的高度
+		var popupHeight=$(".consult_popup").height()/2;
+		$(".consult_popup").css("margin-top",-popupHeight);
+		//点击立即咨询
+		$(".footer").click(function(){
+			$(".popup_mask").show();
+			$(".consult_popup").show();
+		})
+		$(".popup_mask").click(function(){
+			$(".popup_mask").hide();
+			$(".consult_popup").hide();
+		})
+		$(".close").click(function(){
+			$(this).parent().hide();
+			$(".popup_mask").hide();
+		})
+		 function load(){
+      	 var length=$(".Introduce").val().length;
+      	 var html=$(".Introduce").val();
+      	 
+      	 if(length>199){
+      	 $(".Introduce").val(html.substring(0,200))
+      	 	
+      	 	 $("#span span").html(200);
+      	 	 
+      	 }else{
+      	 	 $("#span span").html(length)
+      	 }
+      	
+     }
+	 function load2(){
+      	 var length=$(".Introduce2").val().length;
+      	 var html=$(".Introduce2").val();
+      	 
+      	 if(length>199){
+      	 $(".Introduce2").val(html.substring(0,200))
+      	 	
+      	 	 $("#span2 span").html(200);
+      	 	 
+      	 }else{
+      	 	 $("#span2 span").html(length)
+      	 }
+      	
+     }	 
+     //投放时间
+     //时间选择
+	(function($) {
+				$.init();
+				// 获取当前时间
+			     var now=new Date();
+			    var obj1 = opt()
+			    var time = document.getElementById("result");
+			    
+			    time.setAttribute('data-options',JSON.stringify(obj1));
+			    
+			    time.innerText = obj1.beginYear + "-" +(obj1.beginMonth >=10 ? obj1.beginMonth : "0" + obj1.beginMonth ) + "-" + obj1.beginDay +"  "+obj1.beginHour+":"+obj1.beginMinutes;
+				var result = $('#result')[0];
+				var btns = $('.Btn');
+				//最大就是理解不了并且不会弹窗怎么从今天以后的两天后开始显示
+			btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var option s = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						
+						 var today = new Date();
+						 /* var picker = new mui.DtPicker({
+								beginDate: new Date(today.getFullYear(), today.getMonth(), today.getDay())
+						 })  */
+						 var picker = new $.DtPicker(options);
+						 //----------------------------var picker为注释的那部分就有时分但是48小时以后不对，var没注释的 没有时分
+						 //------------------------这个加两天 的只能放点击事件里不然rs没定义，不过不知道弹窗里的日期怎么才能从48小时以后显示
+						 //---------------------------加上时分的感觉是要一起放arr数组里处理，但是最后以分隔符换的时候把时分也弄上了
+						picker.show(function(rs) {
+							result.innerText = rs.text;
+							var arr = rs.text.split("-")
+							console.log(arr)
+							var lateTime = getTime(arr);
+							arr[1] = lateTime.month;
+							arr[2] = lateTime.day;
+							arr[3]=lateTime.hour;
+							arr[4]=lateTime.second;
+			                var obj = opt(arr.join("-"),now.getFullYear(),lateTime.month,lateTime.day,lateTime.hour,lateTime.second)
+			                console.log(JSON.stringify(obj))
+			                document.getElementById("result").setAttribute('data-options',JSON.stringify(obj));
+							arr[1] = arr[1] >=10 ? arr[1] : "0" + arr[1]
+							
+							
+			                btns[i].innerText = arr.join("-");
+			            //------------------------------------------------如何把2017-01-02-10-20换成2017-01-02  10:20；
+							tfTime=rs.text;
+							
+					changeTime(tfTime)
+							picker.dispose();
+						});
+						
+					}, false);
+					
+				})
+			})(mui);
+	
+		 function changeTime(tfTime){
+			$("#endDate").val(tfTime);
+		 }
+		 function getTime(arr) {
+				//arr 的格式是["2017","06","29"]
+
+				// 是不是闰年
+				var year = 0;
+				// 记录加48小时后的日期
+				var day = 0;
+				// 记录当前的月份
+				var month = 0;
+				// 一月是 31 天的数组
+				var day31 = [1,3,5,7,8,10,12];
+				// 一月30天的数组
+				var day30 = [4,6,9,11];
+				
+	//------------------------------------------------------------------------
+				var hour=new Date().getHours();
+				console.log(hour)
+				var second=new Date().getMinutes();
+				console.log(second)
+				// 判断是不是闰年
+			    function isLeapYear(year) {
+			    	return (year % 4 == 0) && (year % 100 != 0 || year % 400 == 0);
+			    }
+			    // 闰年二月要加1
+			    year = isLeapYear(parseInt(arr[0])) ? 1 : 0;
+
+				if($.inArray(parseInt(arr[1]),day31) != -1){
+					day = parseInt(arr[2]) + 2 > 31 ? (parseInt(arr[2])+2 - 31) : parseInt(arr[2]) + 2;
+			        month = parseInt(arr[2]) + 2 > 31 ? parseInt(arr[1]) +1 : parseInt(arr[1])
+			    }else if($.inArray(parseInt(arr[1]),day30) != -1){
+					day = parseInt(arr[2]) + 2 > 30 ? (parseInt(arr[2])+2 - 30) : parseInt(arr[2]) + 2;
+			        month = parseInt(arr[2]) + 2 > 30 ? parseInt(arr[1]) +1 : parseInt(arr[1])
+				}else{
+			        if(year){
+			        	day = parseInt(arr[2]) + 2 + year > 29 ? parseInt(arr[2]) + 2 + year - 29 : parseInt(arr[2]) +2
+			            month = parseInt(arr[2]) + 2 + year > 29 ? parseInt(arr[1]) +1 : parseInt(arr[1])
+					}else{
+			            day = parseInt(arr[2]) + 2 + year > 28 ? parseInt(arr[2]) + 2 + year - 28 : parseInt(arr[2]) +2
+			            month = parseInt(arr[2]) + 2 > 28 ? parseInt(arr[1]) +1 : parseInt(arr[1])
+					}
+				}
+
+				// 将日给处理成需要的格式
+			    day = day >= 10 ? day : "0" + day
+			    return {month:month,day:day,hour:hour,second:second};
+			}
+
+			// 格式化时间选择器的配置
+			function opt(value,year,mouth,day,hour,second) {
+				
+			    var obj = {
+			        type:"date"
+			    }
+			    
+			    if(arguments[1]){
+			    	
+			        obj.value = value;
+					obj.beginYear=year;
+			        obj.beginMonth=parseInt(mouth);
+			        obj.beginDay=day;
+			        obj.beginHour=hour;
+			         obj.beginMinutes=second;
+			       
+				}else{
+			    	var now = new Date();
+			    	
+			        obj.beginYear=now.getFullYear();
+			        obj.beginMonth=now.getMonth()+1;;
+			        obj.beginDay=now.getDate() >= 10 ? now.getDate() : "0" + now.getDate();
+			       obj.beginHour=now.getHours() >= 10 ? now.getHours() : "0" + now.getHours();
+			       obj.beginMinutes=now.getMinutes() >= 10 ? now.getMinutes() : "0" + now.getMinutes();
+			        obj.value = obj.beginYear + "-" + obj.beginMonth + "-" + obj.beginDay+"  "+ obj.beginHour+":"+ obj.beginMinutes
+			        
+				}
+
+
+			    return obj;
+			}
+	</script>
+</html>

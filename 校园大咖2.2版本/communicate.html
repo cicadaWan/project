@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>周星驰</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="communicate_content">
+			<p class="communicate_title">请勿通过微信/支付宝等其他途径付款交易，谨防被骗!</p>
+			<div class="communicate_box">
+				<div class="communicate_time"><span>18:00</span></div>
+				<!--卖家端-->
+				<div class="sell_box">
+					<div class="sell_communicate">
+						<div class="sell_new"><span>你好</span></div>
+						<img src="img/per_photo.png" class="sell_photo" />
+					</div>
+				</div>
+				<!--买家端-->
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>技能多少钱</span></div>
+					</div>
+				</div>
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>技能多少钱</span></div>
+					</div>
+				</div>
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>技能多少钱</span></div>
+					</div>
+				</div>
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>技能多少钱</span></div>
+					</div>
+				</div>
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>技能多少钱</span></div>
+					</div>
+				</div>
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>技能多少钱</span></div>
+					</div>
+				</div>
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>2e3r</span></div>
+					</div>
+				</div>
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>技能多少钱</span></div>
+					</div>
+				</div>
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>技能多少钱</span></div>
+					</div>
+				</div>
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>123技能多少钱</span></div>
+					</div>
+				</div>
+			</div>
+			<!--时隔很久再次发信息时候
+			<div class="communicate_box communicate_Box">
+				<div class="communicate_time"><span>18:00</span></div>
+				
+				<div class="sell_box">
+					<div class="sell_communicate">
+						<div class="sell_new"><span>你好</span></div>
+						<img src="img/per_photo.png" class="sell_photo" />
+					</div>
+				</div>
+				
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>技能多少钱</span></div>
+					</div>
+				</div>
+				
+				<div class="sell_box">
+					<div class="sell_communicate buy_communicate">
+						<img src="img/per_photo.png" class="sell_photo" />
+						<div class="sell_new buy_new"><span>那附近的解放后的算接口谁说的GV和束带结发华四大皆空返回速度四大皆空国福祸</span></div>
+					</div>
+				</div>
+				
+				<div class="sell_box">
+					<div class="sell_communicate">
+						<div class="sell_new"><span>你好</span></div>
+						<img src="img/per_photo.png" class="sell_photo" />
+					</div>
+				</div>
+			</div>-->
+		</div>
+		<footer class="communicate_foot">
+			<div class="communication_foot">
+				<img src="img/say.png" class="foot_pic foot_photo" />
+			<input type="text" />
+			<img src="img/look.png" class="foot_pic" />
+			<a href="javascript:void(0);">
+				<img src="img/pic.png" class="communicate_pic" />
+			</a>
+			<span class="send">发送</span>
+			</div>
+			<div class="communication_bottom">
+				<div class="bottom_pic">
+					<img src="img/picture.png"  />
+					<span>图片</span>
+				</div>
+				<div class="bottom_pic">
+					<img src="img/said.png"  />
+					<span>语音聊天</span>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script>
+		$(".communicate_box .sell_box:last-child").attr("id","cookie")
+		
+		
+		//获取底部高度
+		var height = $(".communicate_foot").outerHeight(true);
+		$(".communicate_content .communicate_box:last-child").css("margin-bottom", height);
+		
+	   //调用发图片的
+	   $(".communicate_pic").click(function(){
+	   	$(".communication_bottom").show();
+	   	var height = $(".communicate_foot").outerHeight(true);
+		$(".communicate_content .communicate_box:last-child").css("margin-bottom", height);
+	   })
+	   //input获取焦点出来发送时候
+	   $(".communication_foot input").focus(function(){
+	   	   $(".communication_foot a").hide();
+	   	   $(".send").show();
+	   	   $(".communication_bottom").hide();
+	   })
+	   $(".send").click(function(){
+	   	 $(this).hide();
+	   	 $(".communication_foot a").show();
+	   })
+	</script>
+
+</html>

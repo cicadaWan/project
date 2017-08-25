@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>订单管理</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<header class="seller_header">
+			<div class="seller_green"><span class="green">全部</span></div>
+			<div><span>待付款</span></div>
+			<div><span>待服务</span></div>
+			<div><span>待确认</span></div>
+			<div><span>待退款</span></div>
+		</header>
+		<!--全部出来的样式-->
+		<section>
+		<ul class="seller_Box">
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="head-content">
+						<div class="head_left"><img src="img/watch.png" class="search_pic" /></div>
+						<span class="head_right">等待买家付款，<span>23小时59分59秒后将自动取消</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待付款</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+					<span class="substance_Line"><span>服务类型</span></span>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="head_content">
+						<div class="head_left"><img src="img/watch.png" class="search_pic" /></div>
+						<span class="head_right">买家已付款，<span>23小时59分59秒后将自动关闭</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待服务</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+				<div class="total_content none_border seller_border">
+					<div class="order_content seller_refuse">
+						<a href="javascript:void(0);">拒绝</a>
+						<a href="javascript:void(0);" class="green Green">接单</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="seller_Content">
+						<div class="head_left"><img src="img/watch.png" class="search_pic" /></div>
+						<span class="head_right">您已接单，服务中</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待确认</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<div class="seller_picture">
+							<img src="img/tell.png" class="seller_pic" />
+							<a href="communicate.html"><img src="img/chart.png" class="seller_pic seller_pic2" /></a>
+						</div>
+
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="sellerComit_content">
+						<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+						<span class="head_right">等待买家确认收货，6天23小时45分59秒后将自动确认</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待确认</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<div class="seller_picture">
+							<img src="img/tell.png" class="seller_pic" />
+							<a href="communicate.html"><img src="img/chart.png" class="seller_pic seller_pic2" /></a>
+						</div>
+
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="sellerComit_content2">
+						<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+						<span class="head_right">买家申请退款，<span>6天23小时45分59秒</span>后将自动确认</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待退款</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<div class="seller_picture">
+							<img src="img/tell.png" class="seller_pic" />
+							<a href="communicate.html"><img src="img/chart.png" class="seller_pic seller_pic2" /></a>
+						</div>
+
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+				<div class="total_content none_border seller_border">
+					<div class="order_content seller_Refuse">
+						<a href="javascript:void(0);">拒绝退款</a>
+						<a href="javascript:void(0);" class="green Green">同意退款</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+			<div class="headerRefuse_content">
+				<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+				<span class="head_right scale">已拒绝，等待买家重新处理，6天23小时45分59秒后将自动关闭</span></span>
+			</div>
+		</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待退款</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<div class="seller_picture">
+							<img src="img/tell.png" class="seller_pic" />
+							<a href="communicate.html"><img src="img/chart.png" class="seller_pic seller_pic2" /></a>
+						</div>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="sellerComit_content2">
+						<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+						<span class="head_right">买家申请退款，<span>6天23小时45分59秒</span>后将自动确认</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待退款</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<div class="seller_picture">
+							<img src="img/tell.png" class="seller_pic" />
+							<a href="communicate.html"><img src="img/chart.png" class="seller_pic seller_pic2" /></a>
+						</div>
+
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+				<div class="total_content none_border seller_border">
+					<div class="order_content seller_Refuse">
+						<a href="javascript:void(0);">拒绝退款</a>
+						<a href="javascript:void(0);" class="green Green">同意退款</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+			<div class="header_content2">
+				<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+				<span class="head_right">您已同意退款</span></span>
+			</div>
+		</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">已退款</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+			<div class="header_content3">
+				<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+				<span class="head_right">买家已取消，服务已关闭</span></span>
+			</div>
+		</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">已关闭</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+			<div class="header_content4">
+				<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+				<span class="head_right">您已拒绝订单，服务已关闭</span></span>
+			</div>
+		</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">已关闭</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+			<div class="header_content">
+				<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+				<span class="head_right">服务已完成</span></span>
+			</div>
+		</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">已完成</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+        <!--待付款出来的样式-->
+        <ul class="seller_Box none">
+        	<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="head-content">
+						<div class="head_left"><img src="img/watch.png" class="search_pic" /></div>
+						<span class="head_right">等待买家付款，<span>23小时59分59秒后将自动取消</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待付款</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right buyer_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+					<!--出来的删除-->
+						<div class="selected_del">删除</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+        </ul>
+        <ul class="seller_Box none">
+        	<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="head_content">
+						<div class="head_left"><img src="img/watch.png" class="search_pic" /></div>
+						<span class="head_right">买家已付款，<span>23小时59分59秒后将自动关闭</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待服务</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+				<div class="total_content none_border seller_border">
+					<div class="order_content seller_refuse">
+						<a href="javascript:void(0);">拒绝</a>
+						<a href="javascript:void(0);" class="green Green">接单</a>
+					</div>
+				</div>
+			</li>
+        </ul>
+        <!--待确认-->
+        <ul class="seller_Box none">
+        	<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="seller_Content">
+						<div class="head_left"><img src="img/watch.png" class="search_pic" /></div>
+						<span class="head_right">您已接单，服务中</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待确认</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<div class="seller_picture">
+							<img src="img/tell.png" class="seller_pic" />
+							<a href="communicate.html"><img src="img/chart.png" class="seller_pic seller_pic2" /></a>
+						</div>
+
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="sellerComit_content">
+						<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+						<span class="head_right">等待买家确认收货，6天23小时45分59秒后将自动确认</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待确认</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<div class="seller_picture">
+							<img src="img/tell.png" class="seller_pic" />
+							<a href="communicate.html"><img src="img/chart.png" class="seller_pic seller_pic2" /></a>
+						</div>
+
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+        </ul>
+        <!--待退款-->
+        <ul class="seller_Box none">
+        	<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+					<div class="sellerComit_content2">
+						<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+						<span class="head_right">买家申请退款，<span>6天23小时45分59秒</span>后将自动确认</span></span>
+					</div>
+				</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待退款</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<div class="seller_picture">
+							<img src="img/tell.png" class="seller_pic" />
+							<a href="communicate.html"><img src="img/chart.png" class="seller_pic seller_pic2" /></a>
+						</div>
+
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+				<div class="total_content none_border seller_border">
+					<div class="order_content seller_Refuse">
+						<a href="javascript:void(0);">拒绝退款</a>
+						<a href="javascript:void(0);" class="green Green">同意退款</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="seller_bg"></div>
+				<div class="consult_head">
+			<div class="headerRefuse_content">
+				<div class="head_left"><img src="img/plaint.png" class="search_pic" /></div>
+				<span class="head_right scale">已拒绝，等待买家重新处理，6天23小时45分59秒后将自动关闭</span></span>
+			</div>
+		</div>
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+					<span class="edit">待退款</span>
+				</div>
+				<div class="substance_content seller_content">
+					<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+					<div class="substance_Right">
+						<span class="substance_Music">服务标题</span>
+						<span class="substance_Line"><span>服务类型</span></span>
+						<div class="seller_picture">
+							<img src="img/tell.png" class="seller_pic" />
+							<a href="communicate.html"><img src="img/chart.png" class="seller_pic seller_pic2" /></a>
+						</div>
+						<span class="orderDetail_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么么...</span>
+						<span class="substance_price">20</span><span class="substance_price">元/次</span>
+						<span class="sell_Num">[已售4567]</span>
+					</div>
+				</div>
+				<div class="info-content info-content2">
+					<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+					<span>2016-12-03&nbsp;10:00&nbsp至&nbsp;2016-12-04&nbsp;12:00</span>
+				</div>
+				<div class="seller_box">
+					<div class="seller_left">
+						<img src="img/money.png" />
+						<span class="seller_num">购买数量&nbsp;:</span>
+						<span class="seller_number">1</span>
+					</div>
+					<div class="seller_right">
+						<img src="img/diamond.png" />
+						<span class="accurate_left seller_total">合计&nbsp;:&nbsp;</span>
+						<span class="seller_total green seller-total">500元</span>
+					</div>
+				</div>
+			</li>
+        </ul>
+		</section>
+		<!--出来的电话弹框-->
+		<a href="tel:15036693872" class="telephone_content">点此拨打：15036693872</a>
+		<div class="popup_mask"></div>
+	</body>
+    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+    <script>
+    	$(".seller_header div").click(function(){
+    		var index=$(this).index();
+    		$(this).addClass("seller_green").siblings().removeClass("seller_green");
+    		$(".seller_header span").removeClass("green")
+    		$(">span",this).addClass("green");
+    		$("section ul").eq(index).show().siblings().hide();
+    	})
+    	//截取前三十个字
+		var html = $(".orderDetail_info").html();
+		var length = $(".orderDetail_info").html().length;
+		if(length > 30) {
+			$(".orderDetail_info").html(html.substring(0, 30) + '...')
+		}
+		//点击拒绝或者接单时候
+		$(".seller_refuse a").click(function(){
+			var index=$(this).index();
+			$(this).addClass("green Green").siblings().removeClass("green Green");
+			$(this).siblings().css("border","1px solid #939393");
+			if(index==0){
+				$(this).parents("li").find(".edit").html("已关闭");
+			}else{
+				$(this).parents("li").find(".edit").html("待确认");
+			}
+		})
+		//dianji点击拨打电话
+		var h=$("body").height();
+		$(".seller_picture img:first-child").click(function(){
+			
+			$(".popup_mask").css({"height":h,"display":"block"});
+			$(".telephone_content").css("display","block")
+		})
+		$(".popup_mask").click(function(){
+			$(this).hide();
+			$(".telephone_content").hide();
+		})
+		//点击拒绝退款同意退款
+		$(".seller_Refuse a").click(function(){
+			var index=$(this).index();
+			$(this).addClass("green Green").siblings().removeClass("green Green");
+			$(this).siblings().css("border","1px solid #939393");
+			if(index==0){
+			$(this).parents("li").find(".edit").html("待退款")
+			}else{
+				$(this).parents("li").find(".edit").html("已退款")
+			}
+		})
+		//获取删除的高度
+		var height = $(".substance_content").height();
+		$(".selected_del").css({
+			"height": height,
+			"line-height": height + 'px'
+		});
+		$(".buyer_Right").on("touchstart", function(e) {
+			e.preventDefault();
+			startX = e.originalEvent.changedTouches[0].pageX,
+				startY = e.originalEvent.changedTouches[0].pageY;
+		});
+		$(".buyer_Right").on("touchmove", function(e) {
+
+			moveEndX = e.originalEvent.changedTouches[0].pageX,
+				moveEndY = e.originalEvent.changedTouches[0].pageY,
+				X = moveEndX - startX,
+				Y = moveEndY - startY;
+
+		});
+		$(".buyer_Right").on("touchend", function(e) {
+			var windowHeight = $(window).height(),
+				$body = $("body");
+			$body.css("height", windowHeight);
+			e.preventDefault();
+			if(Math.abs(X) > Math.abs(Y) && X < 0) {
+				$(this).siblings(".selected_del").removeClass("del1").addClass("del")
+			}
+			if(Math.abs(X) > Math.abs(Y) && X > 0) {
+				$(this).siblings(".selected_del").removeClass("del").addClass("del1")
+			}
+
+		});
+		$(".selected_del").click(function() {
+			$(this).parents('li').hide();
+			$(this).parent().removeAttr("href");
+		})
+    </script>
+</html>

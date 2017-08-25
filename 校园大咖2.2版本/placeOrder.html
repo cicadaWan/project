@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="css/mui.picker.css" />
+		<link rel="stylesheet" href="css/mui.poppicker.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>下单</title>
+	</head>
+
+	<body>
+		<!--说明高校社团和技能达人一样-->
+		<div class="publish_case">
+			<div class="publish_content none_border">
+				<div class="publish_title">
+					<span class="title_pic"><img src="img/per_photo.png" class="search_pic" /></span>
+					<h3>大话西游</h3>
+				</div>
+			</div>
+			<div class="substance_content border">
+				<div class="substance_left"><img src="img/pro_img.jpg" class="search_pic" /></div>
+				<div class="substance_Right">
+					<span class="substance_Music">歌声无敌棒</span>
+					<span class="substance_Line"><span>服务类型</span></span>
+					<span class="placeOrder_info">广州大二萌妹子一枚，擅长唱流行歌曲,美声,以及民族歌曲,喜欢我就联系我吧。么会飞的上半场v发版发v飓风肌肤的</span>
+					<span class="substance_price">20</span><span class="substance_price">元/次</span>
+					<span class="sell_Num">[已售4567]</span>
+				</div>
+			</div>
+		</div>
+		<ul class="accurate_content">
+			<li>
+				<span class="accurate-title">购买数量</span>
+				<div class="placeOrder_num">
+					<span class="jian"><img src="img/jian.png" class="search_pic" /></span>
+					<input placeholder="1" id="num" />
+					<!--<span id="num">0</span>-->
+					<span class="add"><img src="img/add.png" class="search_pic" /></span>
+				</div>
+			</li>
+			<!--校内商家下单出现的-->
+			<li>
+				<span class="accurate-title">合作形式</span>
+				<div id="choose" class="mui-input-row">
+					<span class="accurate_inp result-tips gray">请选择合作形式</span>
+					<span class="accurate_inp show-result gray"></span>
+				</div>
+
+			</li>
+			<!--校内商家下单出现的完-->
+			<!--社群大V下单出现的-->
+			<li>
+				<span class="accurate-title">投放版位</span>
+				<div id="accurate" class="mui-input-row">
+					<span class="accurate_inp result-tips gray">请选择投放版位</span>
+					<span class="accurate_inp show-result gray"></span>
+				</div>
+
+			</li>
+			<!--社群大V下单出现的完-->
+			<li>
+				<span class="accurate-title">联&nbsp;&nbsp;系&nbsp;&nbsp;人</span>
+				<input placeholder="请填写您的姓名" class="accurate_inp" />
+			</li>
+			<li>
+				<span class="accurate-title">联系电话</span>
+				<input placeholder="请填写您的联系电话" class="accurate_inp" />
+			</li>
+			<!--这一部分校内商家和社群大V下单没有-->
+			<li>
+				<span class="accurate-title">需求描述</span>
+				<div class="textarea">
+					<textarea class="Introduce placeOrder_mes" name="aboutMe" onkeyup="load()" onkeydown="load()" placeholder="请简要描述所需服务地点，服务具体内容及所需达成的目标吧!"></textarea>
+					<div id="span" class="Span"><span>0</span>/500</div>
+				</div>
+			</li>
+			<!--这一部分校内商家和社群大V下单没有完-->
+			<li>
+				<span class="accurate-title placeOrder_word">买家留言<span class="choose_title">(&nbsp;选填&nbsp;)</span></span>
+				<div class="textarea">
+					<textarea class="Introduce placeOrder_mes Introduce2" name="aboutMe" onkeyup="load2()" onkeydown="load2()" placeholder=""></textarea>
+					<div id="span2" class="Span"><span>0</span>/200</div>
+				</div>
+			</li>
+		</ul>
+		<div class="selected_bg accurate_bg"></div>
+		<!--服务下单出现-->
+		<div class="info-content info-content2">
+			<span class=" accurate_left">服务时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+			<span class="gray">2016-12-03&nbsp;10:00&nbsp;</span>
+			<span>至&nbsp;</span>
+			<span class="gray">2016-12-06&nbsp;12:00</span>
+		</div>
+		<!--场地下单出现-->
+		<div class="info-content info-content2">
+			<span class=" accurate_left">使用时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+			<span class="gray">2016-12-03&nbsp;10:00&nbsp;</span>
+			<span>至&nbsp;</span>
+			<span class="gray">2016-12-06&nbsp;12:00</span>
+		</div>
+		<!--社群大V下单出现-->
+		<div class="info-content info-content2">
+			<span class=" accurate_left">投放时间&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+			<span class="gray">2016-12-03&nbsp;10:00&nbsp;</span>
+			
+		</div>
+		<div class="accurate_total">
+			<span>合计&nbsp;:&nbsp;</span>
+			<span>500元</span>
+		</div>
+		<div class="selected_bg accurate_bg"></div>
+		<div class="footer"><span>提交订单</span></div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/mui.picker.js"></script>
+	<script type="text/javascript" src="js/mui.poppicker.js"></script>
+	<script>
+		//截取前三十个字
+		var html = $(".placeOrder_info").html();
+		var length = $(".placeOrder_info").html().length;
+		if(length > 30) {
+			$(".placeOrder_info").html(html.substring(0, 30) + '...')
+		}
+		//数量增减
+
+		//当是默认1时候
+		var t = $("#num").attr('placeholder');
+		console.log(t)
+		document.getElementById("num").value=t;
+//		console.log(document.getElementById("num").value)
+		//当不是placeholder时候
+		$(".add").click(function() {
+                t=document.getElementById("num").value;
+				t=parseInt(t)+1;
+				$("#num").attr("placeholder",t)
+				$(".add").removeAttr("disabled");
+				document.getElementById("num").value=t;
+			})
+		
+		$(".jian").click(function() {
+				if(document.getElementById("num").value > 1) {
+					 t=document.getElementById("num").value;
+					t=parseInt(t)-1;
+					document.getElementById("num").value=t;
+				} else {
+					$(".jian").attr("disabled", "disabled")
+				}
+			})
+
+		function load() {
+			var length = $(".Introduce").val().length;
+			var html = $(".Introduce").val();
+
+			if(length > 199) {
+				$(".Introduce").val(html.substring(0, 200))
+
+				$("#span span").html(200);
+
+			} else {
+				$("#span span").html(length)
+			}
+
+		}
+
+		function load2() {
+			var length = $(".Introduce2").val().length;
+			var html = $(".Introduce2").val();
+
+			if(length > 199) {
+				$(".Introduce2").val(html.substring(0, 200))
+
+				$("#span2 span").html(200);
+
+			} else {
+				$("#span2 span").html(length)
+			}
+
+		}
+		//选择合作形式
+		var provide = new mui.PopPicker({
+			layer: 1
+		});
+		provide.setData([{
+			value: 0,
+			text: "合作"
+		}, {
+			value: 0,
+			text: "不合作"
+		}]);
+		var showprovideButton = document.getElementById('choose');
+		showprovideButton.addEventListener('tap', function(event) {
+			provide.show(function(items) {
+				document.querySelector('#choose .result-tips').style.display = "none";
+				document.querySelector('#choose .show-result').style.display = "block";
+				document.querySelector('#choose .show-result').innerText = items[0].text;
+				//返回 false 可以阻止选择框的关闭
+				//return false;
+			});
+		}, false);
+		//选择投放版位
+		var choose = new mui.PopPicker({
+			layer: 1
+		});
+		choose.setData([{
+			value: 0,
+			text: "头条"
+		}, {
+			value: 0,
+			text: "次条"
+		}]);
+		var accurateButton = document.getElementById('accurate');
+		accurateButton.addEventListener('tap', function(event) {
+			choose.show(function(items) {
+				document.querySelector('#accurate .result-tips').style.display = "none";
+				document.querySelector('#accurate .show-result').style.display = "block";
+				document.querySelector('#accurate .show-result').innerText = items[0].text;
+				//返回 false 可以阻止选择框的关闭
+				//return false;
+			});
+		}, false);
+	</script>
+
+</html>

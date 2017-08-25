@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>我的</title>
+	</head>
+
+	<body>
+		<header class="user_top">
+			<img src="img/myBg.png" class="search_pic" />
+			<div class="user_pic"><img src="img/per_photo.png" class="search_pic" /></div>
+			<span class="user_name">咕咕柰子</span>
+			<a href="editor.html">
+				<span class="user_message"><img src="img/edit.png" class="search_pic" /></span>
+			</a>
+		</header>
+		<section>
+			<!--我的订单部分-->
+			<div class="service_manage">
+				<div class="user_function">
+					<h3 class="user_h3">我的订单</h3>
+					<a href="buyer_list.html" class="buyer_look">
+						<span>查看全部订单</span>
+						<span><img src="img/right.png" class="search_pic" /></span>
+					</a>
+				</div>
+				<div class="user_content">
+					<div class="user_picContent">
+						<span class="user_picture"><img src="img/person_01.png" class="search_pic" /></span>
+						<span class="user_size">待付款</span>
+					</div>
+					<div class="user_picContent">
+						<span class="user_picture"><img src="img/person_02.png" class="search_pic" /></span>
+						<span class="user_size">待服务</span>
+					</div>
+					<div class="user_picContent">
+						<span class="user_picture"><img src="img/person_03.png" class="search_pic" /></span>
+						<span class="user_size">待确认</span>
+					</div>
+					<div class="user_picContent user_picR">
+						<span class="user_picture"><img src="img/person_04.png" class="search_pic" /></span>
+						<span class="user_size">待退款</span>
+					</div>
+				</div>
+				<div class="user_bg"></div>
+			</div>
+			<div class="buyer_Box">
+				<!--功能管理部分-->
+				<div class="user_function">
+					<h3 class="user_h3">功能管理</h3></div>
+				<div class="user_content">
+					<div class="user_picContent buyer_border">
+						<span class="user_picture"><img src="img/user_img0.png" class="search_pic" /></span>
+						<span class="user_size">我的发票</span>
+					</div>
+					<div class="user_picContent buyer_border">
+						<span class="user_picture"><img src="img/user_img1.png" class="search_pic" /></span>
+						<span class="user_size">用户反馈</span>
+					</div>
+					<a href="javascript:void(0);" class="user_picContent buyer_border">
+						<span class="user_picture"><img src="img/user_img2.png" class="search_pic" /></span>
+						<span class="user_size">在线咨询</span>
+					</a>
+					<a href="javascript:void(0);" class="user_picContent buyer_border right_none">
+						<span class="user_picture"><img src="img/user_img3.png" class="search_pic" /></span>
+						<span class="user_size">常见问题</span>
+					</a>
+					<a href="javascript:void(0);" class="user_picContent buyer_border">
+						<span class="user_picture"><img src="img/user_img4.png" class="search_pic" /></span>
+						<span class="user_size">关于平台</span>
+					</a>
+				</div>
+				<div class="user_bg"></div>
+			</div>
+			<!--服务管理这一部分只有当审核通过以后才会出现-->
+			<div class="buyer_Box">
+				<div class="user_function">
+					<h3 class="user_h3">服务管理</h3></div>
+				<div class="user_content buyer_content">
+					<div class="user_picContent buyer_border">
+						<span class="user_picture"><img src="img/person_05.png" class="search_pic" /></span>
+						<span class="user_size">发布服务</span>
+					</div>
+					<div class="user_picContent buyer_border">
+						<span class="user_picture"><img src="img/person_06.png" class="search_pic" /></span>
+						<span class="user_size">服务管理</span>
+					</div>
+					<div class="user_picContent buyer_border">
+						<span class="user_picture"><img src="img/person_07.png" class="search_pic" /></span>
+						<span class="user_size">订单管理</span>
+					</div>
+					<div class="user_picContent buyer_border right_none">
+						<span class="user_picture"><img src="img/person_08.png" class="search_pic" /></span>
+						<span class="user_size">我的钱包</span>
+					</div>
+					<div class="user_picContent buyer_border">
+						<span class="user_picture"><img src="img/person_09.png" class="search_pic" /></span>
+						<span class="user_size">我的信息</span>
+					</div>
+					<div class="user_picContent buyer_border">
+						<span class="user_picture"><img src="img/person_10.png" class="search_pic" /></span>
+						<span class="user_size">管理员更换</span>
+					</div>
+				</div>
+			</div>
+			<!--服务管理这一部分只有当审核通过以后才会出现-->
+			<div class="buyer_Box">
+				<!--审核中 部分-->
+				<div class="in_review" style="display: none;">校园资源入驻(审核中)</div>
+				<!--开始没有入驻时候吗，只有第一个P标签，入驻以后没有通过两个p标签都出现-->
+				<div class="no_review">
+					<p>+ 校园资源入驻</p>
+					<p>(审核不通过,请重新提交)</p>
+				</div>
+			</div>
+		</section>
+		<!--底部-->
+		<nav class="foot-bar-tab">
+			<a class="foot-tab-item" href="javascript:void(0);">
+				<span class="foot-icon foot-icon-home"></span>
+				<span class="foot-tab-label">首页</span>
+			</a>
+			<a class="foot-tab-item foot-active" href="javascript:void(0);">
+				<span class="foot-icon foot-icon-pub"></span>
+				<span class="foot-tab-label">消息</span>
+			</a>
+			<a class="foot-tab-item refuse_publish" href="javascript:void(0);">
+				<span class="foot-icon foot-icon-release"></span>
+				<span class="foot-tab-label">发布</span>
+			</a>
+			<a class="foot-tab-item" href="javascript:void(0);">
+				<span class="foot-icon foot-icon-bus"></span>
+				<span class="foot-tab-label">已选</span>
+			</a>
+			<a class="foot-tab-item" href="javascript:void(0);">
+				<span class="foot-icon foot-icon-person"></span>
+				<span class="foot-tab-label">我的</span>
+			</a>
+		</nav>
+	</body>
+    <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+    <script>
+    	var h = $(".foot-bar-tab").height();
+		$("section .buyer_Box:last-child").css("margin-bottom", h);
+		//底部选项卡切换
+		$(".foot-bar-tab a:not(.refuse_publish)").click(function() {
+			$(this).addClass("foot-active").siblings().removeClass("foot-active");
+		})
+    </script>
+</html>
