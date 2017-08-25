@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>优质资源</title>
+	</head>
+	<body onload="load()">
+		<div id="wrapper">
+		<div id="scroller">
+			<ul class="list">
+			<li class="resource_content resource_content1">
+				<div class="resource_detail">
+					<div class="detail_content">
+						<img class="search_pic" src="img/vedio_img.jpg" />
+						<div class="resource_marsk">
+							<p>庞帅轮滑社携手动漫社落地了一场大活动</p>
+						</div>
+					</div>
+					<p class="resource_explain">北京大学庞帅是轮滑社的社长，就在昨天，他在北京大学与动漫社一起举行了一场鱼丸活动。</p>
+				<div class="more_content">
+					<span class="iconfont icon-iconset0207"></span>
+					<span>5320</span>
+					<span class="iconfont icon-iconfontdianzan"></span>
+					<span class="zan_number">523</span>
+					<span>2017-02-12</span>
+				</div>
+				</div>
+		    </li>
+		    <li class="resource_content resource_content1">
+				<div class="resource_detail">
+					<div class="detail_content">
+						<img class="search_pic" src="img/vedio_img.jpg" />
+						<div class="resource_marsk">
+							<p>庞帅轮滑社携手动漫社落地了一场大活动</p>
+						</div>
+					</div>
+					<p class="resource_explain">北京大学庞帅是轮滑社的社长，就在昨天，他在北京大学与动漫社一起举行了一场鱼丸活动。</p>
+				<div class="more_content">
+					<span class="iconfont icon-iconset0207"></span>
+					<span>5320</span>
+					<span class="iconfont icon-iconfontdianzan"></span>
+					<span class="zan_number">523</span>
+					<span>2017-02-12</span>
+				</div>
+				</div>
+		    </li>
+		    <li class="resource_content resource_content1">
+				<div class="resource_detail">
+					<div class="detail_content">
+						<img class="search_pic" src="img/vedio_img.jpg" />
+						<div class="resource_marsk">
+							<p>庞帅轮滑社携手动漫社落地了一场大活动</p>
+						</div>
+					</div>
+					<p class="resource_explain">北京大学庞帅是轮滑社的社长，就在昨天，他在北京大学与动漫社一起举行了一场鱼丸活动。</p>
+				<div class="more_content">
+					<span class="iconfont icon-iconset0207"></span>
+					<span>5320</span>
+					<span class="iconfont icon-iconfontdianzan"></span>
+					<span class="zan_number">523</span>
+					<span>2017-02-12</span>
+				</div>
+				</div>
+		    </li>
+		    <li class="resource_content resource_content1">
+				<div class="resource_detail">
+					<div class="detail_content">
+						<img class="search_pic" src="img/vedio_img.jpg" />
+						<div class="resource_marsk">
+							<p>庞帅轮滑社携手动漫社落地了一场大活动</p>
+						</div>
+					</div>
+					<p class="resource_explain">北京大学庞帅是轮滑社的社长，就在昨天，他在北京大学与动漫社一起举行了一场鱼丸活动。</p>
+				<div class="more_content">
+					<span class="iconfont icon-iconset0207"></span>
+					<span>5320</span>
+					<span class="iconfont icon-iconfontdianzan"></span>
+					<span class="zan_number">523</span>
+					<span>2017-02-12</span>
+				</div>
+				</div>
+		    </li>
+		    </ul>
+		    <div id="pullUp" class="">  
+	        <div class="pullUpLabel">加载更多</div>  
+	        </div> 
+		</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript" src="js/iscroll.probe.min.js" ></script>
+	<script>
+		
+	
+	function load () {  
+		console.log(1)
+        var myScroll, 
+                    pullUp = $("#pullUp"),    
+                    pullUpLabel = $(".pullUpLabel"),  
+                    container = $('.list'),  
+                    loadingStep = 0;//加载状态0默认，1显示加载状态，2执行加载数据，只有当为0时才能再次加载，这是防止过快拉动刷新  
+  
+
+            pullUp.hide();  
+  
+            myScroll = new IScroll("#wrapper", {  
+                scrollbars: true,  
+                mouseWheel: false,  
+                interactiveScrollbars: true,  
+                shrinkScrollbars: 'scale',  
+                fadeScrollbars: true,  
+                scrollY:true,  
+                probeType: 2,  
+                bindToWrapper:true  
+            });  
+            myScroll.on("scroll",function(){ 
+                    if(loadingStep == 0  && !pullUp.attr("class").match('refresh')){  
+                       if(this.y < (this.maxScrollY - 14)){//上拉加载更多
+                        pullUp.addClass("refresh").show();  
+                        pullUpLabel.text("正在载入");  
+                        loadingStep = 1;  
+                        pullUpAction();  
+                        console.log("1")
+                    }  
+                }  
+            }); 
+        function pullUpAction(){  
+            setTimeout(function(){  
+                var li, i;  
+                for (i = 0,li = ""; i < 5; i++) {  
+                   li += '<li class="resource_content resource_content1">'+
+							'<div class="resource_detail">'+
+								'<div class="detail_content">'+
+									'<img class="search_pic" src="img/vedio_img.jpg" />'+
+									'<div class="resource_marsk">'+
+										'<p>庞帅轮滑社携手动漫社落地了一场大活动</p>'+
+									'</div>'+
+								'</div>'+
+								'<p class="resource_explain">北京大学庞帅是轮滑社的社长，就在昨天，他在北京大学与动漫社一起举行了一场鱼丸活动。</p>'+
+							'<div class="more_content">'+
+								'<span class="iconfont icon-iconset0207"></span>'+
+								'<span>5320</span>'+
+								'<span class="iconfont icon-iconfontdianzan"></span>'+
+								'<span class="zan_number">523</span>'+
+								'<span>2017-02-12</span>'+
+							'</div>'+
+							'</div>'+
+					  '</li>'
+                }  
+                container.append(li);  
+                pullUp.attr('class','').hide();  
+                myScroll.refresh();  
+                loadingStep = 0;  
+            },500);  
+        }  
+  
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);  
+        }  
+        //点赞效果的实现
+        $(".icon-iconfontdianzan").click(function(){
+        	$(this).toggleClass("zan");
+        	var classname=$(this).attr("class");
+//      	console.log(classname)
+        	var zan_num=parseInt($(".zan_number").html());
+//      	console.log(zan_num)
+	        	if(classname == "iconfont icon-iconfontdianzan zan"){
+					zan_num +=1;
+					
+					$(".zan_number").html(zan_num);
+			
+		}else if(classname== "iconfont icon-iconfontdianzan"){
+			zan_num -=1;
+			$(".zan_number").html(zan_num);
+		}
+        })
+       
+</script>
+
+</html>
