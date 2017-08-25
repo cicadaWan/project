@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>发布服务</title>
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/enterInfo.css" />
+		<link rel="stylesheet" href="../css/publishService.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="enterInfo_top">
+			<img src="../img/enterInfo_top.png" class="search_pic" />
+		</div>
+		<div class="person_style">
+			<span>发布类型</span>
+		</div>
+		<div class="publishService_pic">
+			<a href="publishService_community.html" class="choose choose_style">
+				<span class="picture_green"><img src="../img/community.png" class="search_pic" /></span>
+				<span>高校社团</span>
+			</a>
+			<a href="publishService_place.html" class="choose choose_style">
+				<span class="picture"><img src="../img/place_green.png" class="search_pic" /></span>
+				<span class="color_green">场地资源</span>
+			</a>
+			<a href="publishService_school.html" class="choose choose_style">
+				<span class="picture"><img src="../img/school.png" class="search_pic" /></span>
+				<span>校内商家</span>
+			</a>
+			<a href="publishService_acitive.html" class="choose choose_style">
+				<span class="picture"><img src="../img/acitive.png" class="search_pic" /></span>
+				<span>技能达人</span>
+			</a>
+			<a href="publishService_association.html" class="choose choose_style">
+				<span class="picture"><img src="../img/association.png" class="search_pic" /></span>
+				<span>社群大V</span>
+			</a>
+		</div>
+		<div class="enterInfo_bg"></div>
+		<ul class="message_content">
+			<li>
+				<span class="enter_name">场地名称</span>
+				<input class="inp" type="text" placeholder="请填写场地名称" />
+			</li>
+			<li>
+				<span class="enter_name">场地类型</span>
+				<div id="placeStyle" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">请选择场地类型</span>
+					<span class="myInfo_name enter_school show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">场地规模</span>
+				<div id="scopeStyle" class=- "mui-input-row">
+					<span class="myInfo_name enter_school result-tips">请选择场地规模</span>
+					<span class="myInfo_name enter_school show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+
+			</li>
+			<li>
+				<p class="place_name">基本物资配备(可选)</p>
+				<div class="resource_content">
+					<div class="resource">
+						麦克风
+						<span><img src="../img/gou.png" class="search_pic" /></span>
+					</div>
+					<div class="resource">
+						音响
+						<span><img src="../img/gou.png" class="search_pic" /></span>
+					</div>
+					<div class="resource">
+						桌椅
+						<span><img src="../img/gou.png" class="search_pic" /></span>
+					</div>
+					<div class="resource">
+						投阴影
+						<span><img src="../img/gou.png" class="search_pic" /></span>
+					</div>
+					<div class="resource">
+						电脑
+						<span><img src="../img/gou.png" class="search_pic" /></span>
+					</div>
+					<div class="resource">
+						展板
+						<span><img src="../img/gou.png" class="search_pic" /></span>
+					</div>
+				</div>
+				<p class="enter_name place_useTime">使用时间</p>
+				<input placeholder="8点" id="time" data-options='{"type":"time"}' class="btn mui-btn mui-btn-block place_inp" />
+				<span class="place_span">—</span>
+				<input placeholder="12点" id="time1" data-options='{"type":"time"}' class="btn mui-btn mui-btn-block place_inp" />
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">提供兼职</span>
+				<div id="provide" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">是否可提供兼职人员</span>
+					<span class="myInfo_name enter_school show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou "></span>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">场地价格</span>
+				<div class="service_price">
+					<input type="number" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写报价" />
+					<span>元/</span>
+					<div id="unitStyle" class="mui-input-row" style="float: left;">
+						<span class="choose_unit result-tips">请选择单位</span>
+						<span class="choose_unit show-result"></span>
+					</div>
+					<span style="margin-right:0 ;">单位</span>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name publishService_name">场地照片</span>
+				<span class="enter_name enterName2">全景照片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+						
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*请上传2-9张全景照片</p>
+				<span class="enter_name add_photo enterName2">中景照片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							<span class="cover">封面</span>
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						<span class="cover">封啊</span>
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						<span class="cover">封面</span>
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*请上传2-9张中景照片</p>
+				<span class="enter_name add_photo enterName2">近景照片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+							
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*请上传2-9张近景照片</p>
+			</li>
+			<li>
+				<span class="enter_name publishService_name">场地描述</span>
+				<div class="textarea">
+					<div class="textarea_info">
+						<textarea class="introduce" id="aboutMeT" name="aboutMe" onkeyup="load()" placeholder="请填写和场地有关的信息，譬如场地大小，过往举办的活动等等"></textarea>
+					</div>
+					<div id="span" class="span"><span>0</span>/200</div>
+				</div>
+			</li>
+		</ul>
+		<footer class="write_foot"><span>提交</span></footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../js/mui.min.js"></script>
+	<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+	<script type="text/javascript" src="../js/mui.poppicker.js"></script>
+	<script type="text/javascript" src="../js/mui.dtpicker.js" ></script>
+	<script type="text/javascript" src="../js/publishService/place.js"></script>
+
+</html>

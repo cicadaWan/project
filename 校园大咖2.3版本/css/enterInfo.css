@@ -1,0 +1,374 @@
+body,
+html,
+ul,
+li,
+span,
+h3,
+p,
+input,
+textarea,
+a,
+i,
+img,
+strong,
+div,
+label,
+header,
+section,
+nav,
+form,
+button,
+footer,
+strong {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	box-sizing: border-box;
+}
+i,
+strong {
+	font-style: normal;
+}
+h3,h6{
+	font-weight: normal;
+}
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+.search_pic {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+}
+/*平台协议*/
+.agree_top{
+	font-size: 4.8vw;
+	color: #333;
+	text-align: center;
+	margin: 17px auto;
+}
+.agree_content{
+	width:92vw;
+	overflow: hidden;
+	margin: 0 auto 17px;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 0 5px #ccc;
+	-moz-box-shadow: inset 0 0 5px #ccc;
+    -webkit-box-shadow: inset 0 0 5px #ccc;
+}
+.agreement_content{
+	width:86.133vw;
+	height: 46.477vh;
+	overflow: scroll;
+	margin: 11px auto 0;
+	font-size:3.733vw ;
+	color: #666;
+	line-height:1.423 ;
+	
+}
+.agree_foot{
+	display: block;
+	width: 92vw;
+	overflow: hidden;
+	margin: 0 auto;
+	background: #1d9243;
+}
+.agree_foot span,.write_foot span{
+	display: block;
+	text-align: center;
+	margin: 13px auto;
+	font-size: 4.8vw;
+	color: #fff;
+}
+/*入驻信息填写页面*/
+section{
+	overflow: hidden;
+}
+.enterInfo_top {
+    width: 100vw;
+    height: 38vw;
+}
+.person_style{
+	width: 100vw;
+	overflow: hidden;
+}
+.person_style span{
+	display: block;
+	margin: 20px 4vw 16px;
+	font-size: 4.533vw;
+	color: #0c0c0c;
+}
+.enterInfo_choose{
+	width: 57.333vw;
+	margin: 0 auto 20px;
+	overflow: hidden;
+}
+.choose{
+	overflow: hidden;
+	float: left;
+	margin: 0 7.6vw;
+}
+.choose span:first-child{
+	display: block;
+	width:13.333vw;
+	height: 13.333vw;
+	
+}
+.choose span:nth-of-type(2){
+	display: block;
+	font-size: 3.466vw;
+	color: #bdbdbd;
+	text-align: center;
+	margin: 7px auto 0;
+}
+.team{
+	background: url(../img/team_green.png) no-repeat;
+	background-size: 100% 100%;
+}
+.person{
+	background: url(../img/person.png) no-repeat;
+	background-size: 100% 100%;
+}
+.color_green{
+	color: #1c9242 !important;
+}
+.message_content {
+    width: 92vw;
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+}
+.li{
+	width: 92vw;
+	margin: 0 auto;
+}
+.message_content li,.li {
+    overflow: hidden;
+    clear: both;
+    border-bottom: 1px solid #e0e0e0;
+}
+.message_content li:last-child{
+	margin-bottom: 25px;
+}
+.enter_name {
+    width: 20.267vw;
+    font-size: 4.533vw;
+    color: #333;
+    display: block;
+    margin: 17px 10.666vw 17px 0;
+    float: left;
+}
+.inp, .enter_jia, .myInfo_name {
+    width: 49vw;
+    border: 0;
+    float: left;
+    font-size: 4vw;
+    line-height: normal !important;
+    color: #333;
+    margin: 17px 0;
+}
+#associationStyle .result-tips{
+	color:#ccc;
+}
+#associationStyle .show-result{
+	color:#333;
+}
+.enter_youjiantou, .icon-del {
+    color: #b5b5b5;
+    font-size: 4.13333vw;
+    float: left;
+    margin: 18px 0 17px 0;
+}
+.enter_youjiantou{
+	float: right;
+}
+.show-result {
+    display: none;
+}
+.webservice_content {
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 13px;
+    }
+.limit {
+    font-size: 4vw;
+    color: #aaa;
+    margin-bottom: 18px;
+}
+.enter_nameT {
+    width: 20.267vw;
+    font-size: 4.267vw;
+    color: #0c0c0c;
+    display: block;
+    margin: 2px 0 13px 0;
+}
+.textarea {
+	width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.textarea_info{
+	width: 92vw;
+    margin: 0 0 18px 0;
+    border: 1px solid #e0e0e0 !important;
+  
+    border-radius: 5px;
+}
+.introduce,.Introduce{
+	display: block;
+	width: 85.6vw;
+	min-height: 28vw;
+	margin: 12px auto 0;
+    font-size: 4vw;
+    line-height: 1.5;
+    color: #333;
+    border: 0;
+}
+.groom_content{
+	width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 8px;
+    float: left;
+}
+.groom{
+	float: left;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+	width:28.8vw;
+	cursor:pointer;
+}
+.groom span{
+	display: block;
+	font-size: 4vw;
+	color: #ccc;
+	margin:1.333vw 0 ;
+	text-align:center;
+}
+.add_biaoqian{
+	float: left;
+	width: 28.8vw;
+	height: 8.266vw;
+	line-height: 7.266vw;
+	text-align: center;
+	font-size: 4vw;
+	color: #ccc;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+}
+.add_biaoqian{
+	font-size: 8vw !important;
+}
+.groom_green{
+	border: 1px solid #47b458 !important;
+	margin-bottom: 5px;
+}
+.write_foot{
+	width: 100vw;
+	overflow: hidden;
+	background: #1d9234;
+}
+/*自定义弹窗的样式*/
+.bomb_box{
+	width: 100vw;
+    background: #eee;
+    padding-top: 12px;
+    margin-top: 45px;
+    height: 188px;
+    overflow: scroll;
+}
+.bomb_box li{
+	overflow: hidden;
+}
+.bomb_box li span{
+	float: left;
+}
+.bomb_box li span:first-child{
+	width: 5.333vw;
+    height: 5.333vw;
+    border-radius: 100%;
+    margin: 12px 88px 12px 50px;
+}
+.bomb_box li span:nth-of-type(2){
+	font-size: 4.8vw;
+	color: #999;
+	margin: 12px 0;
+}
+.enterInfo_round{
+   border: 1px solid #9b9b9b;
+}
+.enterInfo_check{
+	background: url(../img/check.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.enterInfo_sizeColor{
+	color: #333 !important;
+}
+/*删除弹窗样式*/
+.remove_box{
+	display: none;
+	width: 200px;
+	overflow: hidden;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	background: #fff;
+	z-index: 1000;
+	border-radius: 5px;
+}
+.remove{
+	display: block;
+	margin: 20px 0 10px;
+	text-align: center;
+	color: #0c0c0c;
+	font-size: 4vw;
+}
+.yes_content{
+	width: 90%;
+	overflow: hidden;
+	margin: 10px auto;
+}
+.yes_content span{
+	font-size: 3.466vw;
+	color: #0c0c0c;
+}
+.yes_content span:first-child{
+	float: left;
+}
+.yes_content span:last-child{
+	float: right;
+}
+/*06-23主页标签优化*/
+.label_content{
+	width: 4000%;
+}
+.label{
+	float: left;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	 -webkit-tap-highlight-color: transparent;
+}
+.label_content .label:last-child{
+	margin-right: 0;
+}
+.label span{
+	font-size: 4vw;
+	color: #ccc;
+	display: block;
+	text-align: center;
+	margin: 8px 20px;
+}
+.label_border{
+	border: 1px solid #47b458;
+}
+.label_color{
+	color: #47b458 !important;
+}

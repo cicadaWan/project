@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/mui.dtpicker.css" />
+		<link rel="stylesheet" href="../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../css/publish.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<title>发布</title>
+	</head>
+
+	<body>
+		<header class="publish_demandHead">
+			<img src="../img/publish_banner.jpg" class="search_pic" />
+		</header>
+		<div class="webservice_box1">
+			<section>
+				<ul class="information_content publish_Demand">
+					<li>
+						<span class="demand_title">发布类型</span>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="demand_content">
+							<span><img src="../img/publish_g1.png" class="search_pic" /></span>
+							<span class="green">精准需求</span>
+						</a>
+						<a href="publish_consult.html" class="demand_content">
+							<span><img src="../img/publish_02.png" class="search_pic" /></span>
+							<span>精准咨询</span>
+						</a>
+						<a href="publish_put.html" class="demand_content">
+							<span><img src="../img/publish_03.png" class="search_pic" /></span>
+							<span>精准投放</span>
+						</a>
+					</li>
+					<li>
+						<span class="publish_name">咨询类型</span>
+						<div class="choose_webservice">
+							<div id="resourceStyle" class="mui-input-row">
+								<span class="publish_jia publish_style publishConsult_style result-tips">选择资源类型</span>
+								<span class="publish_jia publish_style publishConsult_style show-result"></span>
+								<span class="publish_right"><img src="../img/right.png" class="search_pic" /></span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<span class="publish_name">活动时间</span>
+						<span id="time" class="publish_time btn mui-btn mui-btn-block" data-options='{"type":"date","beginYear":2017,"endYear":2022}'>2017-04-12</span>
+						<span class="publish_line">—</span>
+						<span id="time2" class="publish_time btn mui-btn mui-btn-block" data-options='{"type":"date","beginYear":2017,"endYear":2022}'>2017-04-18</span>
+					</li>
+					<li>
+						<span class="publish_name">活动城市</span>
+						<span class="publish_jia school_city">选择活动城市</span>
+						<span class="publish_right"><img src="../img/right.png" class="search_pic" /></span>
+					</li>
+					<li>
+						<span class="publish_name publish_school">活动院校<span class="publish_choose">(选填)</span></span>
+						<span class="publish_jia choose_school">请选择活动落地院校</span>
+						<span class="publish_right"><img src="../img/right.png" class="search_pic" /></span>
+					</li>
+					<li>
+						<span class="publish_name">投入量级</span>
+						<div id="publishDemand_price" class="mui-input-row">
+							<span class="publish_jia result-tips">选择活动投入的资金</span>
+							<span class="publish_jia show-result"></span>
+							<span class="publish_right"><img src="../img/right.png" class="search_pic" /></span>
+						</div>
+					</li>
+					<li class="none_border">
+						<span class="publish_name">预期产出</span>
+						<div class="textarea">
+							<textarea class="Introduce publish_introduce" name="aboutMe" onkeyup="load()" onkeydown="load()" placeholder="请填写活动预期效果"></textarea>
+							<div id="span" class="Span publish_span"><span>0</span>/200</div>
+						</div>
+					</li>
+					<li>
+						<span class="publish_name">您的姓名</span>
+						<input type="text" placeholder="填写您的姓名" class="publish_jia" />
+					</li>
+					<li>
+						<span class="publish_name">您的电话</span>
+						<input type="text" placeholder="填写您的联系方式" class="publish_jia phone" />
+						<p class="warn_tel"></p>
+					</li>
+					<li>
+						<span class="publish_name">您的公司</span>
+						<input type="text" placeholder="填写您的公司全称" class="publish_jia" />
+					</li>
+					<li>
+						<span class="publish_name publish_school">备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注<span class="publish_choose">(选填)</span></span>
+						<div class="textarea publish_textarea">
+							<textarea class="Introduce2 publish_introduce" name="aboutMe" onkeyup="load2()" onkeydown="load2()" placeholder=""></textarea>
+							<div id="span2" class="Span publish_span"><span>0</span>/500</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<a href="../cue.html" class="footer"><span>提交</span></a>
+		</div>
+		<!--遮罩层-->
+		<div class="webservice_mask mask_none"></div>
+		<!--选择资源类型时候出现的那一部分-->
+		<!--<div class="webservice_box2">
+			
+			<ul class="webservice_styleContent">
+				<p>一级服务</p>
+				<li><span>高校社团</span></li>
+				<li><span>注册推广</span></li>
+				<li><span>群众演员</span></li>
+				<li><span>活动人员</span></li>
+				<li><span>活动场地</span></li>
+			</ul>
+			
+			<ul class="webservice_styleContent1">
+				<p>二级服务</p>
+				<li><span>发发发</span></li>
+				<li><span>方法</span></li>
+				<li><span>发GV</span></li>
+				<li><span>高校社团</span></li>
+				<li><span>注册推广</span></li>
+				<li><span>群众演员</span></li>
+				<li><span>活动人员</span></li>
+				<li><span>活动场地</span></li>
+				<li><span>发发发</span></li>
+				<li><span>方法</span></li>
+				<li><span>发GV</span></li>
+				<li><span>高校社团</span></li>
+			</ul>
+			<form class="enter_form webservice_form" onsubmit="return false">
+				<button>确认</button>
+			</form>
+		</div>-->
+
+		<!--弹窗选择城市-->
+		<div class="popup_mask"></div>
+		<div class="school_content city_content">
+			<div class="school_header">
+				<span>取消</span>
+				<span class="ensure_city">确定</span>
+			</div>
+			<div class="school_Box">
+				<div class="box_left">
+					<div class="left_head border">
+						<span class="publishConsult_border left_choose"></span>
+						<span>全选</span>
+					</div>
+					<ul class="left_head" id='city'>
+						<li>
+							<span class="publishConsult_Left publishConsult_border"></span>
+							<span class="color school_name">北京</span>
+						</li>
+						<li>
+							<span class="publishConsult_Left publishConsult_border"></span>
+							<span class="color school_name">上海</span>
+						</li>
+						<li>
+							<span class="publishConsult_Left publishConsult_border"></span>
+							<span class="color school_name">河南</span>
+						</li>
+					</ul>
+				</div>
+				<div class="box_right">
+					<div class="left_head border">
+						<span class="publishConsult_border right_choose"></span>
+						<span>全选</span>
+					</div>
+					<div class="school_box">
+						<ul class="left_head">
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">海淀区</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">房山区</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">西城区</span>
+							</li>
+						</ul>
+						<ul class="left_head none">
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">上海
+									区</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">上海</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">上海</span>
+							</li>
+						</ul>
+						<ul class="left_head none">
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">郑州</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">信阳</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">洛阳</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--选择学校-->
+		<div class="school_content school_Content">
+			<div class="school_header">
+				<span>取消</span>
+				<span class="ensure_school">确定</span>
+			</div>
+			<div class="school_Box">
+				<div class="box_left">
+					<div class="left_head border">
+						<span class="publishConsult_border left_choose chooseSchool"></span>
+						<span>全选</span>
+					</div>
+					<ul class="left_head">
+						<li>
+							<span class="publishConsult_Left publishConsult_border"></span>
+							<span class="color school_name">985/211</span>
+						</li>
+						<li>
+							<span class="publishConsult_Left publishConsult_border"></span>
+							<span class="color school_name">本科</span>
+						</li>
+						<li>
+							<span class="publishConsult_Left publishConsult_border"></span>
+							<span class="color school_name">专科</span>
+						</li>
+					</ul>
+				</div>
+				<div class="box_right">
+					<div class="left_head border">
+						<span class="publishConsult_border right_choose chooseSchool"></span>
+						<span>全选</span>
+					</div>
+					<div class="school_box">
+						<!--这个985/211-->
+						<ul class="left_head none">
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">清华大学</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">北京大学</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">武汉大学</span>
+							</li>
+						</ul>
+						<!--本科-->
+						<ul class="left_head none">
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">上海大学</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">广州大学</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">哈尔滨大学</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">河南大学</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">郑州大学</span>
+							</li>
+						</ul>
+						<!--专科-->
+						<ul class="left_head none">
+							
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">武汉学院</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../js/mui.min.js"></script>
+	<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+	<script type="text/javascript" src="../js/mui.dtpicker.js"></script>
+	<script type="text/javascript" src="../js/mui.poppicker.js"></script>
+	<script type="text/javascript" src="../js/publish/publish_demand.js"></script>
+
+</html>

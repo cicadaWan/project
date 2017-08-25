@@ -1,0 +1,348 @@
+body,
+html,
+ul,
+li,
+span,
+h3,
+p,
+input,
+textarea,
+a,
+i,
+img,
+strong,
+div,
+label,
+header,
+section,
+nav,
+form,
+button,
+footer,
+strong {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	box-sizing: border-box;
+}
+i,
+strong {
+	font-style: normal;
+}
+h3,h6{
+	font-weight: normal;
+}
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+.search_pic {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+}
+.person_top {
+    width: 100vw;
+    height: 40vw;
+    position: relative;
+}
+.personal_pic {
+    width: 15vw;
+    height: 15vw;
+    border: 3px solid #a8b1ae;
+    border-radius: 100%;
+    position: absolute;
+    top: 6.8vw;
+    left: 42.13333vw;
+}
+.person_top p {
+    color: #fff;
+    position: absolute;
+    font-weight: 500;
+}
+.personal_name {
+    font-size: 4.375vw;
+    top: 24.5333vw;
+    width: 100%;
+    text-align: center;
+}
+.personal_school {
+    font-size: 3.75vw;
+    top: 31.3333vw;
+    width: 100%;
+    text-align: center;
+}
+.person_top span {
+    position: absolute;
+    bottom: 7px;
+}
+.person_zuobiao {
+    font-size: 5vw;
+    color: #df511f;
+    position: absolute;
+    left: 2.5333vw;
+    margin: 0 !important;
+}
+.person_top span:nth-of-type(2) {
+    font-size: 2.8vw;
+    color: #fff;
+    left: 7.6vw;
+}
+.person_top span:nth-of-type(3) {
+    width: 4.1333vw;
+    height: 2.8vw;
+    color: #fff;
+    right: 12.2vw;
+}
+.person_top span:nth-of-type(4) {
+    color: #fff;
+    font-size: 2.2667vw;
+    right: 3.466vw;
+}
+.label_style{
+	width: 94.133vw;
+	overflow: hidden;
+	margin: 17px auto;
+}
+.tag{
+	float: left;
+	border-radius:10px;
+	margin: 0 1.066vw 1.066vw;
+}
+.tag span{
+	display: block;
+	margin: 4px 2.4vw;
+	font-size: 3.2vw;
+	color: #7fd67a;
+}
+.label_style .tag:nth-of-type(1){
+	border: 1px solid #7fd67a;
+}
+.label_style .tag:nth-of-type(2){
+	border: 1px solid #f7b77a;
+}
+.label_style .tag:nth-of-type(2) span{
+	color:#f7b77a ;
+}
+.label_style .tag:nth-of-type(3){
+	border: 1px solid #8adac8;
+}
+.label_style .tag:nth-of-type(3) span{
+	color: #8adac8;
+}
+.label_style .tag:nth-of-type(4){
+	border: 1px solid #89b9f3;
+}
+.label_style .tag:nth-of-type(4) span{
+	color: #89b9f3;
+}
+.label_style .tag:nth-of-type(5){
+	border: 1px solid #aeaef3;
+}
+.label_style .tag:nth-of-type(5) span{
+	color:#aeaef3 ;
+}
+.label_style .tag:nth-of-type(6){
+	border: 1px solid #88d3f3;
+}
+.label_style .tag:nth-of-type(6) span{
+	color:#88d3f3 ;
+}
+.label_style .tag:nth-of-type(7){
+	border: 1px solid #fa9a91;
+}
+.label_style .tag:nth-of-type(7) span{
+	color:#fa9a91 ;
+}
+.person_about {
+    width: 83.333vw;
+    overflow: hidden;
+    clear: both;
+    margin: 0 auto;
+}
+.about_line {
+    width: 25.13vw;
+    border-bottom: 1px solid #adadad;
+    margin: 24.5px 8px 17px 0;
+    float: left;
+}
+.about_he {
+    width: 4.4vw;
+    height: 4.4vw;
+    float: left;
+    margin: 17px 16px 17px 0;
+}
+.about_him {
+    font-size: 4vw;
+    color: #0c0c0c;
+    float: left;
+    margin: 15px 0 9px 0;
+}
+.about_lineR {
+    width: 26.13vw;
+    border-bottom: 1px solid #adadad;
+    margin: 24.5px 0 17px;
+    float: right;
+}
+.introduce_new {
+    width: 86.933vw;
+    margin: 0 auto 17px;
+    overflow: hidden;
+    position: relative;
+}
+.about_content {
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    text-indent: 23px;
+    font-size: 3.4667vw;
+    line-height: 1.77;
+    color: #3e3e3e;
+}
+.person_box,.service_More,.service_content{
+    overflow: hidden;
+    clear: both;
+}
+.skip{
+	display: block;
+	overflow: hidden;
+}
+.pic_content {
+    width: 92vw;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.about_pic {
+    width: 100%;
+    height: 46.7vw;
+    margin: 0 auto;
+    background: #f6f6f6;
+    position: relative;
+}
+.consult {
+    background: #1c9242;
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 18.5px;
+    border-radius: 0 20px 20px 0;
+    z-index: 10;
+}
+.consult span{
+	display: block;
+	margin: 6.5px 14px;
+	color: #fff;
+    font-size: 3.4667vw;
+}
+.about_sell {
+    overflow: hidden;
+    clear: both;
+}
+.about_dance, .about_diamond, .num1 {
+    float: left;
+}
+.about_diamond {
+    width: 6vw;
+    height: 5.6vw;
+    margin: 14px 2.667vw 12px 4vw;
+}
+.num1 {
+    font-size: 3.4667vw;
+    color: #0c0c0c;
+    margin-top: 16px;
+}
+.about_dance {
+    border: 1px solid #89C394;
+    margin: 11.5px 0 0 17px;
+}
+.about_dance span{
+	display: block;
+	 font-size: 3.2vw;
+    color: #89c394;
+    margin: 3px 9px;
+}
+.about_number {
+    font-size: 2.6667vw;
+    color: #8e8e8e;
+    float: right;
+    margin: 16px 4vw 0 0;
+}
+.about_sell p {
+    width: 88.4vw;
+    font-size: 3.4667vw;
+    line-height: 1.5;
+    color: #8e8e8e;
+    margin: 0 0 15px 4vw;
+    clear: both;
+}
+.person_pic{
+	margin-top: 20px;
+}
+.border_none{
+	border: 0;
+}
+.person_service{
+	float: left;
+	font-size: 4vw;
+	color: #0c0c0c;
+	margin: 13px 0 0 4vw;
+}
+.service_right{
+	float: right;
+	overflow: hidden;
+}
+.service_right .about_diamond{
+	width: 6vw;
+    height: 5.6vw;
+    margin: 14px 5px 12px 0;
+}
+.service_right .num1{
+	margin-right: 8px;
+}
+.address_service{
+	margin-top: 17px !important;
+}
+.person_title{
+	width: 92vw;
+	margin: 0 auto 12px;
+	overflow: hidden;
+}
+.title_head{
+	float: left;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+.title_head span{
+	display: block;
+	font-size: 3.466vw;
+	color: #ccc;
+	margin: 0 4vw 7px;
+}
+.title_active{
+	color: #3da166 !important;
+}
+.title_green{
+	border-bottom: 1px solid #3da166 !important;
+}
+/*轮播图部分*/
+.about_Pic {
+    background: #fff;
+}
+.about_pic2{
+	display: none;
+}
+.swiper_container{
+	height: 100%;
+}
+.swiper-container{
+	height: 46.7vw;
+}
+.service_More .service_content:last-child .about_box{
+	border: 0 !important;
+	
+}

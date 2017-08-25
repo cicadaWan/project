@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>管理员更换</title>
+	</head>
+	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../css/administrator.css" />
+	<body>
+		<ul class="change_content">
+			<li>
+				<span class="enter_name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+				<input class="inp" type="text" placeholder="请填写新管理员姓名">
+			</li>
+			<li>
+				<span class="enter_name">手机号码</span>
+				<input class="inp phone" type="text" placeholder="请填写新管理员姓名手机号码">
+				<p class="warn_tel"></p>
+			</li>
+			<li>
+				<span class="enter_name">联系邮箱</span>
+				<input class="inp letter" type="text" placeholder="请填写新管理员联系邮箱">
+				<p class="warn_letter"></p>
+			</li>
+			<li>
+				<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+				<input class="inp wechat" type="text" placeholder="请填写新管理员微信号">
+				<p class="warn_wechat"></p>
+			</li>
+		</ul>
+		<footer class="write_foot"><span>提交</span></footer>
+		<!--用户提交了入驻的信息-->
+		<div class="mask"></div>
+		<div class="inform change_inform">该用户已入驻，转权失败</div>
+		<!--未关注-->
+		<div class="inform change_Inform">该用户未关注校咖汇公众号，转权失败</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js" ></script>
+	<script>
+		var h=$(document).height();
+		$(".mask").css("height",h);
+		
+		 //验证手机号码
+		 //当文本框失去焦点的时候
+		 $(".phone").blur(function(){
+		 	var val1=$(".phone").val()
+    		var re=/^1[3|4|7|5|8]\d{9}$/;
+    		if(!re.test(val1)){
+    			$(".warn_tel").html("输入手机格式有误，请重新输入").css("display","block")
+    			
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_tel").html("请输入手机号").css("display","block");
+    		}
+    		
+		 })
+        //当文本框重新获得焦点的时候
+        $(".phone").focus(function(){
+        	var val1=$(".phone").val()
+    		var re=/^1[3|4|5|7|8]\d{9}$/;
+    		if(!re.test(val1)){
+    			$(".warn_tel").html("").css("display","none")
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_tel").html("").css("display","none");
+    		}
+        })
+		//验证邮箱
+		//当文本框失去焦点的时候
+		 $(".letter").blur(function(){
+		 	var val1=$(".letter").val()
+    		var reg=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+    		if(!reg.test(val1)){
+    			$(".warn_letter").html("输入邮箱格式有误，请重新输入").css("display","block")
+    			
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_letter").html("请输入邮箱号").css("display","block");
+    		}
+    		
+		 })
+        //当文本框重新获得焦点的时候
+        $(".letter").focus(function(){
+        	var val1=$(".letter").val()
+    		var reg=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+    		if(!reg.test(val1)){
+    			$(".warn_letter").html("").css("display","none")
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_letter").html("").css("display","none");
+    		}
+        })
+        //验证微信号
+         //当文本框失去焦点的时候
+		 $(".wechat").blur(function(){
+		 	var val1=$(".wechat").val()
+    		var re=/^[a-zA-Z]{1}[-_a-zA-Z0-9]{5,19}$/;
+    		if(!re.test(val1)){
+    			$(".warn_wechat").html("输入微信号格式有误，请重新输入").css("display","block")
+    		    
+  		}
+ 		if(val1==""){
+  			$(".warn_wechat").html("请输入微信号").css("display","block");
+  			
+  		}
+    		
+		 })
+        //当文本框重新获得焦点的时候
+        $(".wechat").focus(function(){
+        	var val1=$(".wechat").val()
+    		var re=/^[a-zA-Z]{1}[-_a-zA-Z0-9]{5,19}$/;
+    		if(!re.test(val1)){
+    			$(".warn_wechat").html("").css("display","none")
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_tel").html("").css("display","none");
+    		}
+        })
+	</script>
+</html>

@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/enterInfo.css" />
+		<link rel="stylesheet" href="../css/publish.css" />
+		
+		<title>校咖汇</title>
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="enterInfo_top">
+			<img src="../img/enterInfo_top.png" class="search_pic" />
+		</div>
+		<!--内容区域-->
+		<section>
+			<div class="person_style">
+				<span>用户类型</span>
+			</div>
+			<div class="enterInfo_choose">
+				<div class="choose">
+					<span class="team"></span>
+					<span class="color_green">团队</span>
+				</div>
+				<div class="choose">
+					<span class="person"></span>
+					<span>个人</span>
+				</div>
+			</div>
+			<div class="enterInfo_bg"></div>
+			<ul class="message_content">
+				<li>
+					<span class="enter_name">城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</span>
+					<div id="activeCity" class="mui-input-row">
+						<span class="myInfo_name enter_city result-tips">请选择你所在的城市</span>
+						<span class="myInfo_name show-result"></span>
+						<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+
+					</div>
+				</li>
+				<li>
+					<span class="enter_name">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校</span>
+					<div id="activeShcool" class="mui-input-row">
+						<span class="myInfo_name enter_school result-tips">请选择您所在的学校</span>
+						<span class="myInfo_name show-result"></span>
+						<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+					</div>
+
+				</li>
+				<li>
+					<span class="enter_name">入驻名称</span>
+					<input class="inp" type="text" placeholder="请填写入驻名称" />
+				</li>
+				<li>
+					<span class="enter_name">入驻头像</span>
+					<div class="webservice_content">
+						<!--添加的图片-->
+						<div class="picture_box">
+							<div class="add_picture">
+								<img src="../img/per_banner01.jpg" class="search_pic" />
+								<span class="iconfont icon-shanchu"></span>
+
+							</div>
+							<div class="add_picture">
+								<img src="../img/per_banner01.jpg" class="search_pic" />
+								<span class="iconfont icon-shanchu"></span>
+
+							</div>
+							<div class="add_picture">
+								<img src="../img/per_banner01.jpg" class="search_pic" />
+								<span class="iconfont icon-shanchu"></span>
+
+							</div>
+						</div>
+						<!--<添加的图片完-->
+						<div class="add_pic">
+							<span class="iconfont icon-pic"></span>
+							<span class="size">+添加图片</span>
+						</div>
+					</div>
+					<p class="limit">*请上传头像</p>
+					<span class="enter_nameT">主页介绍</span>
+					<div class="textarea">
+						<div class="textarea_info">
+							<textarea class="introduce" id="aboutMeT" name="aboutMe" onkeyup="load()" placeholder="请简述您的团队/个人优势，过往案例等，将展示在您的个人主页哦~"></textarea>
+						</div>
+						<div id="span" class="span"><span>0</span>/200</div>
+					</div>
+					<span class="enter_nameT">主页标签</span>
+					<div class="groom_content">
+						<div class="groom groom_green"><span class="groom_Green">地推达人</span></div>
+                       <!--06-23新换-->
+                       <!--<div class="label_content">
+                       	<span class="label"><span>地推达人</span></span>
+                       	<span class="label"><span>路演狂魔</span></span>
+                       	<span class="label"><span>派单侠</span></span>
+                        <span class="label"><span>兼职狗</span></span>
+                       	<span class="label"><span>问卷星</span></span>
+                       <span class="label"><span>校园代理</span></span>
+                       	<span class="label"><span>KOL</span></span>
+                       </div>-->
+					</div>
+						<span class="add_biaoqian" id="biaoStyle">+</span>
+					<div style="width: 100%;overflow: hidden;">
+						<span class="enter_name">联&nbsp;&nbsp;系&nbsp;&nbsp;人</span>
+						<input class="inp" type="text" placeholder="请填写您的姓名" />
+					</div>
+
+				</li>
+				<li>
+					<span class="enter_name">联系电话</span>
+					<input class="phone inp" type="text" placeholder="请填写您的手机号码" />
+					<p class="warn_tel"></p>
+				</li>
+				<li>
+					<span class="enter_name">联系邮箱</span>
+					<input class="letter inp" type="text" placeholder="请填写您的联系邮箱" />
+					<p class="warn_letter"></p>
+				</li>
+				<li>
+					<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+					<input class="wechat inp" type="text" placeholder="请填写您的微信账号" />
+					<p class="warn_wechat"></p>
+				</li>
+			</ul>
+		</section>
+		<footer class="write_foot"><span>提交</span></footer>
+		<!--添加主页标签的部分-->
+		<div class="school_content school_Content">
+			<div class="school_header">
+				<span>取消</span>
+				<span class="ensure_school">确定</span>
+			</div>
+			<!--<ul class="bomb_box">
+				<li>
+					<span class="enterInfo_round"></span>
+					<span class="enterInfo_size">地推达人</span>
+				</li>
+				<li>
+					<span class="enterInfo_round"></span>
+					<span class="enterInfo_size">路演狂魔</span>
+				</li>
+				<li>
+					<span class="enterInfo_round"></span>
+					<span class="enterInfo_size">派单侠</span>
+				</li>
+				<li>
+					<span class="enterInfo_round"></span>
+					<span class="enterInfo_size">兼职狗</span>
+				</li>
+				<li>
+					<span class="enterInfo_round"></span>
+					<span class="enterInfo_size">问卷星</span>
+				</li>
+				<li>
+					<span class="enterInfo_round"></span>
+					<span class="enterInfo_size">校园代理</span>
+				</li>
+				<li>
+					<span class="enterInfo_round"></span>
+					<span class="enterInfo_size">KOL</span>
+				</li>
+			</ul>-->
+			<div class="school_Box">
+				<div class="box_left">
+					<div class="left_head border">
+						<span class="publishConsult_border left_choose"></span>
+						<span>全选</span>
+					</div>
+					<ul class="left_head" id='city'>
+						<li>
+							<span class="publishConsult_Left publishConsult_border"></span>
+							<span class="color school_name">校园大咖</span>
+						</li>
+						<li>
+							<span class="publishConsult_Left publishConsult_border"></span>
+							<span class="color school_name">地推达人</span>
+						</li>
+						<li>
+							<span class="publishConsult_Left publishConsult_border"></span>
+							<span class="color school_name">校内商家</span>
+						</li>
+					</ul>
+				</div>
+				<div class="box_right">
+					<div class="left_head border">
+						<span class="publishConsult_border right_choose"></span>
+						<span>全选</span>
+					</div>
+					<div class="school_box">
+						<ul class="left_head">
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">校园大咖1</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">校园大咖2</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">校园大咖3</span>
+							</li>
+						</ul>
+						<ul class="left_head none">
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">舞蹈达人</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">舞蹈达人1</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">舞蹈达人2</span>
+							</li>
+						</ul>
+						<ul class="left_head none">
+							<li>
+								<span class="publishConsult_left publishConsult_border"></span>
+								<span class="color school_name">跳舞</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border enterInfo_round"></span>
+								<span class="color school_name">唱歌</span>
+							</li>
+							<li>
+								<span class="publishConsult_left publishConsult_border enterInfo_round"></span>
+								<span class="color school_name">唱歌</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup_mask"></div>
+		<!--点击是否删除-->
+		<div class="remove_box">
+			<span class="remove">是否删除?</span>
+			<div class="yes_content">
+				<span>否</span>
+				<span>是</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="../js/mui.min.js"></script>
+	<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+	<script type="text/javascript" src="../js/mui.poppicker.js"></script>
+	<script type="text/javascript" src="../js/city.data.js"></script>
+	<script type="text/javascript" src="../js/shcool.data.js"></script>
+	<script type="text/javascript" src="../js/enterInfo(1).js"></script>
+
+</html>

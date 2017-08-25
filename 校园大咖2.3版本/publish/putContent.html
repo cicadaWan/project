@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>校咖汇</title>
+		<link rel="stylesheet" href="../css/publish.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+	</head>
+
+	<body>
+		<div class="content_wraper">
+			<header>
+				<p class="putContent_title">有一个会摄影会后期的逗比爸爸是一种什么体验~</p>
+				<span class="putContent_time">2017-04-20&nbsp;10:00</span>
+			</header>
+			<section>
+				<div class="putContent_content introduce_new">
+					<div class="about_content p" id="box">
+						<div>要在全国50所高校落地50场活动，在活动现场产生1万。成就用户以及500万的交易额，另外关注企业微信号人数达到1000万以上。要在全国50所高校落地50场活动，在活动现场产生1万。成交用户以及500万的交易额，另外关注企业微信号人数达到1000万以上。要在全国50所高校落地50场活动，在活动现场产生1万。成交用户以及500万的交易额，另外关注企业微信号人数达到1000万以上。</div>
+					</div>
+					<span class="watch class_up"></span>
+				</div>
+				<div class="putContent_picBox">
+					<img src="../img/put.png" />
+					<img src="../img/put.png" />
+					<img src="../img/put.png" />
+					<img src="../img/put.png" />
+					<img src="../img/put.png" />
+					<img src="../img/put.png" />
+				</div>
+			</section>
+			<footer>
+				<div class="putContent_Foot">
+					<a href="#" class="putContent_foot">
+						<span>点击链接查看更多&nbsp;&nbsp;:</span>
+						<span>http:baidu.com</span>
+					</a>
+				</div>
+				<div class="read_content read">
+					<span class="put_color">已阅</span>
+				</div>
+				<div class="put_handContent">
+					<img src="../img/head.png" />
+					<span>点击可获得分成哦!</span>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
+	<script>
+		//点击已阅时候
+		$(".read_content").click(function() {
+			$(this).removeClass("read").addClass("already_read");
+			$('>span:last-child', this).removeClass("put_color").addClass("already_color");
+		})
+		$(document).ready(function(){
+                 function show(){
+					var btn = document.getElementsByClassName("watch");
+					var p = document.getElementsByClassName("p");
+					var arr=[];
+					for(var i=0;i<btn.length;i++){
+						(function(i) {
+							var text = p[i].innerHTML;
+							arr.push(text)
+							var length=$(".p").eq(i).html().length;
+							var html=$(".p").eq(i).html();
+							if(length>60){
+								 $(".p").eq(i).html(html.substring(0,60)+"...")
+							}
+						btn[i].onclick = function(){
+								var newBox = document.createElement("div");
+							 $(this).toggleClass("class_up").toggleClass("class_down")
+							newBox.innerHTML=arr[i];
+							if($(this).hasClass("class_down")) {
+								newBox.innerHTML = arr[i];
+							} else{
+								if($(".p").eq(i).html().length>60){
+									newBox.innerHTML = arr[i].substring(0, 60) + "...";
+								}else{
+									newBox.innerHTML = arr[i];
+								}								
+							}
+						 	  p[i].innerHTML = ""; 
+							 p[i].appendChild(newBox); 
+							
+						} 
+						
+						})(i)
+					}
+				}
+				show();
+		
+	})	
+	</script>
+</html>

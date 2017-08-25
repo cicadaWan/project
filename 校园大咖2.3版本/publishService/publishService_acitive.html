@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>发布服务</title>
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/enterInfo.css" />
+		<link rel="stylesheet" href="../css/publishService.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div class="enterInfo_top">
+			<img src="../img/enterInfo_top.png" class="search_pic" />
+		</div>
+		<div class="person_style">
+			<span>发布类型</span>
+		</div>
+		<div class="publishService_pic">
+			<a href="publishService_community.html" class="choose choose_style">
+				<span class="picture_green"><img src="../img/community.png" class="search_pic" /></span>
+				<span>高校社团</span>
+			</a>
+			<a href="publishService_place.html" class="choose choose_style">
+				<span class="picture"><img src="../img/place_zy.png" class="search_pic" /></span>
+				<span>场地资源</span>
+			</a>
+			<a href="publishService_school.html" class="choose choose_style">
+				<span class="picture"><img src="../img/school.png" class="search_pic" /></span>
+				<span>校内商家</span>
+			</a>
+			<a href="publishService_acitive.html" class="choose choose_style">
+				<span class="picture"><img src="../img/acitive_green.png" class="search_pic" /></span>
+				<span class="color_green">技能达人</span>
+			</a>
+			<a href="publishService_association.html" class="choose choose_style">
+				<span class="picture"><img src="../img/association.png" class="search_pic" /></span>
+				<span>社群大V</span>
+			</a>
+		</div>
+		<div class="enterInfo_bg"></div>
+		<ul class="message_content">
+			<li>
+				<span class="enter_name">技能名称</span>
+				<input class="inp" type="text" placeholder="请填写场地名称" />
+			</li>
+			<li>
+				<span class="enter_name">技能类型</span>
+				<div id="serviceStyle" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">请选择技能类型</span>
+					<span class="myInfo_name enter_school show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">服务性质</span>
+				<div class="nature_box">
+					<div class="nature">
+						<span class="nature_choose"></span>
+						<span class="groom_Green">线上</span>
+					</div>
+					<div class="nature">
+						<span></span>
+						<span>线下</span>
+					</div>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">技能价格</span>
+				<div class="service_price unit_content">
+					<input type="number" placeholder="请填写报价" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" />
+					<span>元/</span>
+					<div id="unitStyle" class="mui-input-row">
+						<span class="choose_unit result-tips">请选择单位</span>
+						<span class="choose_unit show-result"></span>
+					</div>
+					<span style="margin-right:0 ;" class="result-tips">单位</span>
+				</div>
+			</li>
+			<li>
+				<span class="enter_name publishService_name">图&nbsp;&nbsp;&nbsp;&nbsp;片</span>
+				<div class="webservice_content">
+					<!--添加的图片-->
+					<div class="picture_box">
+						<div class="add_picture">
+							<img src="../img/per_banner01.jpg" class="search_pic">
+							<span class="iconfont icon-shanchu"></span>
+
+						</div>
+						<!--<div class="add_picture">
+							<img src="../img/per_banner01.jpg" class="search_pic">
+							<span class="iconfont icon-shanchu"></span>
+
+						</div>-->
+						<!--<div class="add_picture">
+							<img src="../img/per_banner01.jpg" class="search_pic">
+							<span class="iconfont icon-shanchu"></span>
+
+						</div>-->
+					</div>
+					<!--<添加的图片完-->
+					<div class="add_pic">
+						<span class="iconfont icon-pic"></span>
+						<span class="size">+添加图片</span>
+					</div>
+				</div>
+				<p class="limit">*请上传2-9张服务图片</p>
+			</li>
+			<li>
+				<span class="enter_name publishService_name">服务介绍</span>
+				<div class="textarea">
+					<div class="textarea_info">
+						<textarea class="introduce" id="aboutMeT" name="aboutMe" onkeyup="load()" placeholder="请简要描述服务优势，过往案例等"></textarea>
+					</div>
+					<div id="span" class="span"><span>0</span>/200</div>
+				</div>
+			</li>
+			</ul>
+			<footer class="write_foot"><span>提交</span></footer>
+	</body>
+	<script type="text/javascript" src="../js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script type="text/javascript" src="../js/mui.picker.min.js" ></script>
+	<script type="text/javascript" src="../js/mui.poppicker.js" ></script>
+	<script type="text/javascript" src="../js/publishService/community.js" ></script>
+</html>

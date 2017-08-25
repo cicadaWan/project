@@ -1,0 +1,446 @@
+iframe{
+	display: block;
+	width: 100vw;
+	height: 54vh;
+	border: 0;
+}
+.publishService_pic{
+	width: 97.6vw;
+	overflow: hidden;
+	margin: 0 auto 20px;
+}
+.choose_style{
+	display: block;
+	margin: 0 2.8vw 20px;
+}
+@media only screen and (min-width: 320px) and (max-width: 350px) {
+	.choose_style{
+	margin: 0 2.38vw !important;
+}
+}
+.choose_style span:first-child{
+	margin: 0 auto;
+}
+/*.publishService_pic .choose:first-child .picture_green{
+	background: url(../img/community_green.png) no-repeat;
+	background-size: 100% 100%;
+}
+.publishService_pic .choose:first-child .picture{
+	background: url(../img/community.png) no-repeat;
+	background-size: 100% 100%;
+}
+.publishService_pic .choose:nth-of-type(2) .picture{
+	background: url(../img/place_zy.png) no-repeat;
+	background-size: 100% 100%;
+}
+.publishService_pic .choose:nth-of-type(2) .picture_green{
+	background: url(../img/place_green.png) no-repeat;
+	background-size: 100% 100%;
+}
+.publishService_pic .choose:nth-of-type(3) .picture{
+	background: url(../img/school.png) no-repeat;
+	background-size: 100% 100%;
+}
+.publishService_pic .choose:nth-of-type(3) .picture_green{
+	background: url(../img/shool_green.png) no-repeat;
+	background-size: 100% 100%;
+}
+.publishService_pic .choose:nth-of-type(4) .picture{
+	background: url(../img/acitive.png) no-repeat;
+	background-size: 100% 100%;
+}
+.publishService_pic .choose:nth-of-type(4) .picture_green{
+	background: url(../img/acitive_green.png) no-repeat;
+	background-size: 100% 100%;
+}
+.publishService_pic .choose:nth-of-type(5) .picture{
+	background: url(../img/association.png) no-repeat;
+	background-size: 100% 100%;
+}
+.publishService_pic .choose:nth-of-type(5) .picture_green{
+	background: url(../img/association_green.png) no-repeat;
+	background-size: 100% 100%;
+}*/
+.nature_box{
+   float: left;
+   width: 40vw;
+   overflow: hidden;
+   margin: 17px 0;
+}
+
+.unit_content{
+	width: 61vw;
+}
+.service_price{
+	float: left;
+	/*width: 61vw;*/
+	overflow: hidden;
+	margin: 17px 0;
+}
+.service_price input,.service_price span{
+	float: left;
+}
+.service_price span{
+	font-size: 4.533vw;
+	color: #0c0c0c;
+	margin-right: 1.133vw;
+}
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
+	.service_price span{
+	  font-size:17px;
+	}
+}
+.service_price input,.service_price .choose_unit{
+	width: 20vw;
+	border: 0;
+	font-size: 4vw;
+	color: #bdbdbd;
+	margin-right: 0.6vw;
+	margin-top: 2px;
+	text-align: center;
+}
+@media only screen and (min-width: 375px) and (max-width: 1000px) {
+	.service_price input,.service_price .choose_unit{
+	    font-size:15px;
+	}
+}
+.limit{
+	margin-bottom: 20px;
+}
+.publishService_name{
+	/*width: 100%;*/
+	margin: 20px 0 15px;
+}
+.textarea_info{
+	margin-bottom: 20px;
+}
+.message_content li:last-child{
+	border: 0;
+	margin-bottom: 0;
+}
+/*高校社团*/
+.place_name {
+    width: 100%;
+    font-size: 4.533vw;
+    color: #0c0c0c;
+    display: block;
+    margin: 20px 0 15px 0;
+    float: left;
+}
+.place_inp {
+    float: left;
+    width: 21.46vw;
+    height: 8.4vw;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    background: #fafafa;
+    margin: 17px 0 0;
+    text-align: center;
+    line-height: 8.4vw;
+}
+.place_span {
+    float: left;
+    margin: 20px 7px 0;
+    color: #bdbdbd;
+}
+.resouce_green{
+	border: 1px solid #47b458 !important;
+	color: #47b458 !important;
+}
+.place_useTime{
+	margin: 18px 10.666vw 16px 0;
+}
+.enterName2 {
+    color: #0c0c0c;
+    font-size: 4vw;
+    margin: 0 10.666vw 13px 0;
+    float: none;
+}
+.resource_content{
+	width: 94.667vw;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.resource{
+	float: left;
+	width: 28.4vw;
+	height: 8.266vw;
+	text-align: center;
+	line-height: 8.266vw;
+	font-size: 4vw;
+	color: #bdbdbd;
+	border: 1px solid #bdbdbd;
+	margin: 0 1.33vw 7px;
+	position: relative;
+}
+.resource span{
+	display: block;
+	position: absolute;
+	right: 4px;
+	top: 3.066vw;
+	width:3.067vw ;
+	height: 2.267vw;
+	display: none;
+}
+.publish_schoolName{
+	margin-bottom: 14px;
+}
+/*校内商家*/
+
+.shoppe_content,.shoppe_box{
+	overflow: hidden;
+}
+.shoppe{
+	width: 32.733vw;
+	/* font-size: 4vw; */
+	font-size:15px;
+	margin: 17px 6vw 17px 0;
+}
+@media only screen and (min-width: 320px) and (max-width: 360px){
+	.shoppe{
+	    font-size:4vw !important;
+	}
+	.shoppe_content .shoppe_box:nth-of-type(2) .shoppe{
+	 letter-spacing:1.9px !important;
+	}
+	.shoppe_content .shoppe_box:nth-of-type(4) .shoppe{
+	letter-spacing:2px !important;
+	}
+}
+.shoppe_content .shoppe_box:nth-of-type(2) .shoppe{
+	letter-spacing: 2.1975px;
+}
+.shoppe_content .shoppe_box:nth-of-type(4) .shoppe{
+	letter-spacing: 2.25px;
+}
+.serviceSchool_price input,.serviceSchool_price .school_unit{
+	width: 16vw;
+	font-size: 3.2vw;
+	margin-right:1.866vw ;
+	padding-bottom: 2.5px;
+	border-bottom: 1px solid #bdbdbd;
+}
+@media only screen and (min-width: 375px) and (max-width: 1000px){
+	.serviceSchool_price input,.serviceSchool_price .school_unit{
+	    font-size:12px;
+	}
+	.serviceSchool_price span{
+	   font-size:15px;
+	}
+}
+@media only screen and (min-width: 300px) and (max-width: 370px) {
+	.serviceSchool_price .school_unit{
+		width: 19vw;
+		margin-right: 0.866vw;
+	}
+	.shoppe{
+		margin: 17px 4vw 17px 0;
+	}
+	
+}
+.serviceSchool_price span{
+	font-size: 4vw;
+	margin-right: 3.33vw;
+}
+.store{
+	margin-top: 0 !important;
+}
+.place_resource{
+	width: 42.666vw;
+}
+/*社群大v*/
+.association_limit{
+	margin-bottom: 0;
+}
+.introduct{
+	font-size: 3.733vw;
+	color: #bdbdbd;
+	float: left;
+	margin: 22px 0 15px;
+}
+.community_enterName{
+	width: 23vw;
+	margin: 17px 10.66vw 17px 0;
+}
+.community_inp {
+    float: left;
+    width: 38.2666vw;
+    font-size: 4.2667vw;
+    line-height: normal;
+    color: #bdbdbd;
+    border: 0;
+    margin: 17px 6.5px 17px 0;
+}
+.community_span {
+    float: right;
+    font-size: 4.2667vw;
+    color: #0c0c0c;
+    margin: 17px 0;
+}
+.community_pic{
+	width: 24vw;
+}
+.spacing{
+	letter-spacing: 4.5px;
+}
+.association_none{
+	display: none;
+}
+/*服务详情*/
+.person_top {
+    width: 100vw;
+    height:33.21vh;
+    position: relative;
+}
+.eye_symbol{
+	    width: 16vw;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 7px;
+}
+.person_top span:nth-of-type(1) {
+   width: 4.1333vw;
+    height: 2.8vw;
+    color: #fff;
+    display: block;
+    float: left;
+}
+.person_top span:nth-of-type(2) {
+    color: #fff;
+    font-size: 2.2667vw;
+    margin-top: -4px;
+    float: left;
+    margin-left: 5px;
+}
+.ablity h3{
+	margin: 12px 0 12px 11px;
+}
+.detail_content{
+	width: 100vw;
+	overflow: hidden;
+	padding: 17px 4vw;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+.detail_content p:nth-of-type(1){
+	font-size: 4vw;
+	color: #333;
+	margin-bottom: 10px;
+}
+.detail_content p:nth-of-type(2),.detail_message div{
+	font-size: 3.466vw;
+	color: #8e8e8e;
+}
+.detail_message{
+	width: 92vw;
+	margin: 0 auto;
+	position: relative;
+}
+.detail_message div{
+	line-height: 1.5;
+}
+.detail_service{
+	width:100vw;
+	overflow: hidden;
+    padding: 12px 4vw;	
+    border-bottom: 1px solid #dedede;
+}
+.detail_picture{
+	float: left;
+	width: 5.066vw;
+	height: 5.6vw;
+	margin-right:10px ;
+}
+.detail_style,.detail_line{
+	font-size: 3.733vw;
+	color: #333;
+}
+.detail_style{
+	margin-right: 20px;
+}
+.detail_number{
+	float: right;
+	font-size: 3.2vw;
+	color: #d2d2d2;
+	margin-top: 2px;
+}
+.detail_box{
+	margin-top: 15px;
+	border: 0;
+}
+.place_style{
+	margin-right: 48px !important;
+}
+.cooperate_style{
+	float: left;
+}
+.cooperate_box{
+	width: 62vw;
+	float: left;
+	overflow: hidden;
+	margin-top: -2px;
+}
+@media only screen and (min-width: 300px) and (max-width:360px) {
+	.cooperate_box{
+		width: 60vw;
+	}
+}
+.cooperate{
+	border: 1px solid #bdbdbd;
+	float: left;
+	margin: 0 1.133vw 0.6vw 4px;
+}
+.cooperate span{
+	display: block;
+	font-size: 3.466vw;
+	color: #bdbdbd;
+	margin: 1.066vw;
+}
+.cooperate_box p{
+	font-size: 3.2vw;
+	color: #bdbdbd;
+	margin-top: 1vw;
+	float: left;
+}
+.case_content{
+	width: 100vw;
+	overflow: hidden;
+	border-top: 1px solid #dedede;
+}
+.case_pic{
+	width: 92vw;
+	height: 47vw;
+	margin: 17px auto 12px;
+}
+.swiper-wrapper{
+	height: 47vw;
+}
+.association_message{
+	margin-bottom: 20px;
+}
+.media_style{
+	margin-right: 34px !important;
+}
+.media{
+	float: left;
+	width: 22.666vw;
+	height: 6.133vw;
+	text-align: center;
+	line-height: 6.133vw;
+	font-size: 3.466vw;
+    color: #bdbdbd;
+    border: 1px solid #bdbdbd;
+}
+.cooperate_box .media:first-child{
+	margin-right: 10px;
+}
+.media_box{
+	width: 56vw;
+	margin-left: 6px;
+}
+@media only screen and (min-width: 300px) and (max-width: 360px) {
+	.media_box{
+		width: 54vw;
+	}
+}

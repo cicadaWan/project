@@ -1,0 +1,260 @@
+body,
+html,
+ul,
+li,
+span,
+h3,
+p,
+input,
+textarea,
+a,
+i,
+h5,
+img,
+strong,
+div,
+label,
+header,
+section,
+nav,
+form,
+button,
+footer,
+strong {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+.popup_mask,.consult_popup{
+	display: block;
+}
+.popup_content h3{
+	font-size: 5.333vw;
+	color: #0c0c0c;
+	margin: 25px auto 18px;
+}
+.popup_pic{
+	border: 0;
+	margin: 0 auto 15px;
+	width: 31.866vw;
+	height: 25.333vw;
+}
+.told{
+	display: block;
+	width: 67.066vw;
+	overflow: hidden;
+	font-size: 4.8vw;
+	color: #505050;
+	line-height: 1.333;
+	text-align: initial;
+	text-indent: 33px;
+	margin:0 auto 40px ;
+}
+.admini_choose{
+	display: block;
+	text-align: center;
+	font-size: 5.333vw;
+	color: #287f3a;
+	margin-bottom: 30px;
+}
+.choose_content{
+	width: 100%;
+	margin-top: 15px;
+}
+.choose_content .yes:first-child{
+	float: left;
+}
+.choose_content .yes:last-child{
+	float: right;
+}
+.yes_border{
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+.choose_content .yes span{
+	font-size: 5.333vw;
+	color: #fff;
+	display: block;
+	margin: 11px 28px;
+}
+/*身份验证*/
+.adminiSure_content{
+	width: 76vw;
+	overflow: hidden;
+	margin: 110px auto 0;
+}
+.adminiSure_title{
+	display: block;
+	text-align: center;
+	margin: 0 auto 17px;
+	font-size: 4.8vw;
+	color: #333;
+}
+.admniSure_tel{
+	overflow: hidden;
+}
+.admniSure_tel span,.admniSure_tel div{
+	float: left;
+}
+.admniSure_tel span{
+	font-size: 4.266vw;
+	color: #676767;
+	letter-spacing: 7px;
+	line-height: 10.4vw;
+}
+.admminiSure_inp{
+	border: 1px solid #e7e7e7;
+	margin-right: 7px;
+}
+.admminiSure_inp input{
+	float: left;
+	width: 8.4vw;
+	height: 10.4vw;
+	background: #fff;
+	text-align: center;
+	font-size: 4.266vw;
+	color: #676767;
+	border: 0;
+	border-right: 1px solid #e7e7e7;
+}
+.admminiSure_inp input:last-child{
+	border-right: 0;
+}
+.ensure{
+	display: block;
+	height: 12.8vw;
+	line-height: 12.8vw;
+	text-align: center;
+	font-size: 5.333vw;
+	color: #fff;
+	background: #1d9243;
+	margin-top: 112px;
+}
+.mask{
+	width: 100vw; 
+    background: #000;
+    opacity: 0.5;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.inform{
+	width: 30vw;
+	height: 20vw;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 20vw;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -15vw;
+	margin-top: -10vw;
+	background: #fff;
+	z-index: 1000;
+	display: none;
+}
+/*guanliyuan更换*/
+.change_content{
+	width: 92vw;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.change_content li{
+	overflow: hidden;
+	border-bottom: 1px solid #bdbdbd;
+}
+.enter_name{
+	font-size: 4.8vw;
+	color: #0c0c0c;
+	margin: 18px 15.733vw 18px 0;
+}
+.inp{
+	font-size: 4.266vw;
+	color: #bdbdbd;
+	margin: 18px 0;
+	border: 0;
+}
+.write_foot{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+.change_inform{
+	width: 50vw;
+	margin-left: -25vw;
+	display: none;
+}
+.change_Inform{
+	width: 74vw;
+	margin-left: -37vw;
+	text-align: initial;
+	display: none;
+}
+/*模板消息*/
+.adminiNew_content{
+	width: 83.466vw;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.admini_new{
+	display: block;
+	margin: 55px 8px 60px;
+	font-size: 4.8vw;
+	color: #333;
+}
+.admini_green{
+	color: #1c9242;
+}
+.introduce{
+	display: block;
+	height: 11.2vw;
+	font-size: 4.8vw;
+	color: #fff;
+	text-align: center;
+	line-height: 11.2vw;
+	background: #1d9243;
+	margin-bottom: 17px;
+}
+.intro{
+	display: block;
+	text-align: center;
+	font-size: 4.8vw;
+	color: #999;
+}
+/*提示跳转页面*/
+.cue_content{
+	width: 100vw;
+	height: 100vh;
+	background: url(../img/cue_bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.cue_content img{
+	display: block;
+	width: 33.6vw;
+	height: 35.3vw;
+	position: absolute;
+	left: 33.2vw;
+	top: 19.6vw;
+}
+.cue_content p{
+	position: absolute;
+	font-size: 5.333vw;
+	top: 73.333vw;
+	left: 19.866vw;
+	color: #151515;
+}
+.cue_content a{
+	display: block;
+	font-size: 5.066vw;
+	color: #505050;
+	position: absolute;
+	top: 89.066vw;
+	left: 36.2vw;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<title>发布服务</title>
+		<link rel="stylesheet" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../iconfont/iconfont.css" />
+		<link rel="stylesheet" href="../css/enterInfo.css" />
+		<link rel="stylesheet" href="../css/publishService.css" />
+	</head>
+
+	<body>
+		<!--头部-->
+		<div class="enterInfo_top">
+			<img src="../img/enterInfo_top.png" class="search_pic" />
+		</div>
+		<div class="person_style">
+			<span>发布类型</span>
+		</div>
+		<div class="publishService_pic">
+			<a href="publishService_community.html" class="choose choose_style">
+				<span class="picture_green"><img src="../img/community.png" class="search_pic" /></span>
+				<span>高校社团</span>
+			</a>
+			<a href="publishService_place.html" class="choose choose_style">
+				<span class="picture"><img src="../img/place_zy.png" class="search_pic" /></span>
+				<span>场地资源</span>
+			</a>
+			<a href="publishService_school.html" class="choose choose_style">
+				<span class="picture"><img src="../img/school.png" class="search_pic" /></span>
+				<span>校内商家</span>
+			</a>
+			<a href="publishService_acitive.html" class="choose choose_style">
+				<span class="picture"><img src="../img/acitive.png" class="search_pic" /></span>
+				<span>技能达人</span>
+			</a>
+			<a href="publishService_association.html" class="choose choose_style">
+				<span class="picture"><img src="../img/association_green.png" class="search_pic" /></span>
+				<span class="color_green">社群大V</span>
+			</a>
+		</div>
+		<div class="enterInfo_bg"></div>
+		<div class="li">
+			<span class="enter_name">社群类型</span>
+			<div id="associationStyle" class="mui-input-row">
+				<span class="myInfo_name enter_school result-tips">请选择社群类型</span>
+				<span class="myInfo_name enter_school show-result"></span>
+			    <span class="iconfont icon-youjiantou enter_youjiantou"></span>
+			</div>
+			
+		</div>
+		<section class="association_content">
+			<!--社区大v除自媒体以外的部分-->
+			<ul class="message_content">
+				<!--<li>
+					<span class="enter_name">社群类型</span>
+					<span class="myInfo_name enter_school">请选择社群类型</span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</li>-->
+				<li>
+					<span class="enter_name">社群名称</span>
+					<input class="inp" type="text" placeholder="请填写社群名称" />
+				</li>
+				<li>
+					<span class="enter_name">社群人数</span>
+					<input class="inp" type="text" placeholder="请填写社群人数" />
+				</li>
+				<li>
+					<span class="enter_name publishService_name">社群头像</span>
+					<div class="webservice_content">
+						<!--添加的图片-->
+						<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+						
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+						<!--<添加的图片完-->
+						<div class="add_pic">
+							<span class="iconfont icon-pic"></span>
+							<span class="size">+添加图片</span>
+						</div>
+					</div>
+					<p class="limit association_limit">*请上传社群头像</p>
+					<span class="enter_name publishService_name">群成员图</span>
+					<span class="introduct">(&nbsp;照片需体现群人数哦&nbsp;)</span>
+					<div class="webservice_content">
+						<!--添加的图片-->
+						<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+						
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+						<!--<添加的图片完-->
+						<div class="add_pic">
+							<span class="iconfont icon-pic"></span>
+							<span class="size">+添加图片</span>
+						</div>
+					</div>
+					<p class="limit association_limit">*请上传1-2张群成员图片</p>
+					<span class="enter_name publishService_name">活动图片</span>
+					<span class="introduct">(&nbsp;选填&nbsp;)</span>
+					<div class="webservice_content">
+						<!--添加的图片-->
+						<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+						
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+						<!--<添加的图片完-->
+						<div class="add_pic">
+							<span class="iconfont icon-pic"></span>
+							<span class="size">+添加图片</span>
+						</div>
+					</div>
+					<p class="limit">*请上传9张活动图片</p>
+				</li>
+				<li>
+					<span class="enter_name publishService_name">活动案例</span>
+					<span class="introduct">(&nbsp;选填&nbsp;)</span>
+					<div class="textarea">
+						<div class="textarea_info">
+							<textarea class="introduce" id="aboutMeT" name="aboutMe" onkeyup="load()" placeholder="请填写社群组织开展过的活动，群成员参与情况等"></textarea>
+						</div>
+						<div id="span" class="span"><span>0</span>/200</div>
+					</div>
+				</li>
+			</ul>
+			<!--社群大V自媒体部分-->
+			<ul class="message_content association_none">
+				<!--<li>
+					<span class="enter_name community_enterName spacing">社群类型</span>
+					<span class="myInfo_name enter_school">请选择社群类型</span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</li>-->
+				<li>
+					<span class="community_enterName enter_name">公众号名称</span>
+					<input class="inp" type="text" placeholder="请填写公众号名称">
+				</li>
+				<li>
+					<span class="community_enterName enter_name" style="letter-spacing: 0.853vw;">公众号ID</span>
+					<input class="inp wechat" type="text" placeholder="请填写公众号微信ID">
+					<p class="warn_wechat"></p>
+				</li>
+				<li>
+					<span class="community_enterName enter_name spacing">粉丝人数</span>
+					<input class="inp" type="number" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写公众号粉丝数">
+				</li>
+				<li>
+					<span class="community_enterName enter_name">平均阅读量</span>
+					<input class="inp" type="number" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写单篇平均阅读量">
+				</li>
+				<li>
+					<span class="community_enterName enter_name spacing">头条报价</span>
+					<input type="number" class="community_inp" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写头条软文报价">
+					<span class="community_span">元/篇</span>
+
+				</li>
+				<li>
+					<span class="community_enterName enter_name spacing">词条报价</span>
+					<input type="number" class="community_inp" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" placeholder="请填写次条软文报价">
+					<span class="community_span">元/篇</span>
+				</li>
+				<li>
+					<span class="enter_name publishService_name community_enterName">公众号头像</span>
+					<div class="webservice_content">
+						<!--添加的图片-->
+						<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+						
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+						<!--<添加的图片完-->
+						<div class="add_pic">
+							<span class="iconfont icon-pic"></span>
+							<span class="size">+添加图片</span>
+						</div>
+					</div>
+					<p class="limit association_limit">*请上传公众号头像</p>
+					<span class="enter_name publishService_name community_pic">日常推文图</span>
+					<span class="introduct">(&nbsp;照片需体现阅读量哦&nbsp;)</span>
+					<div class="webservice_content">
+						<!--添加的图片-->
+						<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+						
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+						<!--<添加的图片完-->
+						<div class="add_pic">
+							<span class="iconfont icon-pic"></span>
+							<span class="size">+添加图片</span>
+						</div>
+					</div>
+					<p class="limit association_limit">*请上传1-9张日常推文图</p>
+					<span class="enter_name publishService_name community_pic" style="letter-spacing: 1.21vw;">活动图片</span>
+					<span class="introduct">(&nbsp;选填&nbsp;)</span>
+					<div class="webservice_content">
+						<!--添加的图片-->
+						<!--<div class="picture_box">
+						<div class="add_picture">
+							<img src="img/per_banner01.jpg" class="search_pic" />
+							<span class="iconfont icon-shanchu"></span>
+						
+						</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					<div class="add_picture">
+						<img src="img/per_banner01.jpg" class="search_pic" />
+						<span class="iconfont icon-shanchu"></span>
+						
+					</div>
+					</div>-->
+						<!--<添加的图片完-->
+						<div class="add_pic">
+							<span class="iconfont icon-pic"></span>
+							<span class="size">+添加图片</span>
+						</div>
+					</div>
+					<p class="limit">*最多可上传9张活动照片</p>
+				</li>
+				<li>
+					<span class="enter_name publishService_name community_pic spacing">活动案例</span>
+					<span class="introduct">(&nbsp;选填&nbsp;)</span>
+					<div class="textarea">
+						<div class="textarea_info">
+							<textarea class="Introduce" id="aboutMe" name="aboutMe" onkeyup="load2()" placeholder="请填写社群组织开展过的活动，群成员参与情况等"></textarea>
+						</div>
+						<div id="span2" class="span"><span>0</span>/200</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<footer class="write_foot"><span>提交</span></footer>
+		</ul>
+	</body>
+   <script type="text/javascript" src="../js/jquery-2.1.0.js" ></script>
+   <script type="text/javascript" src="../js/mui.min.js" ></script>
+   <script type="text/javascript" src="../js/mui.picker.min.js" ></script>
+   <script type="text/javascript" src="../js/mui.poppicker.js" ></script>
+   <script type="text/javascript" src="../js/publishService/association.js" ></script>
+   <!--<script>
+   	console.log($(".enterInfo_top img").attr("src"))
+   </script>-->
+</html>
