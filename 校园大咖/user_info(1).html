@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>我的</title>
+	</head>
+	<style>
+		html,
+		body {
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: space-between;
+			flex-flow: column nowrap;
+		}
+	</style>
+
+	<body>
+		<section>
+			<div class="user_top">
+				<div class="user_pic"><img src="img/class_picture.png" class="search_pic" /></div>
+				<span class="user_name">咕咕柰子</span>
+				<a href="editor.html">
+					<span class="iconfont icon-tianxiexinxi user_message"></span>
+				</a>
+			</div>
+			<!--服务管理部分-->
+			<div class="service_manage">
+				<div class="user_function">
+				<h3 class="user_h3">我的服务</h3></div>
+			<div class="user_content">
+				<div class="user_picContent">
+					<span class="user_picture"><img src="img/user_pic1.png" class="search_pic" /></span>
+					<span class="user_size">发布服务</span>
+				</div>
+				<div class="user_picContent">
+					<span class="user_picture"><img src="img/user_pic2.png" class="search_pic" /></span>
+					<span class="user_size">服务管理</span>
+				</div>
+				<div class="user_picContent">
+					<span class="user_picture"><img src="img/user_pic3.png" class="search_pic" /></span>
+					<span class="user_size">我的信息</span>
+				</div>
+				<div class="user_picContent user_picR">
+					<span class="user_picture"><img src="img/user_pic4.png" class="search_pic" /></span>
+					<span class="user_size">管理员更换</span>
+				</div>
+			</div>
+			<div class="user_bg"></div>
+			</div>
+			
+			<!--功能管理部分-->
+			<div class="user_function">
+				<h3 class="user_h3">功能管理</h3></div>
+			<div class="user_content">
+				<div class="user_picContent">
+					<span class="user_picture"><img src="img/user_img1.png" class="search_pic" /></span>
+					<span class="user_size">用户反馈</span>
+				</div>
+				<div class="user_picContent">
+					<span class="user_picture"><img src="img/user_img2.png" class="search_pic" /></span>
+					<span class="user_size">在线咨询</span>
+				</div>
+				<div class="user_picContent">
+					<span class="user_picture"><img src="img/user_img3.png" class="search_pic" /></span>
+					<span class="user_size">常见问题</span>
+				</div>
+				<div class="user_picContent user_picR">
+					<span class="user_picture"><img src="img/user_img4.png" class="search_pic" /></span>
+					<span class="user_size">关于平台</span>
+				</div>
+			</div>
+			<div class="user_bg"></div>
+			<!--审核中 部分-->
+			<div class="in_review" style="display: none;">校园资源入驻(审核中)</div>
+			<!--审核未通过-->
+			<div class="no_review">
+				<p>+ 校园资源入驻</p>
+				<p>(审核不通过,请重新提交)</p>
+			</div>
+		</section>
+
+		<!--底部条-->
+		<nav class="foot-bar-tab">
+			<a class="foot-tab-item" href="index.html">
+				<span class="foot-icon foot-icon-home"></span>
+				<span class="foot-tab-label">首页</span>
+			</a>
+			<a class="foot-tab-item" href="publish.html">
+				<span class="foot-icon foot-icon-pub"></span>
+				<span class="foot-tab-label">发布</span>
+			</a>
+			<a class="foot-tab-item" href="#">
+				<span class="foot-icon foot-icon-bus"></span>
+				<span class="foot-tab-label">已选</span>
+			</a>
+			<a class="foot-tab-item foot-active" href="#">
+				<span class="foot-icon foot-icon-person"></span>
+				<span class="foot-tab-label">我的</span>
+			</a>
+		</nav>
+	</body>
+
+</html>
