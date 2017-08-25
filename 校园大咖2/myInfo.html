@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>校园资源入驻</title>
+	</head>
+	<div class="enterInfo_top">
+			<img src="img/infomation.png" class="search_pic"  />
+		</div>
+		<!--公有信息部分-->
+		<ul class="message_content">
+			<li>
+				<span class="enter_name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+				<input type="text" placeholder="庞欢" />
+				<!--<span class="myInfo_name">庞欢</span>-->
+			</li>
+			<li>
+				<span class="enter_name">城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</span>
+				<span class="myInfo_name">广州</span>
+				<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+			</li>
+			<li>
+				<span class="enter_name">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校</span>
+				<span class="myInfo_name">北京大学</span>
+				<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+			</li>
+			<li>
+				<span class="enter_name1">入驻类型</span>
+				<div class="enter_choose">
+					<div class="enter_left">
+						<span class="iconfont icon-tuandui icon_color"></span>
+						<span class="team">团队</span>
+					</div>
+					<span class="enter_line"></span>
+					<div class="enter_right">
+						<span class="iconfont icon-geren"></span>
+						<span class="team">个人</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="enter_box">
+		<!--团队信息部分-->
+		<ul class="team_content message_content">
+			<li>
+				<span class="enter_name">团队名称</span>
+				<input type="text" placeholder="校咖团队" />
+			</li>
+			<li>
+				<span class="enter_name">团队头像</span>
+				<span class="enter_jia myInfo_photo"><img src="img/per_banner01.jpg" class="search_pic" /></span>
+				<span class="iconfont icon-del enter_youjiantou icon_pic"></span>
+			</li>
+			<li>
+				<span class="enter_name">联系电话</span>
+				<input class="phone" type="text" placeholder="15036693873" />
+				<!--<span class="myInfo_name">15036698695</span>-->
+				<p class="warn_tel"></p>		
+			</li>
+			<li>
+				<span class="enter_name">联系邮箱</span>
+				<input class="letter" type="text" placeholder="15036693873@163.com" />
+				<!--<span class="myInfo_name">xiaoka123.com</span>-->
+				<p class="warn_letter"></p>	
+			</li>
+			<li>
+				<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+					<input type="text" placeholder="45566" />
+					<!--<span class="myInfo_name">254263</span>-->
+			</li>
+			<li>
+				<span class="enter_nameT">团队介绍</span>
+				<textarea class="introduce" placeholder="请填写您的团队优势,案例介绍等">我们团队很牛逼很快厉害何况胡扯夫索多补</textarea>
+				
+			</li>
+		</ul>
+		<!--个人信息页面-->
+		<ul class="geren_content message_content">
+			<li>
+				<span class="enter_name">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</span>
+				<input type="text" placeholder="校咖" />
+				<!--<span class="myInfo_name">校咖</span>-->
+			</li>
+			<li>
+				<span class="enter_name">个人头像</span>
+					<span class="enter_jia myInfo_photo"><img src="img/per_banner01.jpg" class="search_pic" /></span>
+				<span class="iconfont icon-jiahao enter_youjiantou icon_pic"></span>
+			</li>
+			<li>
+				<span class="enter_name">联系电话</span>
+				<input class="phone" type="text" placeholder="15036693873" />
+				<!--<span class="myInfo_name">1587563956</span>-->
+				<p class="warn_tel"></p>		
+			</li>
+			<li>
+				<span class="enter_name">联系邮箱</span>
+				<input class="letter" type="text" placeholder="15036693873@163.com" />
+				<!--<span class="myInfo_name">15036693873@163.com</span>-->
+				<p class="warn_letter"></p>		
+			</li>
+			<li>
+				<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+				<input type="text" placeholder="5554343" />
+				<!--<span class="myInfo_name">532145</span>-->
+			</li>
+			<li>
+				<span class="enter_nameT">个人介绍</span>
+				<textarea class="introduce" placeholder="请填写您的团队优势,案例介绍等">我们很牛逼很快厉害何况胡扯夫索多补</textarea>
+				
+			</li>
+		</ul>
+		</div>
+		<!--底部提交-->
+		<form class="enter_form" onsubmit="return false">
+			<button>保存</button>
+		</form>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script>
+		//点击图像切换团队和个人
+		var Index=0;
+		$(".enter_choose div").click(function(){
+		     $(".enter_choose span").removeClass("icon_color");
+			 $(">span:first-child",this).addClass("icon_color");
+			 Index=$(this).index();
+//				console.log(Index)
+				if(Index==0){
+					$(".enter_box ul").eq(0).show().siblings().hide();
+				}else if(Index==2){
+					$(".enter_box ul").eq(1).show().siblings().hide();
+				}
+		})
+		 //验证手机号码
+		 //当文本框失去焦点的时候
+		 $(".phone").blur(function(){
+		 	var val1=$(".phone").val()
+    		var re=/^1[3|5|8]\d{9}$/;
+    		if(!re.test(val1)){
+    			$(".warn_tel").html("输入手机格式有误，请重新输入").css("display","block")
+    			
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_tel").html("请输入手机号").css("display","block");
+    		}
+    		
+		 })
+        //当文本框重新获得焦点的时候
+        $(".phone").focus(function(){
+        	var val1=$(".phone").val()
+    		var re=/^1[3|5|8]\d{9}$/;
+    		if(!re.test(val1)){
+    			$(".warn_tel").html("").css("display","none")
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_tel").html("").css("display","none");
+    		}
+        })
+		//验证邮箱
+		//当文本框失去焦点的时候
+		 $(".letter").blur(function(){
+		 	var val1=$(".letter").val()
+    		var reg=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+    		if(!reg.test(val1)){
+    			$(".warn_letter").html("输入邮箱格式有误，请重新输入").css("display","block")
+    			
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_letter").html("请输入邮箱号").css("display","block");
+    		}
+    		
+		 })
+        //当文本框重新获得焦点的时候
+        $(".letter").focus(function(){
+        	var val1=$(".letter").val()
+    		var reg=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+    		if(!reg.test(val1)){
+    			$(".warn_letter").html("").css("display","none")
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_letter").html("").css("display","none");
+    		}
+    		})
+	</script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    <meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+	    <meta content="yes" name="apple-mobile-web-app-capable" />
+	    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	    <meta content="telephone=no" name="format-detection" />
+	    <link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+	    <link rel="stylesheet" href="iconfont/iconfont.css" />
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<title>校咖汇</title>
+	</head>
+	<body>
+		<!--轮播图-->
+		<div class="lunbo personal_lunbo">
+				<div class="swiper-container personal_swiper">
+		            <div class="swiper-wrapper">
+				    <div class="swiper-slide"><img src="img/banner01.jpg"/></div>
+				    <div class="swiper-slide"><img src="img/banner02.jpg"/></div>
+				    <div class="swiper-slide"><img src="img/banner03.jpg"/></div>
+		   			</div>
+                    <div class="swiper-pagination personal_pagination"></div>
+                    <div class="personal_text">
+	      		   	    <span class="iconfont icon-youjian"></span>
+	      		   	    <span>9</span>
+      		        </div>
+      		        <span class="iconfont icon-iconset0207 personal_eye"></span>
+      		        <span class="personal_number">5320</span>
+      		   </div>
+       </div>
+      	<!--个人信息-->
+      	<a href="person.html" class="personal_content">
+      		<div class="personal_left">
+      			<img src="img/class_picture.png" class="search_pic"  />   
+      		</div>
+      		<div class="personal_right">
+      			<p>叮咚叮咚</p>
+      			<span class="personal_college">华南农业大学</span>
+      			<span class="iconfont icon-zuobiao personal_zuobiao"></span>
+      			<span class="personal_city">广州</span>
+      		</div>
+      	</a>
+		<div class="about_bg"></div>
+		<div class="personal_service">
+			<div class="Pservice_pic">
+				<img src="img/icon_type.png" class="search_pic"  />
+			</div>
+			<span class="P_style">服务类型 :</span>
+			<span class="P_line">线上</span>
+		</div>
+		<div class="personal_ablity">
+			<div class="Pablity_pic">
+				<img src="img/icon_diamond.png" class="search_pic"  />
+			</div>
+			<span class="Pablity_price">服务价格 :</span>
+			<span class="Pablity_number">20</span>
+			<span class="Pablity_yuan">元</span>
+			<span class="personal_sell">已售[</span>
+			<span class="personal_price">2681]</span>
+		</div>
+		<div class="about_bg"></div>
+		<div class="info_content">
+			<span>服务标题</span>
+			<p>我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。我是一个自信，友好，积极向上的孟女士，我有着广泛的学习爱好。</p>
+		</div>
+	</body>
+	<script src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+	<script>
+			//轮播部分
+		var mySwiper = new Swiper('.swiper-container',{
+			loop:true,
+			autoplay:3000,
+			autoplayDisableOnInteraction:false, 
+			pagination:'.swiper-pagination',
+			paginationClickable:true
+			
+})
+	</script>
+</html>

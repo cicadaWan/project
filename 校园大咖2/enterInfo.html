@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1" id="viewport" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+	    <link rel="stylesheet" type="text/css" href="css/mui.picker.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/mui.poppicker.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<title>校园资源入驻</title>
+	</head>
+	<body>
+		<div class="enterInfo_top">
+			<img src="img/infomation.png" class="search_pic"  />
+		</div>
+		<!--公有信息部分-->
+		<ul class="message_content">
+			<li>
+				<span class="enter_name">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+				<input type="text" placeholder="填写您的姓名" />
+			</li>
+			<li>
+				<span class="enter_name">城&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;市</span>
+				<div id="activeCity" class="mui-input-row">
+					<span class="myInfo_name enter_city result-tips">选择您所在的城市</span>
+					<span class="myInfo_name show-result"></span>
+					<span class="iconfont icon-youjiantou enter_youjiantou"></span>
+					
+				</div>
+			</li>
+			<li>
+				<span class="enter_name">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;校</span>
+				<div id="activeShcool" class="mui-input-row">
+					<span class="myInfo_name enter_school result-tips">选择您所在的学校</span>
+					<span class="myInfo_name show-result"></span>
+				   <span class="iconfont icon-youjiantou enter_youjiantou"></span>
+				</div>
+				
+			</li>
+			<li>
+				<span class="enter_name1">入驻类型</span>
+				<div class="enter_choose">
+					<div class="enter_left">
+						<span class="iconfont icon-tuandui icon_color"></span>
+						<span class="team">团队</span>
+					</div>
+					<span class="enter_line"></span>
+					<div class="enter_right">
+						<span class="iconfont icon-geren"></span>
+						<span class="team">个人</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="enter_box">
+		<!--团队信息部分-->
+		<ul class="team_content message_content">
+			<li>
+				<span class="enter_name">团队名称</span>
+				<input type="text" placeholder="填写您的团队名称" />
+			</li>
+			<li>
+				<span class="enter_name">团队头像</span>
+				<span class="enter_jia">点击加号上传团队头像</span>
+				<span class="iconfont icon-jiahao enter_youjiantou icon_pic"></span>
+			</li>
+			<li>
+				<span class="enter_name">联系电话</span>
+				<input class="phone" type="text" placeholder="填写您的手机号码" />
+				<p class="warn_tel"></p>
+			</li>
+			<li>
+				<span class="enter_name">联系邮箱</span>
+				<input class="letter" type="text" placeholder="填写您的联系邮箱" />
+				<p class="warn_letter"></p>
+			</li>
+			<li>
+				<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+				<input type="text" placeholder="填写您的微信账号" />
+			</li>
+			<li>
+				<span class="enter_nameT">团队介绍</span>
+				<textarea class="introduce" placeholder="请填写您的团队优势,案例介绍等"></textarea>
+				
+			</li>
+		</ul>
+		<!--个人信息页面-->
+		<ul class="geren_content message_content">
+			<li>
+				<span class="enter_name">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</span>
+				<input type="text" placeholder="填写您的昵称" />
+			</li>
+			<li>
+				<span class="enter_name">个人头像</span>
+				<span class="enter_jia">点击加号上传团队头像</span>
+				<span class="iconfont icon-jiahao enter_youjiantou icon_pic"></span>
+			</li>
+			<li>
+				<span class="enter_name">联系电话</span>
+				<input class="phone" type="text" placeholder="填写您的手机号码" />
+				<p class="warn_tel"></p>
+			</li>
+			<li>
+				<span class="enter_name">联系邮箱</span>
+				<input type="text" placeholder="填写您的联系邮箱" />
+				<p class="warn_letter"></p>
+			</li>
+			<li>
+				<span class="enter_name">微&nbsp;&nbsp;信&nbsp;&nbsp;号</span>
+				<input type="text" placeholder="填写您的微信账号" />
+			</li>
+			<li>
+				<span class="enter_nameT">个人介绍</span>
+				<textarea class="introduce" placeholder="请填写您的个人优势,案例介绍等"></textarea>
+				
+			</li>
+		</ul>
+		</div>
+		<!--底部提交-->
+		<form class="enter_form" onsubmit="return false">
+			<button>提交</button>
+		</form>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/city.data.js"></script>
+		<script src="js/shcool.data.js"></script>
+	<!--<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+	<!--<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>-->
+	<script>
+		//点击图像切换团队和个人
+		var Index=0;
+		$(".enter_choose div").click(function(){
+		     $(".enter_choose span").removeClass("icon_color");
+			 $(">span:first-child",this).addClass("icon_color");
+			 Index=$(this).index();
+//				console.log(Index)
+				if(Index==0){
+					$(".enter_box ul").eq(0).show().siblings().hide();
+				}else if(Index==2){
+					$(".enter_box ul").eq(1).show().siblings().hide();
+				}
+		})
+		 //点击加号上传头像图标变换部分
+		 $(".icon_pic").click(function(){
+			 	if($('.icon_pic').hasClass('icon-jiahao')){
+				$('.icon_pic').removeClass("icon-jiahao").addClass("icon-del")
+			}else{
+				$('.icon_pic').removeClass("icon-del").addClass("icon-jiahao")
+			}
+		 })
+		 //验证手机号码
+		 //当文本框失去焦点的时候
+		 $(".phone").blur(function(){
+		 	var val1=$(".phone").val()
+    		var re=/^1[3|5|8]\d{9}$/;
+    		if(!re.test(val1)){
+    			$(".warn_tel").html("输入手机格式有误，请重新输入").css("display","block")
+    			
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_tel").html("请输入手机号").css("display","block");
+    		}
+    		
+		 })
+        //当文本框重新获得焦点的时候
+        $(".phone").focus(function(){
+        	var val1=$(".phone").val()
+    		var re=/^1[3|5|8]\d{9}$/;
+    		if(!re.test(val1)){
+    			$(".warn_tel").html("").css("display","none")
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_tel").html("").css("display","none");
+    		}
+        })
+		//验证邮箱
+		//当文本框失去焦点的时候
+		 $(".letter").blur(function(){
+		 	var val1=$(".letter").val()
+    		var reg=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+    		if(!reg.test(val1)){
+    			$(".warn_letter").html("输入邮箱格式有误，请重新输入").css("display","block")
+    			
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_letter").html("请输入邮箱号").css("display","block");
+    		}
+    		
+		 })
+        //当文本框重新获得焦点的时候
+        $(".letter").focus(function(){
+        	var val1=$(".letter").val()
+    		var reg=/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/;
+    		if(!reg.test(val1)){
+    			$(".warn_letter").html("").css("display","none")
+    		}
+    		
+    		if(val1==""){
+    			$(".warn_letter").html("").css("display","none");
+    		}
+        })
+        
+        //选择所在地
+        
+        	mui.init();
+        	var cityPicker = new mui.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showCityPickerButton = document.getElementById('activeCity');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							document.querySelector('#activeCity .result-tips').style.display = "none";
+							document.querySelector('#activeCity .show-result').style.display = "block";
+							document.querySelector('#activeCity .show-result').innerText = items[1].text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+       
+      	
+    //选择学校
+     var shcoolPicker = new mui.PopPicker({
+						layer:2
+					});
+					shcoolPicker.setData(shcollData);
+					var showShcoolPickerButton = document.getElementById('activeShcool');
+					showShcoolPickerButton.addEventListener('tap', function(event) {
+						shcoolPicker.show(function(items) {
+							document.querySelector('#activeShcool .result-tips').style.display = "none";
+							document.querySelector('#activeShcool .show-result').style.display = "block";
+							document.querySelector('#activeShcool .show-result').innerText = items[1].text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+  
+	</script>
+</html>
